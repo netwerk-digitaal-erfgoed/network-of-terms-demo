@@ -2,7 +2,8 @@
     <nav class="navbar navbar-expand-sm navbar-light border-bottom shadow-sm">
         <div class="container">
             <router-link :to="{ name: 'home' }" class="navbar-brand">
-                <img :src="'./src/assets/logo-' + locale + '.png'" height="30"/>
+                <img v-if="locale === 'en'" src="./assets/logo-en.png" height="30"/>
+                <img v-if="locale === 'nl'" src="./assets/logo-nl.png" height="30"/>
             </router-link>
             <a class="navbar-brand" href="/termennetwerk/{{languageCode}}"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
