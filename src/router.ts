@@ -2,9 +2,8 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Faq from './components/Faq.vue'
 import Home from './components/Home.vue'
 
-export const routerHistory = createWebHistory()
 export const router = createRouter({
-    history: routerHistory,
+    history: createWebHistory(),
     strict: true,
     routes: [
         {
