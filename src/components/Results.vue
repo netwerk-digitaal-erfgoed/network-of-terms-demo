@@ -46,7 +46,7 @@
 
             const {data} = useQuery({
                 query: `query Terms ($sources: [ID]!, $query: String!) {
-                    terms (sources: $sources query: $query) { source { name identifier } terms { uri prefLabel altLabel hiddenLabel scopeNote } } }`,
+                    terms (sources: $sources query: $query) { source { name uri } terms { uri prefLabel altLabel hiddenLabel scopeNote } } }`,
                 variables: {
                     sources: props.datasets,
                     query: props.q,
