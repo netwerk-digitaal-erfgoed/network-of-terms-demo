@@ -1,6 +1,6 @@
 <template>
     <select v-if="datasets" v-model="state.selectedDatasets" class="form-control form-control-lg selectpicker" :title="t('search.placeholderDatasets')" multiple required>
-        <option v-for="dataset in datasets.sources" :value="dataset.identifier">
+        <option v-for="dataset in datasets.sources" :value="dataset.uri">
             {{ dataset.name }}
         </option>
     </select>
@@ -15,7 +15,7 @@
         name: 'Datasets',
         setup() {
             const {data} = useQuery({
-                query: 'query Sources { sources { name identifier } }',
+                query: 'query Sources { sources { name uri } }',
             })
 
             const {t} = useI18n()
