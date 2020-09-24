@@ -1,8 +1,6 @@
 <template>
     <select v-if="datasets" v-model="state.selectedDatasets" class="form-control form-control-lg selectpicker" :title="t('search.placeholderDatasets')" multiple required>
-        <option v-for="dataset in datasets.sources" :value="dataset.uri">
-            {{ dataset.name }}
-        </option>
+        <DatasetOption v-for="dataset in datasets.sources" :dataset="dataset" />
     </select>
 </template>
 
@@ -10,12 +8,14 @@
     import {useI18n} from 'vue-i18n'
     import {useQuery} from 'villus'
     import state from '../store'
+    import DatasetOption from './DatasetOption.vue';
 
     export default {
         name: 'Datasets',
+        components: {DatasetOption},
         setup() {
             const {data} = useQuery({
-                query: 'query Sources { sources { name uri } }',
+                query: 'query Sources { sources { name alternateName uri creators { uri alternateName } } }',
             })
 
             const {t} = useI18n()
