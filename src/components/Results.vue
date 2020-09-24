@@ -9,9 +9,29 @@
                     <h5 class="card-title"><a :href="term.uri">{{ term.prefLabel[0] }}</a></h5>
                     <p v-if="term.scopeNote" class="card-text">{{ term.scopeNote[0] }}</p>
 
-                    <p v-if="term.altLabel" class="card-text">
+                    <p v-if="term.altLabel.length > 0" class="card-text">
                         <small class="text-muted">
                             <strong>{{ t('search.altLabel') }}</strong>: {{ term.altLabel[0] }}
+                        </small>
+                    </p>
+
+                    <p v-if="term.broader.length > 0" class="card-text">
+                        <small class="text-muted">
+                            <strong>{{ t('search.broaderTerm') }}</strong>:
+                            <span v-for="(broaderTerm, index) in term.broader">
+                                <a :href="broaderTerm.uri">{{ broaderTerm.prefLabel[0] }}</a>
+                                <span v-if="index !== term.broader.length - 1"> •</span>
+                            </span>
+                        </small>
+                    </p>
+
+                    <p v-if="term.narrower.length > 0" class="card-text">
+                        <small class="text-muted">
+                            <strong>{{ t('search.narrowerTerm') }}</strong>:
+                            <span v-for="(narrowerTerm, index) in term.narrower">
+                                <a :href="narrowerTerm.uri">{{ narrowerTerm.prefLabel[0] }}</a>
+                                <span v-if="index !== term.narrower.length - 1"> • </span>
+                            </span>
                         </small>
                     </p>
 
@@ -46,7 +66,28 @@
 
             const {data} = useQuery({
                 query: `query Terms ($sources: [ID]!, $query: String!) {
-                    terms (sources: $sources query: $query) { source { name uri } terms { uri prefLabel altLabel hiddenLabel scopeNote } } }`,
+                    terms (sources: $sources query: $query) {
+                        source {
+                            name
+                            uri
+                        }
+                        terms {
+                            uri
+                            prefLabel
+                            altLabel
+                            hiddenLabel
+                            scopeNote
+                            broader {
+                                uri
+                                prefLabel
+                            }
+                            narrower {
+                                uri
+                                prefLabel
+                            }
+                        }
+                    }
+                }`,
                 variables: {
                     sources: props.datasets,
                     query: props.q,
