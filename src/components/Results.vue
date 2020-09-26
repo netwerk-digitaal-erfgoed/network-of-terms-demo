@@ -11,7 +11,11 @@
 
                     <p v-if="term.altLabel.length > 0" class="card-text">
                         <small class="text-muted">
-                            <strong>{{ t('search.altLabel') }}</strong>: {{ term.altLabel[0] }}
+                            <strong>{{ t('search.altLabel') }}</strong>:
+                            <span v-for="(altLabel, index) in term.altLabel">
+                                {{ altLabel }}
+                                <span v-if="index !== term.altLabel.length - 1"> • </span>
+                            </span>
                         </small>
                     </p>
 
