@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "graphql": "^15.3.0",
-    "villus": "^1.0.0-alpha.4",
-    "vue": "^3.0.0-rc.4",
-    "vue-i18n": "^9.0.0-alpha.11",
-    "vue-router": "^4.0.0-beta.3"
+    "villus": "^1.0.0-beta.0",
+    "vue": "^3.0.0",
+    "vue-i18n": "^9.0.0-beta.3",
+    "vue-router": "^4.0.0-beta.12"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.2.0",
@@ -26,6 +26,6 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0-beta.4",
     "typescript": "^3.9.7",
-    "vite": "^1.0.0-rc.3"
+    "vite": "^1.0.0-rc.4"
   }
 }
