@@ -1,12 +1,13 @@
 <template>
-dit is faq
-
+  dit is faq
 </template>
 
 <script>
-    export default {
-        name: 'Faq'
-    }
+import {defineComponent} from 'vue';
+
+export default defineComponent({
+  name: 'Faq'
+})
 </script>
 
 <style scoped>
