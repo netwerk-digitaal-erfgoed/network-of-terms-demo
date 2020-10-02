@@ -1,7 +1,7 @@
 {
   "general": {
     "nde": "Dutch Digital Heritage Network",
-    "messageFooter": "Initiated by the <a href=\"https://www.netwerkdigitaalerfgoed.nl/en\">Dutch Digital Heritage Network</a> in collaboration with <a href=\"https://www.clariah.nl/en\">CLARIAH</a>"
+    "messageFooter": "Initiated by the <a href=\"https://www.netwerknetwerkdigitaalerfgoed.nl/en\">Dutch Digital Heritage Network</a> in collaboration with <a href=\"https://www.clariah.nl/en\">CLARIAH</a>"
   },
   "faq": {
     "title": "FAQ",
@@ -27,7 +27,7 @@
         "q2": "Can I already use the prototype in my organization?",
         "a2": "You can, but that is not its intended use. Although the prototype searches real terminology sources and returns real results that you might use, we cannot guarantee the reliability of the results or the stability of the prototype. That is not our goal at this stage.",
         "q3": "Who created the prototype?",
-        "a3": "The prototype was initiated by the <a href=\"https://www.netwerkdigitaalerfgoed.nl/en\">Dutch Digital Heritage Network</a> in collaboration with <a href=\"https://www.clariah.nl/en\">CLARIAH</a>. It was built by developers from organizations who were involved in the <a href=\"https://www.clariah.nl/en/events/tech-day-2-2018\">CLARIAH Tech Day</a> (November 2018), such as the <a href=\"https://huc.knaw.nl/\">KNAW Humanities Cluster</a>, <a href=\"https://www.beeldengeluid.nl/kennis\">Sound and Vision</a> and the <a href=\"https://www.kb.nl/en\">National Library</a>. Information specialists at the <a href=\"https://english.cultureelerfgoed.nl/\">Cultural Heritage Agency</a> assisted in preparing certain terminology sources.",
+        "a3": "The prototype was initiated by the <a href=\"https://www.netwerknetwerkdigitaalerfgoed.nl/en\">Dutch Digital Heritage Network</a> in collaboration with <a href=\"https://www.clariah.nl/en\">CLARIAH</a>. It was built by developers from organizations who were involved in the <a href=\"https://www.clariah.nl/en/events/tech-day-2-2018\">CLARIAH Tech Day</a> (November 2018), such as the <a href=\"https://huc.knaw.nl/\">KNAW Humanities Cluster</a>, <a href=\"https://www.beeldengeluid.nl/kennis\">Sound and Vision</a> and the <a href=\"https://www.kb.nl/en\">National Library</a>. Information specialists at the <a href=\"https://english.cultureelerfgoed.nl/\">Cultural Heritage Agency</a> assisted in preparing certain terminology sources.",
         "q4": "Why is terminology source X not listed?",
         "a4": "The purpose of the prototype is to give an impression, not to search all possible terminology sources. The current sources have been chosen for technical reasons: they use Linked Data technologies and specific types of publication platforms (such as Getty, OpenSKOS, PoolParty or Wikidata).",
         "q5": "What’s next?",
@@ -38,11 +38,11 @@
         "q1": "How does the Network of Terms work?",
         "a1": "Users search the Network of Terms through their client systems, for instance a collection management system or content management system. The client forwards the user’s query to the Network of Terms server using <a href=\"https://graphql.org/\">GraphQL</a>, a widely used search language. The server parses the query and sends it to the Linked Data API of the terminology source. The Network of Terms does so according to the terminology source protocol, for example SPARQL. The terminology source then searches for answers to the query and returns them to the Network of Terms, again according to its own protocol, for example in a certain data format (such as JSON-LD or RDF/XML) or a certain metadata standard (such as SKOS or Schema.org). The Network of Terms then converts the results to GraphQL and returns them to the user’s client system, which finally processes and presents them.",
         "q2": "How can I address the prototype?",
-        "a2": "The prototype’s API can be accessed at the following location:</p><p><a href=\"http://demo.netwerkdigitaalerfgoed.nl:8080/nde/graphql\">http://demo.netwerkdigitaalerfgoed.nl:8080/nde/graphql</a></p><p>The user interface of the API can be accessed here:</p><p><a href=\"http://demo.netwerkdigitaalerfgoed.nl:8080/static/graphiql/index.html\">http://demo.netwerkdigitaalerfgoed.nl:8080/static/graphiql/index.html</a>",
+        "a2": "The user interface of the API can be accessed at:</p><p><a href=\"https://termennetwerk-api.netwerkdigitaalerfgoed.nl\">https://termennetwerk-api.netwerkdigitaalerfgoed.nl</a></p><p>The prototype’s API can be accessed at the following location:</p><p><a href=\"https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql\">https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql</a></p>",
         "q3": "Is the source code of the prototype available?",
-        "a3": "Certainly! The source code can be found on GitHub:</p><p><a href=\"https://github.com/netwerk-digitaal-erfgoed/nde-termennetwerk\">https://github.com/netwerk-digitaal-erfgoed/nde-termennetwerk</a>",
+        "a3": "Certainly! The source code can be found on GitHub:</p><p><a href=\"https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api\">https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api</a>",
         "q4": "I have a technical question. Who can I contact?",
-        "a4": "We are happy to help you if you send an email to <a href=\"mailto:tech@netwerkdigitaalerfgoed.nl\">tech@netwerkdigitaalerfgoed.nl</a>."
+        "a4": "We are happy to help you if you send an email to <a href=\"mailto:tech&comat;netwerknetwerkdigitaalerfgoed.nl\">tech&comat;netwerknetwerkdigitaalerfgoed.nl</a>."
       }
     }
   },

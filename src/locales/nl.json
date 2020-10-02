@@ -38,11 +38,11 @@
         "q1": "Hoe werkt het Termennetwerk?",
         "a1": "Een gebruiker zoekt in het Termennetwerk via zijn <em>client</em>, zoals een collectiebeheersysteem of contentmanagementsysteem. Deze client stuurt de zoekvraag van de gebruiker naar de server van het Termennetwerk met behulp van <a href=\"https://graphql.org/\">GraphQL</a>, een veelgebruikte zoektaal. De server van het Termennetwerk ontleedt de zoekvraag vervolgens en stuurt deze naar de Linked Data-API van de terminologiebron. Het Termennetwerk doet dit volgens het protocol van de terminologiebron, bijvoorbeeld met SPARQL. De terminologiebron zoekt daarna naar antwoorden op de zoekvraag en geeft deze terug aan het Termennetwerk, wederom volgens haar eigen protocol, bijvoorbeeld in een bepaald dataformaat (zoals JSON-LD of RDF/XML) of een bepaalde metadatastandaard (zoals SKOS of Schema.org). Het Termennetwerk zet de resultaten daarna om naar GraphQL en geeft deze terug aan de client van de gebruiker. De client verwerkt en presenteert de resultaten.",
         "q2": "Hoe kan ik het prototype aanspreken?",
-        "a2": "De API van het prototype is te bereiken op de volgende locatie:</p><p><a href=\"http://demo.netwerkdigitaalerfgoed.nl:8080/nde/graphql\">http://demo.netwerkdigitaalerfgoed.nl:8080/nde/graphql</a></p><p>De <em>user interface</em> van de API is te bereiken op de volgende locatie:</p><p><a href=\"http://demo.netwerkdigitaalerfgoed.nl:8080/static/graphiql/index.html\">http://demo.netwerkdigitaalerfgoed.nl:8080/static/graphiql/index.html</a>",
+        "a2": "De <em>user interface</em> van de API is te bereiken op de volgende locatie:</p><p><a href=\"https://termennetwerk-api.netwerkdigitaalerfgoed.nl\">https://termennetwerk-api.netwerkdigitaalerfgoed.nl</a></p><p>De API van het prototype is te bereiken op de volgende locatie:</p><p><a href=\"https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql\">https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql</a>",
         "q3": "Is de broncode van het prototype beschikbaar?",
-        "a3": "Zeker! De broncode staat op GitHub:</p><p><a href=\"https://github.com/netwerk-digitaal-erfgoed/nde-termennetwerk\">https://github.com/netwerk-digitaal-erfgoed/nde-termennetwerk</a>",
+        "a3": "Zeker! De broncode staat op GitHub:</p><p><a href=\"https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api\">https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api</a>",
         "q4": "Ik heb een technische vraag. Met wie kan ik contact opnemen?",
-        "a4": "We helpen je graag via <a href=\"mailto:tech@netwerkdigitaalerfgoed.nl\">tech@netwerkdigitaalerfgoed.nl</a>."
+        "a4": "We helpen je graag via <a href=\"mailto:tech&commat;netwerkdigitaalerfgoed.nl\">tech&commat;netwerkdigitaalerfgoed.nl</a>."
       }
     }
   },

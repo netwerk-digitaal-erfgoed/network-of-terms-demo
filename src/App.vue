@@ -53,7 +53,9 @@
     </div>
   </nav>
 
-  <router-view :key="$route.fullPath" />
+  <div class="container px-3 pt-3 pt-md-5 pb-md-4 mx-auto">
+    <router-view :key="$route.fullPath" />
+  </div>
 
   <footer class="text-muted border-top">
     <div class="container">

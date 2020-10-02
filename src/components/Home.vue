@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-3 pt-3 pt-md-5 pb-md-4 text-center mx-auto">
+  <div class="text-center">
     <div id="beta">
       <span class="note">
         <a href="/termennetwerk/{{languageCode}}/faq#prototype">{{ t('search.messageBeta') }}</a>
