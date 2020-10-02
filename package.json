@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "vite build",
+    "compile": "tsc",
     "lint": "eslint --ext .ts,.vue src",
     "fix": "eslint --ext .ts.,.vue src --fix",
     "dev": "vite"
@@ -15,6 +16,7 @@
     "vue-router": "^4.0.0-beta.12"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.1",
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "@typescript-eslint/parser": "^4.2.0",
     "@vue/eslint-config-standard": "^5.1.2",
@@ -25,7 +27,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0-beta.4",
-    "typescript": "^3.9.7",
+    "typescript": "^4.0.3",
     "vite": "^1.0.0-rc.4"
   }
 }
