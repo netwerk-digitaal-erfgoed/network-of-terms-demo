@@ -2,7 +2,9 @@
   <div class="text-center">
     <div id="beta">
       <span class="note">
-        <a href="/termennetwerk/{{languageCode}}/faq#prototype">{{ t('search.messageBeta') }}</a>
+        <router-link
+          :to="{ name: 'faq', hash: '#prototype'}"
+        >{{ t('search.messageBeta') }}</router-link>
       </span>
     </div>
 
@@ -17,7 +19,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { useI18n } from 'vue-i18n'
 import Search from './Search.vue'
 import {defineComponent} from 'vue';
