@@ -99,3 +99,7 @@ footer p:last-child {
 .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
   color: #6c757d;
 }
+
+input:-moz-ui-invalid {
+  box-shadow: none;
+}
