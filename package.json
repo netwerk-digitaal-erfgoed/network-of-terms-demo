@@ -13,7 +13,7 @@
     "villus": "^1.0.0-beta.6",
     "vue": "^3.0.0",
     "vue-i18n": "^9.0.0-beta.4",
-    "vue-router": "^4.0.0-beta.12"
+    "vue-router": "^4.0.0-beta.13"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.1",
