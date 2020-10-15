@@ -1,17 +1,18 @@
 <template>
   <select
-    v-if="datasets"
     v-model="state.selectedDatasets"
     class="form-control form-control-lg selectpicker"
     :title="t('search.placeholderDatasets')"
     multiple
     required
   >
-    <DatasetOption
-      v-for="dataset in datasets.sources"
-      :key="dataset.uri"
-      :dataset="dataset"
-    />
+    <template v-if="datasets">
+      <DatasetOption
+        v-for="dataset in datasets.sources"
+        :key="dataset.uri"
+        :dataset="dataset"
+      />
+    </template>
   </select>
 </template>
 
@@ -35,7 +36,7 @@ export default defineComponent({
     return {t, datasets: data, state: state, locale, placeholder: t('search.placeholderDatasets')}
   },
   watch: {
-    // The select  doesn't pick up the change of its HTML select element’s title (= placeholder),
+    // The select doesn't pick up the change of its HTML select element’s title (= placeholder),
     // so refresh the placeholder manually.
     locale() {
       $('select').selectpicker({
