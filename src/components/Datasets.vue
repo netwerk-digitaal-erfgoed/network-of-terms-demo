@@ -48,6 +48,9 @@ export default defineComponent({
 
   updated() {
     $('select').selectpicker('show')
+
+    // Refresh select after options have loaded.
+    $('select').selectpicker('refresh')
   },
 })
 </script>
