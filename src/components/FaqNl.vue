@@ -1,14 +1,24 @@
 <template>
-  <div class="content" data-v-580dae4e="">
+  <div
+    class="content"
+    data-v-580dae4e=""
+  >
     <p>
       In deze FAQ geven we antwoorden op veelgestelde vragen over het Termenetwerk. We hebben de vragen opgedeeld per
       doelgroep: <a href="#collectiebeheerders">collectiebeheerders</a>, <a href="#beheerders-van-terminologiebronnen">beheerders van terminologiebronnen</a> en
       <a href="#ontwikkelaars">ontwikkelaars van erfgoedsoftware</a>.
     </p>
 
-    <h2 class="display-5" id="collectiebeheerders">Voor collectiebeheerders</h2>
+    <h2
+      id="collectiebeheerders"
+      class="display-5"
+    >
+      Voor collectiebeheerders
+    </h2>
 
-    <h3 class="display-5">Wat zijn termen?</h3>
+    <h3 class="display-5">
+      Wat zijn termen?
+    </h3>
     <p>
       Termen beschrijven waar erfgoed over gaat. Termen zijn bijvoorbeeld onderwerpen, personen of plaatsen. Neem De
       Nachtwacht: het is een ‘schilderij’, vervaardigd door ‘Rembrandt’ in ‘Amsterdam’.
@@ -26,7 +36,9 @@
       De extra informatie over deze term maakt duidelijk dat het een synoniem heeft, 'schilderstuk'.
     </p>
 
-    <h3 class="display-5">Waarom zijn termen belangrijk?</h3>
+    <h3 class="display-5">
+      Waarom zijn termen belangrijk?
+    </h3>
     <p>
       Termen stellen gebruikers – zoals leerlingen, journalisten of wetenschappers – in staat om erfgoed op het web
       beter te vinden. Bijvoorbeeld: als een gebruiker enkel zoekt naar het <em>woord</em> ‘schilderij’, vindt hij
@@ -35,7 +47,9 @@
       Gebruik van termen zorgt dus voor betere vindbaarheid.
     </p>
 
-    <h3 class="display-5">Wat zijn terminologiebronnen?</h3>
+    <h3 class="display-5">
+      Wat zijn terminologiebronnen?
+    </h3>
     <p>
       Termen worden beheerd in terminologiebronnen, zoals thesauri, referentielijsten of classificatiesystemen. Zo
       zijn er bronnen met informatie over plaatsen, zoals <a href="https://www.geonames.org/">GeoNames</a>, en bronnen
@@ -45,7 +59,9 @@
       de <a href="https://vtmk.data.momu.be/id.html">Visuele Thesaurus voor Mode en Kostuums</a>.
     </p>
 
-    <h3 class="display-5">Waarom zijn terminologiebronnen belangrijk?</h3>
+    <h3 class="display-5">
+      Waarom zijn terminologiebronnen belangrijk?
+    </h3>
     <p>
       Termen zijn niet zomaar wat begrippen: het zijn officiële aanduidingen. De beheerders van terminologiebronnen
       staan in voor de kwaliteit ervan. Bijvoorbeeld inhoudelijk: termen moeten accuraat en actueel zijn. Maar ook wat
@@ -53,7 +69,9 @@
       gebruikt kunnen worden.
     </p>
 
-    <h3 class="display-5">Wat is het Termennetwerk?</h3>
+    <h3 class="display-5">
+      Wat is het Termennetwerk?
+    </h3>
     <p>
       Het Termennetwerk is een zoekmachine voor termen. Je voert er een zoekvraag in – zoals ‘Rembrandt’ – en het
       Termennetwerk zoekt vervolgens rechtstreeks, realtime in terminologiebronnen naar overeenkomende termen. Uit de
@@ -61,14 +79,18 @@
       van Rijn’ in de Nederlandse Thesaurus van Auteursnamen.
     </p>
 
-    <h3 class="display-5">Waarom is het Termennetwerk belangrijk?</h3>
+    <h3 class="display-5">
+      Waarom is het Termennetwerk belangrijk?
+    </h3>
     <p>
       Het Termennetwerk maakt het eenvoudiger om te zoeken in terminologiebronnen. Een collectiebeheerder hoeft enkel
       het Termennetwerk te raadplegen, niet meer de individuele bronnen. En een ontwikkelaar van erfgoedsoftware hoeft
       enkel te koppelen met het Termennetwerk, niet meer met de individuele bronnen. Dit scheelt tijd en geld.
     </p>
 
-    <h3 class="display-5">Hoe kan ik het Termennetwerk gebruiken?</h3>
+    <h3 class="display-5">
+      Hoe kan ik het Termennetwerk gebruiken?
+    </h3>
     <p>
       Je gebruikt het Termennetwerk in je collectiebeheersysteem. Je hoeft dus niet tussen beide te <em>switchen</em>.
       Hoe je het Termennetwerk precies kunt gebruiken, ligt aan de mogelijkheden die de leverancier van je systeem
@@ -85,7 +107,9 @@
       Daarmee is er een link gelegd tussen jouw erfgoedobject en de terminologiebron.
     </p>
 
-    <h3 class="display-5">Hoe kan ik het Termennetwerk uitproberen?</h3>
+    <h3 class="display-5">
+      Hoe kan ik het Termennetwerk uitproberen?
+    </h3>
     <p>
       Je kunt gebruikmaken van onze <em>demonstrator</em>, een website waarmee je zoekvragen aan het Termennetwerk
       kunt stellen. De demonstrator is te bereiken op de volgende locatie:
@@ -101,13 +125,20 @@
       werking van het Termennetwerk, maar is geen onderdeel van het Termennetwerk.
     </p>
 
-    <h3 class="display-5">Wie maakt en beheert het Termennetwerk?</h3>
+    <h3 class="display-5">
+      Wie maakt en beheert het Termennetwerk?
+    </h3>
     <p>
       Het Termennetwerk wordt gemaakt en beheerd door de samenwerkende erfgoedinstellingen in het Netwerk Digitaal
       Erfgoed. De instellingen staan in voor de werking en beschikbaarheid van het Termennetwerk.
     </p>
 
-    <h3 class="display-5" id="prototype">Wat is de status van het Termennetwerk?</h3>
+    <h3
+      id="prototype"
+      class="display-5"
+    >
+      Wat is de status van het Termennetwerk?
+    </h3>
     <p>
       Het Termennetwerk is in ontwikkeling. Dat doen we aan de hand van prototypes: kleine, werkende applicaties
       waarmee we testen of onze ideeën hout snijden. Met de beste ideeën gaan we vanaf 2021 een volwaardige versie van
@@ -115,7 +146,9 @@
       allerlei collectiebeheersystemen.
     </p>
 
-    <h3 class="display-5">Kan ik het Termennetwerk nu al gebruiken?</h3>
+    <h3 class="display-5">
+      Kan ik het Termennetwerk nu al gebruiken?
+    </h3>
     <p>
       Jazeker! Het Termennetwerk is weliswaar nog in ontwikkeling, maar nu al te gebruiken. We horen dan ook graag wat
       je ervan vindt. Bijvoorbeeld: zijn de zoekmogelijkheden toereikend? Zijn de zoekresultaten bruikbaar?
@@ -125,8 +158,10 @@
       door je leverancier. Wij ondersteunen je hier graag bij.
     </p>
 
-    <h3 class="display-5">Ik wil een bepaalde terminologiebron gebruiken, maar die komt niet voor in het Termennetwerk.
-        Kan die toegevoegd worden?</h3>
+    <h3 class="display-5">
+      Ik wil een bepaalde terminologiebron gebruiken, maar die komt niet voor in het Termennetwerk.
+      Kan die toegevoegd worden?
+    </h3>
     <p>
       Laat ons weten welke bron het is en we kijken er graag naar. We gaan onderzoeken of de bron aan een aantal
       voorwaarden voldoet. Zo moet de bron als ‘open data’ beschikbaar zijn, bepaalde metadatastandaarden gebruiken en
@@ -134,12 +169,21 @@
       passen voordat deze kan worden toegevoegd aan het Termennetwerk.
     </p>
 
-    <h3 class="display-5">Ik heb een vraag. Met wie kan ik contact opnemen?</h3>
+    <h3 class="display-5">
+      Ik heb een vraag. Met wie kan ik contact opnemen?
+    </h3>
     <p>Met <a href="mailto:sjors@sjorsdevalk.nl">Sjors de Valk</a>, projectleider bij het Netwerk Digitaal Erfgoed.</p>
 
-    <h2 class="display-5" id="beheerders-van-terminologiebronnen">Voor beheerders van terminologiebronnen</h2>
+    <h2
+      id="beheerders-van-terminologiebronnen"
+      class="display-5"
+    >
+      Voor beheerders van terminologiebronnen
+    </h2>
 
-    <h3 class="display-5">Wat zijn termen?</h3>
+    <h3 class="display-5">
+      Wat zijn termen?
+    </h3>
     <p>
       Termen beschrijven waar erfgoed over gaat. Termen zijn bijvoorbeeld onderwerpen, personen of plaatsen. Neem De
       Nachtwacht: het is een ‘schilderij’, vervaardigd door ‘Rembrandt’ in ‘Amsterdam’.
@@ -157,7 +201,9 @@
       De extra informatie over deze term maakt duidelijk dat het een synoniem heeft, 'schilderstuk'.
     </p>
 
-    <h3 class="display-5">Waarom zijn termen belangrijk?</h3>
+    <h3 class="display-5">
+      Waarom zijn termen belangrijk?
+    </h3>
     <p>
       Termen stellen gebruikers – zoals leerlingen, journalisten of wetenschappers – in staat om erfgoed op het web
       beter te vinden. Bijvoorbeeld: als een gebruiker enkel zoekt naar het <em>woord</em> ‘schilderij’, vindt hij
@@ -166,7 +212,9 @@
       Gebruik van termen zorgt dus voor betere vindbaarheid.
     </p>
 
-    <h3 class="display-5">Wat zijn terminologiebronnen?</h3>
+    <h3 class="display-5">
+      Wat zijn terminologiebronnen?
+    </h3>
     <p>
       Termen worden beheerd in terminologiebronnen, zoals thesauri, referentielijsten of classificatiesystemen. Zo
       zijn er bronnen met informatie over plaatsen, zoals <a href="https://www.geonames.org/">GeoNames</a>, en bronnen
@@ -176,7 +224,9 @@
       de <a href="https://vtmk.data.momu.be/id.html">Visuele Thesaurus voor Mode en Kostuums</a>.
     </p>
 
-    <h3 class="display-5">Waarom zijn terminologiebronnen belangrijk?</h3>
+    <h3 class="display-5">
+      Waarom zijn terminologiebronnen belangrijk?
+    </h3>
     <p>
       Termen zijn niet zomaar wat begrippen: het zijn officiële aanduidingen. De beheerders van terminologiebronnen
       staan in voor de kwaliteit ervan. Bijvoorbeeld inhoudelijk: termen moeten accuraat en actueel zijn. Maar ook wat
@@ -184,7 +234,9 @@
       gebruikt kunnen worden.
     </p>
 
-    <h3 class="display-5">Wat is het Termennetwerk?</h3>
+    <h3 class="display-5">
+      Wat is het Termennetwerk?
+    </h3>
     <p>
       Het Termennetwerk is een zoekmachine voor termen. Je voert er een zoekvraag in – zoals ‘Rembrandt’ – en het
       Termennetwerk zoekt vervolgens rechtstreeks, realtime in terminologiebronnen naar overeenkomende termen. Uit de
@@ -192,20 +244,26 @@
       van Rijn’ in de Nederlandse Thesaurus van Auteursnamen.
     </p>
 
-    <h3 class="display-5">Waarom is het Termennetwerk belangrijk?</h3>
+    <h3 class="display-5">
+      Waarom is het Termennetwerk belangrijk?
+    </h3>
     <p>
       Het Termennetwerk maakt het eenvoudiger om te zoeken in terminologiebronnen. Een collectiebeheerder hoeft enkel
       het Termennetwerk te raadplegen, niet meer de individuele bronnen. En een ontwikkelaar van erfgoedsoftware hoeft
       enkel te koppelen met het Termennetwerk, niet meer met de individuele bronnen. Dit scheelt tijd en geld.
     </p>
 
-    <h3 class="display-5">Wie maakt en beheert het Termennetwerk?</h3>
+    <h3 class="display-5">
+      Wie maakt en beheert het Termennetwerk?
+    </h3>
     <p>
       Het Termennetwerk wordt gemaakt en beheerd door de samenwerkende erfgoedinstellingen in het Netwerk Digitaal
       Erfgoed. De instellingen staan in voor de werking en beschikbaarheid van het Termennetwerk.
     </p>
 
-    <h3 class="display-5">Wat is de status van het Termennetwerk?</h3>
+    <h3 class="display-5">
+      Wat is de status van het Termennetwerk?
+    </h3>
     <p>
       Het Termennetwerk is in ontwikkeling. Dat doen we aan de hand van prototypes: kleine, werkende applicaties
       waarmee we testen of onze ideeën hout snijden. Met de beste ideeën gaan we vanaf 2021 een volwaardige versie van
@@ -213,8 +271,10 @@
       allerlei collectiebeheersystemen.
     </p>
 
-    <h3 class="display-5">Mijn terminologiebron komt niet voor in het Termennetwerk. Wat betekent het als ik mijn bron
-        toevoeg?</h3>
+    <h3 class="display-5">
+      Mijn terminologiebron komt niet voor in het Termennetwerk. Wat betekent het als ik mijn bron
+      toevoeg?
+    </h3>
     <p>
       Daarmee geef je aan dat je bron van belang is voor de samenwerkende instellingen in het Netwerk Digitaal
       Erfgoed. Het stelt collectiebeheerders in staat om de termen in je bron eenvoudiger te vinden en te gebruiken
@@ -226,8 +286,10 @@
       systeem naar het Termennetwerk. Jij bent en blijft de eigenaar.
     </p>
 
-    <h3 class="display-5">Aan welke voorwaarden moet mijn bron voldoen om toegevoegd te kunnen worden aan het
-        Termennetwerk?</h3>
+    <h3 class="display-5">
+      Aan welke voorwaarden moet mijn bron voldoen om toegevoegd te kunnen worden aan het
+      Termennetwerk?
+    </h3>
     <p>
       We stellen een aantal voorwaarden. Deze voorwaarden gaan bijvoorbeeld over functionaliteit en techniek: je bron
       moet met bepaalde metadatastandaarden werken, bepaalde zoekmogelijkheden bieden en technologieën als linked data
@@ -235,12 +297,21 @@
       beschikbaar zijn en voor lange tijd gebruikt kunnen worden.
     </p>
 
-    <h3 class="display-5">Ik heb een vraag. Met wie kan ik contact opnemen?</h3>
+    <h3 class="display-5">
+      Ik heb een vraag. Met wie kan ik contact opnemen?
+    </h3>
     <p>Met <a href="mailto:sjors@sjorsdevalk.nl">Sjors de Valk</a>, projectleider bij het Netwerk Digitaal Erfgoed.</p>
 
-    <h2 class="display-5" id="ontwikkelaars">Voor ontwikkelaars van erfgoedsoftware</h2>
+    <h2
+      id="ontwikkelaars"
+      class="display-5"
+    >
+      Voor ontwikkelaars van erfgoedsoftware
+    </h2>
 
-    <h3 class="display-5">Wat zijn termen?</h3>
+    <h3 class="display-5">
+      Wat zijn termen?
+    </h3>
     <p>
       Termen beschrijven waar erfgoed over gaat. Termen zijn bijvoorbeeld onderwerpen, personen of plaatsen. Neem De
       Nachtwacht: het is een ‘schilderij’, vervaardigd door ‘Rembrandt’ in ‘Amsterdam’.
@@ -258,7 +329,9 @@
       De extra informatie over deze term maakt duidelijk dat het een synoniem heeft, 'schilderstuk'.
     </p>
 
-    <h3 class="display-5">Waarom zijn termen belangrijk?</h3>
+    <h3 class="display-5">
+      Waarom zijn termen belangrijk?
+    </h3>
     <p>
       Termen stellen gebruikers – zoals leerlingen, journalisten of wetenschappers – in staat om erfgoed op het web
       beter te vinden. Bijvoorbeeld: als een gebruiker enkel zoekt naar het <em>woord</em> ‘schilderij’, vindt hij
@@ -267,7 +340,9 @@
       Gebruik van termen zorgt dus voor betere vindbaarheid.
     </p>
 
-    <h3 class="display-5">Wie kent termen toe aan erfgoed?</h3>
+    <h3 class="display-5">
+      Wie kent termen toe aan erfgoed?
+    </h3>
     <p>
       Termen worden toegekend door collectiebeheerders van erfgoedinstellingen. Zij zijn materiedeskundigen en weten
       met welke termen zij het erfgoed in hun collecties het beste kunnen beschrijven.
@@ -279,7 +354,9 @@
       daarentegen heel precies aan welke term bedoeld wordt, waardoor er nooit misverstanden over de betekenis zijn.
     </p>
 
-    <h3 class="display-5">Wat zijn terminologiebronnen?</h3>
+    <h3 class="display-5">
+      Wat zijn terminologiebronnen?
+    </h3>
     <p>
       Termen worden beheerd in terminologiebronnen, zoals thesauri, referentielijsten of classificatiesystemen. Zo
       zijn er bronnen met informatie over plaatsen, zoals <a href="https://www.geonames.org/">GeoNames</a>, en bronnen
@@ -289,7 +366,9 @@
       <a href="https://vtmk.data.momu.be/id.html">Visuele Thesaurus voor Mode en Kostuums</a>.
     </p>
 
-    <h3 class="display-5">Waarom zijn terminologiebronnen belangrijk?</h3>
+    <h3 class="display-5">
+      Waarom zijn terminologiebronnen belangrijk?
+    </h3>
     <p>
       Termen zijn niet zomaar wat begrippen: het zijn officiële aanduidingen. De beheerders van terminologiebronnen
       staan in voor de kwaliteit ervan. Bijvoorbeeld inhoudelijk: termen moeten accuraat en actueel zijn. Maar ook wat
@@ -297,7 +376,9 @@
       gebruikt kunnen worden.
     </p>
 
-    <h3 class="display-5">Wat is het Termennetwerk?</h3>
+    <h3 class="display-5">
+      Wat is het Termennetwerk?
+    </h3>
     <p>
       Het Termennetwerk is een zoekmachine voor termen. Je voert er een zoekvraag in – zoals ‘Rembrandt’ – en het
       Termennetwerk zoekt vervolgens rechtstreeks, realtime in terminologiebronnen naar overeenkomende termen. Uit de
@@ -305,14 +386,18 @@
       van Rijn’ in de Nederlandse Thesaurus van Auteursnamen.
     </p>
 
-    <h3 class="display-5">Waarom is het Termennetwerk belangrijk?</h3>
+    <h3 class="display-5">
+      Waarom is het Termennetwerk belangrijk?
+    </h3>
     <p>
       Het Termennetwerk maakt het eenvoudiger om te zoeken in terminologiebronnen. Een collectiebeheerder hoeft enkel
       het Termennetwerk te raadplegen, niet meer de individuele bronnen. En een ontwikkelaar van erfgoedsoftware hoeft
       enkel te koppelen met het Termennetwerk, niet meer met de individuele bronnen. Dit scheelt tijd en geld.
     </p>
 
-    <h3 class="display-5">Hoe werkt het Termennetwerk, technisch?</h3>
+    <h3 class="display-5">
+      Hoe werkt het Termennetwerk, technisch?
+    </h3>
     <p>
       Het Termennetwerk heeft een <em>Programming Interface</em> (API) die door een collectiebeheersysteem
       aangesproken kan worden met een zoekvraag. Het Termennetwerk ontvangt de zoekvraag van het
@@ -326,7 +411,9 @@
     <p> Schematisch ziet dit er als volgt uit: </p>
     <p><img src="./assets/tn-diagram-nl.png"></p>
 
-    <h3 class="display-5">Hoe steekt de API van het Termennetwerk in elkaar?</h3>
+    <h3 class="display-5">
+      Hoe steekt de API van het Termennetwerk in elkaar?
+    </h3>
     <p>
       De API gebruikt <a href="https://graphql.org/">GraphQL</a> als zoektaal. GraphQL stelt ontwikkelaars in staat om
       heel precies aan te geven welke informatie zij terug willen krijgen van het Termennetwerk. Dit maakt de API
@@ -336,7 +423,9 @@
       veelgebruikt model om informatie over termen te structureren.
     </p>
 
-    <h3 class="display-5">Hoe kan ik het Termennetwerk uitproberen?</h3>
+    <h3 class="display-5">
+      Hoe kan ik het Termennetwerk uitproberen?
+    </h3>
     <p>
       Je kunt gebruikmaken van <a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl/playground">GraphQL Playground</a>,
       een interactieve editor waarmee je GraphQL-vragen aan het Termennetwerk kunt stellen via je browser.
@@ -404,7 +493,9 @@
       de pagina verschijnen vervolgens de termen die gevonden zijn in de terminologiebronnen.
     </p>
 
-    <h3 class="display-5">Hoe kan ik de API van het Termennetwerk aanspreken?</h3>
+    <h3 class="display-5">
+      Hoe kan ik de API van het Termennetwerk aanspreken?
+    </h3>
     <p>
       De eerste stap is door een GraphQL <em>client library</em> te selecteren die past bij de technologie van je
       collectiebeheersysteem, zoals Java, .NET of Python. Een lijst met beschikbare libraries is te vinden op de
@@ -414,7 +505,9 @@
     </p>
     <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql">https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql</a></p>
 
-    <h3 class="display-5">Hoe kan ik vanuit mijn collectiebeheersysteem gebruikmaken van het Termennetwerk?</h3>
+    <h3 class="display-5">
+      Hoe kan ik vanuit mijn collectiebeheersysteem gebruikmaken van het Termennetwerk?
+    </h3>
     <p>
       Op een manier die past bij jouw collectiebeheersysteem. Het Termennetwerk biedt bepaalde zoekmogelijkheden, maar
       schrijft niet voor hoe gebruikers van je systeem hiermee interacteren of hoe zoekresultaten gepresenteerd moeten
@@ -432,13 +525,17 @@
       collectiebeheersysteem de identifier – de URI – van de gekozen term op, zoals <a href="https://data.rkd.nl/artists/66219">https://data.rkd.nl/artists/66219</a>.
     </p>
 
-    <h3 class="display-5">Wie maakt en beheert het Termennetwerk?</h3>
+    <h3 class="display-5">
+      Wie maakt en beheert het Termennetwerk?
+    </h3>
     <p>
       Het Termennetwerk wordt gemaakt en beheerd door de samenwerkende erfgoedinstellingen in het Netwerk Digitaal
       Erfgoed. De instellingen staan in voor de werking en beschikbaarheid van het Termennetwerk.
     </p>
 
-    <h3 class="display-5">Wat is de status van het Termennetwerk?</h3>
+    <h3 class="display-5">
+      Wat is de status van het Termennetwerk?
+    </h3>
     <p>
       Het Termennetwerk is in ontwikkeling. Dat doen we aan de hand van prototypes: kleine, werkende applicaties
       waarmee we testen of onze ideeën hout snijden. Met de beste ideeën gaan we vanaf 2021 een volwaardige versie van
@@ -446,7 +543,9 @@
       allerlei collectiebeheersystemen.
     </p>
 
-    <h3 class="display-5">Kan ik het Termennetwerk nu al gebruiken?</h3>
+    <h3 class="display-5">
+      Kan ik het Termennetwerk nu al gebruiken?
+    </h3>
     <p>
       Jazeker! Het Termennetwerk is weliswaar nog in ontwikkeling, maar nu al te gebruiken. We horen dan ook graag wat
       je ervan vindt. Bijvoorbeeld: zijn de zoekmogelijkheden toereikend? Is de API bruikbaar?
@@ -456,7 +555,9 @@
       collectiebeheerders ermee aan de slag kunnen. Wij ondersteunen je hier graag bij.
     </p>
 
-    <h3 class="display-5">Ik heb een vraag. Met wie kan ik contact opnemen?</h3>
+    <h3 class="display-5">
+      Ik heb een vraag. Met wie kan ik contact opnemen?
+    </h3>
     <p>Met <a href="mailto:sjors@sjorsdevalk.nl">Sjors de Valk</a>, projectleider bij het Netwerk Digitaal Erfgoed.</p>
   </div>
 </template>
