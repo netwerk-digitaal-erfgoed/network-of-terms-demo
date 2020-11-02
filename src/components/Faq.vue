@@ -5,12 +5,8 @@
   <p class="lead text-center">
     {{ t('faq.subtitle') }}
   </p>
-  <template v-if="locale === 'en'">
-    <FaqEn />
-  </template>
-  <template v-else>
-    <FaqNl />
-  </template>
+  <FaqEn v-if="locale === 'en'" />
+  <FaqNl v-else />
 </template>
 
 <script lang="ts">
