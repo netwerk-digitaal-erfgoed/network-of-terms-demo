@@ -409,7 +409,7 @@
       resultaten en retourneert deze aan het collectiebeheersysteem.
     </p>
     <p> Schematisch ziet dit er als volgt uit: </p>
-    <p><img src="./assets/tn-diagram-nl.png"></p>
+    <p><img src="../assets/tn-diagram-nl.png"></p>
 
     <h3 class="display-5">
       Hoe steekt de API van het Termennetwerk in elkaar?
