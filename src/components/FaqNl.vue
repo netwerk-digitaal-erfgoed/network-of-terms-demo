@@ -26,14 +26,14 @@
     <p>
       Toch is een term meer dan een woord. Elke term heeft namelijk een identifier, een zogeheten
       <a href="https://nl.wikipedia.org/wiki/Uniform_resource_identifier">URI</a>. Een URI is een uniek adres
-      waardoor ondubbelzinnig duidelijk is welke term bedoeld wordt. Bijvoorbeeld de term 'noodweer': wordt hier het
+      waardoor ondubbelzinnig duidelijk is welke term bedoeld wordt. Bijvoorbeeld de term ‘noodweer’: wordt hier het
       juridische concept bedoeld of een bepaalde weersgesteldheid? De betekenis wordt duidelijk als je de URI van de
       term gebruikt, zoals <a href="http://www.wikidata.org/entity/Q741507">http://www.wikidata.org/entity/Q741507</a>.
     </p>
     <p>
       Daarnaast kan een term extra informatie bevatten, zoals een definitie of een alternatieve benaming. Bijvoorbeeld
-      de term 'schilderij' met de URI <a href="http://vocab.getty.edu/aat/300177435">http://vocab.getty.edu/aat/300177435</a>.
-      De extra informatie over deze term maakt duidelijk dat het een synoniem heeft, 'schilderstuk'.
+      de term ‘schilderij’ met de URI <a href="http://vocab.getty.edu/aat/300177435">http://vocab.getty.edu/aat/300177435</a>.
+      De extra informatie over deze term maakt duidelijk dat het een synoniem heeft, ‘schilderstuk’.
     </p>
 
     <h3 class="display-5">
@@ -191,14 +191,14 @@
     <p>
       Toch is een term meer dan een woord. Elke term heeft namelijk een identifier, een zogeheten
       <a href="https://nl.wikipedia.org/wiki/Uniform_resource_identifier">URI</a>. Een URI is een uniek adres
-      waardoor ondubbelzinnig duidelijk is welke term bedoeld wordt. Bijvoorbeeld de term 'noodweer': wordt hier het
+      waardoor ondubbelzinnig duidelijk is welke term bedoeld wordt. Bijvoorbeeld de term ‘noodweer’: wordt hier het
       juridische concept bedoeld of een bepaalde weersgesteldheid? De betekenis wordt duidelijk als je de URI van de
       term gebruikt, zoals <a href="http://www.wikidata.org/entity/Q741507">http://www.wikidata.org/entity/Q741507</a>.
     </p>
     <p>
       Daarnaast kan een term extra informatie bevatten, zoals een definitie of een alternatieve benaming. Bijvoorbeeld
-      de term 'schilderij' met de URI <a href="http://vocab.getty.edu/aat/300177435">http://vocab.getty.edu/aat/300177435</a>.
-      De extra informatie over deze term maakt duidelijk dat het een synoniem heeft, 'schilderstuk'.
+      de term ‘schilderij’ met de URI <a href="http://vocab.getty.edu/aat/300177435">http://vocab.getty.edu/aat/300177435</a>.
+      De extra informatie over deze term maakt duidelijk dat het een synoniem heeft, ‘schilderstuk’.
     </p>
 
     <h3 class="display-5">
@@ -319,14 +319,14 @@
     <p>
       Toch is een term meer dan een woord. Elke term heeft namelijk een identifier, een zogeheten
       <a href="https://nl.wikipedia.org/wiki/Uniform_resource_identifier">URI</a>. Een URI is een uniek adres
-      waardoor ondubbelzinnig duidelijk is welke term bedoeld wordt. Bijvoorbeeld de term 'noodweer': wordt hier het
+      waardoor ondubbelzinnig duidelijk is welke term bedoeld wordt. Bijvoorbeeld de term ‘noodweer’: wordt hier het
       juridische concept bedoeld of een bepaalde weersgesteldheid? De betekenis wordt duidelijk als je de URI van de
       term gebruikt, zoals <a href="http://www.wikidata.org/entity/Q741507">http://www.wikidata.org/entity/Q741507</a>.
     </p>
     <p>
       Daarnaast kan een term extra informatie bevatten, zoals een definitie of een alternatieve benaming. Bijvoorbeeld
-      de term 'schilderij' met de URI <a href="http://vocab.getty.edu/aat/300177435">http://vocab.getty.edu/aat/300177435</a>.
-      De extra informatie over deze term maakt duidelijk dat het een synoniem heeft, 'schilderstuk'.
+      de term ‘schilderij’ met de URI <a href="http://vocab.getty.edu/aat/300177435">http://vocab.getty.edu/aat/300177435</a>.
+      De extra informatie over deze term maakt duidelijk dat het een synoniem heeft, ‘schilderstuk’.
     </p>
 
     <h3 class="display-5">

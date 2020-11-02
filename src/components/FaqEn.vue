@@ -39,12 +39,12 @@
     </h3>
     <p>
       You search the Network of Terms through your collection or content management system. This is where you enter
-      your search query, for instance: <em>Rembrandt</em> or <em>fiets</em> ('bicycle'). You then select the
-      terminology source you want to search, for instance: <em>Netherlands Thesaurus of Author's names</em> (NTA) or
+      your search query, for instance: <em>Rembrandt</em> or <em>fiets</em> (‘bicycle’). You then select the
+      terminology source you want to search, for instance: <em>Netherlands Thesaurus of Author’s names</em> (NTA) or
       <em>Art &amp; Architecture Thesaurus</em> (AAT). The Network of Terms then performs a real-time query of the
       terminology source and returns all the matching results. For <em>Rembrandt</em> it will return, for example, all
       the people going by that name, and for <em>fiets</em>, all concepts containing that noun, such as
-      <em>bakfiets</em> ('cargo bike') and <em>waterfiets</em> ('pedal boat'). The Network of Terms unlocks the
+      <em>bakfiets</em> (‘cargo bike’) and <em>waterfiets</em> (‘pedal boat’). The Network of Terms unlocks the
       information as it appears in the terminology sources, without any modifications.
     </p>
 
