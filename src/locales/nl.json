@@ -5,46 +5,7 @@
   },
   "faq": {
     "title": "FAQ",
-    "subtitle": "Veelgestelde vragen over het Termennetwerk",
-    "sections": {
-      "1": {
-        "title": "Termennetwerk",
-        "q1": "Wat is het Termennetwerk?",
-        "a1": "Het Termennetwerk is een nieuwe dienst van het Netwerk Digitaal Erfgoed voor het vinden van termen in terminologiebronnen, zoals thesauri, classificatiesystemen en referentielijsten. Het Termennetwerk zoekt in alle terminologiebronnen die in het erfgoednetwerk beschikbaar zijn. We werken nog aan het eindproduct, maar deze website geeft alvast een voorproefje.",
-        "q2": "Voor wie is het Termennetwerk?",
-        "a2": "Het Termennetwerk is er voor iedereen die erfgoedinformatie beheert en die wil voorzien van gestandaardiseerde termen uit gemeenschappelijke terminologiebronnen. Bijvoorbeeld collectiebeheerders van erfgoedcollecties of redacteuren van erfgoedportals. Let wel: als gebruiker zoek je niet rechtstreeks in het Termennetwerk - dit doet je collectiebeheersysteem of contentmanagementsysteem voor je.",
-        "q3": "Waarom wordt het Termennetwerk ontwikkeld?",
-        "a3": "Met het Termennetwerk maken we het collectiebeheerders en redacteuren gemakkelijker om termen van terminologiebronnen te gebruiken. Natuurlijk kun je terminologiebronnen ook rechtstreeks doorzoeken, zonder het Termennetwerk. Maar dit kan een opgave zijn: terminologiebronnen gebruiken verschillende manieren om hun informatie te ontsluiten. Het Termennetwerk vergemakkelijkt het proces door een uniforme manier van zoeken aan te bieden.",
-        "q4": "Hoe werkt het Termennetwerk?",
-        "a4": "Je zoekt in het Termennetwerk via je collectiebeheersysteem of contentmanagementsysteem. Daar voer je eerst je zoekvraag in. Bijvoorbeeld: <em>Rembrandt</em> of <em>fiets</em>. Vervolgens selecteer je de terminologiebron waarin je wilt zoeken. Bijvoorbeeld: <em>Nederlandse Thesaurus van Auteursnamen (NTA)</em> of <em>Art & Architecture Thesaurus (AAT)</em>. Daarna zoekt het Termennetwerk <em>real-time</em> in de terminologiebron en geeft alle resultaten terug die voldoen aan je zoekvraag. Voor <em>Rembrandt</em> zijn dat bijvoorbeeld alle personen met die naam en voor <em>fiets</em> zijn dat alle begrippen die zo heten, zoals <em>bakfiets</em> en <em>waterfiets</em>. Het Termennetwerk ontsluit de informatie zoals die voorkomt in de terminologiebronnen, <em>as-is</em>, zonder aanpassingen.",
-        "q5": "Hoe verhoudt deze website zich tot het Termennetwerk?",
-        "a5": "Achter het Termennetwerk gaat veel nieuwe techniek schuil. We zitten nog middenin deze innovatie. Deze website is een demonstrator die de werking van het Termennetwerk alvast laat zien. De website maakt op de achtergrond gebruik van een <a href=\"#prototype\">prototype</a> van het Termennetwerk."
-      },
-      "2": {
-        "title": "Prototype",
-        "q1": "Waarom is dit een prototype?",
-        "a1": "We hebben allerlei ideeën over de werking van het Termennetwerk. Deze ideeën verkennen we <em>hands-on</em> met prototypes: kleine, werkende applicaties waarmee we kunnen testen of onze ideeën hout snijden. Met de beste ideeën gaan we vervolgens een volwaardige versie van het Termennetwerk maken. Het Termennetwerk zoals je dat via deze website kunt gebruiken is het eerste prototype.",
-        "q2": "Kan ik het prototype al in mijn organisatie gebruiken?",
-        "a2": "Dat kan, maar daar is het niet voor bedoeld. Het prototype zoekt weliswaar in echte terminologiebronnen en geeft echte resultaten terug die je zou kunnen gebruiken, maar we garanderen niet dat de resultaten betrouwbaar zijn en evenmin dat het prototype stabiel is. Dat is in dit stadium ook niet ons doel.",
-        "q3": "Door wie is het prototype gemaakt?",
-        "a3": "Het prototype is een initiatief van het <a href=\"https://www.netwerkdigitaalerfgoed.nl/\">Netwerk Digitaal Erfgoed</a>, in samenwerking met <a href=\"https://www.clariah.nl/\">CLARIAH</a>. Het is gebouwd door ontwikkelaars van organisaties die betrokken waren bij de <a href=\"https://www.clariah.nl/en/events/tech-day-2-2018\">CLARIAH Tech Day</a> van november 2018, zoals <a href=\"https://huc.knaw.nl/\">KNAW Humanities Cluster</a>, <a href=\"https://www.beeldengeluid.nl/kennis\">Nederlands Instituut voor Beeld en Geluid</a> en <a href=\"https://www.kb.nl/\">Koninklijke Bibliotheek</a>. Informatiespecialisten van de <a href=\"https://cultureelerfgoed.nl/\">Rijksdienst voor het Cultureel Erfgoed</a> hebben geholpen bij het voorbereiden van bepaalde terminologiebronnen.",
-        "q4": "Waarom staat terminologiebron X er niet bij?",
-        "a4": "Het doel van het prototype is om een indruk te geven, niet om alle mogelijke terminologiebronnen te doorzoeken. De bronnen die op dit moment worden aangeboden zijn om technische redenen gekozen: ze gebruiken Linked Data-technologieën en specifieke soorten publicatieplatforms (zoals Getty, OpenSKOS, PoolParty of Wikidata).",
-        "q5": "Hoe verder?",
-        "a5": "Dit prototype is een eerste stap in de ontwikkeling van het Termennetwerk. De komende tijd gaan we onderzoeken of het prototype bruikbaar is voor gebruikers, zowel collectiebeheerders als softwareontwikkelaars van collectiebeheersystemen. Met hun feedback gaan we een nieuw prototype maken."
-      },
-      "3": {
-        "title": "Techniek",
-        "q1": "Hoe werkt het Termennetwerk?",
-        "a1": "Een gebruiker zoekt in het Termennetwerk via zijn <em>client</em>, zoals een collectiebeheersysteem of contentmanagementsysteem. Deze client stuurt de zoekvraag van de gebruiker naar de server van het Termennetwerk met behulp van <a href=\"https://graphql.org/\">GraphQL</a>, een veelgebruikte zoektaal. De server van het Termennetwerk ontleedt de zoekvraag vervolgens en stuurt deze naar de Linked Data-API van de terminologiebron. Het Termennetwerk doet dit volgens het protocol van de terminologiebron, bijvoorbeeld met SPARQL. De terminologiebron zoekt daarna naar antwoorden op de zoekvraag en geeft deze terug aan het Termennetwerk, wederom volgens haar eigen protocol, bijvoorbeeld in een bepaald dataformaat (zoals JSON-LD of RDF/XML) of een bepaalde metadatastandaard (zoals SKOS of Schema.org). Het Termennetwerk zet de resultaten daarna om naar GraphQL en geeft deze terug aan de client van de gebruiker. De client verwerkt en presenteert de resultaten.",
-        "q2": "Hoe kan ik het prototype aanspreken?",
-        "a2": "De <em>user interface</em> van de API is te bereiken op de volgende locatie:</p><p><a href=\"https://termennetwerk-api.netwerkdigitaalerfgoed.nl\">https://termennetwerk-api.netwerkdigitaalerfgoed.nl</a></p><p>De API van het prototype is te bereiken op de volgende locatie:</p><p><a href=\"https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql\">https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql</a>",
-        "q3": "Is de broncode van het prototype beschikbaar?",
-        "a3": "Zeker! De broncode staat op GitHub:</p><p><a href=\"https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api\">https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api</a>",
-        "q4": "Ik heb een technische vraag. Met wie kan ik contact opnemen?",
-        "a4": "We helpen je graag via <a href=\"mailto:tech&commat;netwerkdigitaalerfgoed.nl\">tech&commat;netwerkdigitaalerfgoed.nl</a>."
-      }
-    }
+    "subtitle": "Veelgestelde vragen over het Termennetwerk"
   },
   "search": {
     "messageBeta": "Bèta",
