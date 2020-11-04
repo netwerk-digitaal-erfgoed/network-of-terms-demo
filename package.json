@@ -9,7 +9,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "graphql": "^15.3.0",
+    "graphql": "^15.4.0",
     "villus": "^1.0.0-rc.4",
     "vue": "^3.0.2",
     "vue-i18n": "^9.0.0-beta.6",
