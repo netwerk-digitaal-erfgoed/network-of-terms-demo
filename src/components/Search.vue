@@ -34,34 +34,34 @@
 </template>
 
 <script lang="ts">
-import { useI18n } from 'vue-i18n'
-import Datasets from './Datasets.vue'
-import { useClient } from 'villus'
-import state from '../store'
-import { useRouter } from 'vue-router'
-import Results from './Results.vue'
-import {defineComponent, ref} from 'vue'
+import {useI18n} from 'vue-i18n';
+import Datasets from './Datasets.vue';
+import {useClient} from 'villus';
+import state from '../store';
+import {useRouter} from 'vue-router';
+import Results from './Results.vue';
+import {defineComponent, ref} from 'vue';
 
 export default defineComponent({
   name: 'Search',
-  components: { Results, Datasets },
+  components: {Results, Datasets},
   setup () {
-    const { t } = useI18n()
+    const {t} = useI18n();
 
     useClient({
-      url: import.meta.env.VITE_GRAPHQL_URL
-    })
+      url: import.meta.env.VITE_GRAPHQL_URL,
+    });
 
-    const router = useRouter()
-    const q = ref(router.currentRoute.value.query.q)
-    const fromUrl = router.currentRoute.value.query.datasets as string
-    state.selectedDatasets = (fromUrl ? fromUrl.split(',') : [])
+    const router = useRouter();
+    const q = ref(router.currentRoute.value.query.q);
+    const fromUrl = router.currentRoute.value.query.datasets as string;
+    state.selectedDatasets = (fromUrl ? fromUrl.split(',') : []);
 
     function onSubmit () {
-      router.replace({ name: 'home', query: { q: q.value, datasets: state.selectedDatasets.join(',') } })
+      router.replace({name: 'home', query: {q: q.value, datasets: state.selectedDatasets.join(',')}});
     }
 
-    return { t, q, onSubmit, state }
-  }
-})
+    return {t, q, onSubmit, state};
+  },
+});
 </script>

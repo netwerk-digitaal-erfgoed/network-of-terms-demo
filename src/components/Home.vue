@@ -3,7 +3,7 @@
     <div id="beta">
       <span class="note">
         <router-link
-          :to="{ name: 'faq', hash: '#prototype'}"
+          :to="{name: 'faq', hash: '#prototype'}"
         >{{ t('search.messageBeta') }}</router-link>
       </span>
     </div>
@@ -20,21 +20,21 @@
 </template>
 
 <script lang="ts">
-import { useI18n } from 'vue-i18n'
-import Search from './Search.vue'
+import {useI18n} from 'vue-i18n';
+import Search from './Search.vue';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
   name: 'Home',
   components: {
-    Search
+    Search,
   },
   setup () {
-    const { t } = useI18n()
+    const {t} = useI18n();
 
-    return { t }
-  }
-})
+    return {t};
+  },
+});
 </script>
 
 <style scoped>

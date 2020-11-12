@@ -29,17 +29,17 @@
 </template>
 
 <script lang="ts">
-import { useI18n } from 'vue-i18n'
+import {useI18n} from 'vue-i18n';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
   name: 'Language',
   setup () {
-    const { t, locale } = useI18n()
+    const {t, locale} = useI18n();
 
-    return { t, locale }
-  }
-})
+    return {t, locale};
+  },
+});
 </script>
 
 <style scoped>

@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-sm navbar-light border-bottom shadow-sm">
     <div class="container">
       <router-link
-        :to="{ name: 'home' }"
+        :to="{name: 'home'}"
         class="navbar-brand"
       >
         <img
@@ -33,7 +33,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <router-link
-              :to="{ name: 'home' }"
+              :to="{name: 'home'}"
               class="nav-link"
             >
               Home
@@ -41,7 +41,7 @@
           </li>
           <li class="nav-item">
             <router-link
-              :to="{ name: 'faq' }"
+              :to="{name: 'faq'}"
               class="nav-link"
             >
               {{ t('faq.title') }}
@@ -66,26 +66,26 @@
 </template>
 
 <script lang="ts">
-import Language from './components/Language.vue'
-import {useI18n} from 'vue-i18n'
-import {useRoute} from 'vue-router'
-import {computed, defineComponent} from 'vue'
+import Language from './components/Language.vue';
+import {useI18n} from 'vue-i18n';
+import {useRoute} from 'vue-router';
+import {computed, defineComponent} from 'vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    Language
+    Language,
   },
   setup() {
-    const {t, locale} = useI18n()
-    const route = useRoute()
+    const {t, locale} = useI18n();
+    const route = useRoute();
 
     const currentLocation = computed(() => {
-      const {...rest} = route
-      return rest
-    })
+      const {...rest} = route;
+      return rest;
+    });
 
-    return {t, locale, currentLocation}
-  }
-})
+    return {t, locale, currentLocation};
+  },
+});
 </script>
