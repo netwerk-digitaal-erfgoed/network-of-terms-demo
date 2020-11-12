@@ -21,14 +21,14 @@
             </h5>
             <p
               v-if="term.scopeNote"
-              class="card-text"
+              class="card-text text-left"
             >
               {{ term.scopeNote[0] }}
             </p>
 
             <p
               v-if="term.altLabel.length > 0"
-              class="card-text"
+              class="card-text text-left"
             >
               <small class="text-muted">
                 <strong>{{ t('search.altLabel') }}</strong>:
@@ -44,7 +44,7 @@
 
             <p
               v-if="term.broader.length > 0"
-              class="card-text"
+              class="card-text text-left"
             >
               <small class="text-muted">
                 <strong>{{ t('search.broaderTerm') }}</strong>:
@@ -60,7 +60,7 @@
 
             <p
               v-if="term.narrower.length > 0"
-              class="card-text"
+              class="card-text text-left"
             >
               <small class="text-muted">
                 <strong>{{ t('search.narrowerTerm') }}</strong>:
