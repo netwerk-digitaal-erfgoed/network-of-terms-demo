@@ -442,10 +442,18 @@
     source {
       name
     }
-    terms {
-      uri
-      prefLabel
-      altLabel
+    result {
+      __typename
+      ... on Terms {
+        terms {
+          uri
+          prefLabel
+          altLabel
+        }
+      }
+      ... on Error {
+        message
+      }
     }
   }
 }</pre>
@@ -467,23 +475,31 @@
         alternateName
       }
     }
-    terms {
-      uri
-      prefLabel
-      altLabel
-      hiddenLabel
-      scopeNote
-      broader {
-        uri
-        prefLabel
+    result {
+      __typename
+      ... on Terms {
+        terms {
+          uri
+          prefLabel
+          altLabel
+          hiddenLabel
+          scopeNote
+          broader {
+            uri
+            prefLabel
+          }
+          narrower {
+            uri
+            prefLabel
+          }
+          related {
+            uri
+            prefLabel
+          }
+        }
       }
-      narrower {
-        uri
-        prefLabel
-      }
-      related {
-        uri
-        prefLabel
+      ... on Error {
+        message
       }
     }
   }
