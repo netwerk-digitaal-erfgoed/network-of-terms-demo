@@ -88,8 +88,8 @@
 </template>
 
 <script lang="ts">
-import {useQuery} from 'villus'
-import {useI18n} from 'vue-i18n'
+import {useQuery} from 'villus';
+import {useI18n} from 'vue-i18n';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
@@ -97,21 +97,21 @@ export default defineComponent({
   props: {
     q: {
       type: String,
-      default: null
+      default: null,
     },
     datasets: {
       type: Array,
-      default: () => []
+      default: () => [],
     },
   },
   setup(props) {
-    const {t} = useI18n()
+    const {t} = useI18n();
 
     if (!props.q || !props.datasets) {
       return {
         data: null,
-        t
-      }
+        t,
+      };
     }
 
     const {data} = useQuery({
@@ -140,15 +140,15 @@ export default defineComponent({
               }`,
       variables: {
         sources: props.datasets,
-        query: props.q
-      }
-    })
+        query: props.q,
+      },
+    });
 
-    new ClipboardJS('.btn-copy')
+    new ClipboardJS('.btn-copy');
 
-    return {data, t}
-  }
-})
+    return {data, t};
+  },
+});
 </script>
 
 <style scoped>

@@ -19,11 +19,11 @@ export default defineComponent({
   name: 'Faq',
   components: {FaqEn, FaqNl},
   setup () {
-    const { t, locale } = useI18n()
+    const {t, locale} = useI18n();
 
-    return { t, locale }
+    return {t, locale};
   },
-})
+});
 </script>
 
 <style scoped>

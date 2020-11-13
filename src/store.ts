@@ -1,5 +1,5 @@
-import { reactive } from 'vue'
+import {reactive} from 'vue';
 
 export default reactive({
-  selectedDatasets: [] as string[]
-})
+  selectedDatasets: [] as string[],
+});

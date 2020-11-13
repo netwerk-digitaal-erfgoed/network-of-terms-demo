@@ -5,7 +5,7 @@
     "build": "vite build",
     "compile": "tsc",
     "lint": "eslint --ext .ts,.vue src",
-    "fix": "eslint --ext .ts.,.vue src --fix",
+    "fix": "eslint --ext .ts,.vue src --fix",
     "dev": "vite"
   },
   "dependencies": {
