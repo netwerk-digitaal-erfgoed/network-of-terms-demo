@@ -53,7 +53,7 @@
                   :key="broaderTerm"
                 >
                   <a :href="broaderTerm.uri">{{ broaderTerm.prefLabel[0] }}</a>
-                  <span v-if="index !== term.broader.length - 1"> •</span>
+                  <span v-if="index !== term.broader.length - 1"> • </span>
                 </span>
               </small>
             </p>
