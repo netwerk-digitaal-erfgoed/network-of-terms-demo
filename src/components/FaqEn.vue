@@ -48,72 +48,6 @@
       information as it appears in the terminology sources, without any modifications.
     </p>
 
-    <h3 class="display-5">
-      How does this website relate to the Network of Terms?
-    </h3>
-    <p>
-      A lot of new technology is hidden behind the Network of Terms. We are in the middle of implementing this
-      innovation. This website demonstrates the operation of the Network of Terms. It uses a
-      <a href="#prototype">prototype</a> of the Network of Terms that is being executed in the background.
-    </p>
-
-    <h2
-      id="prototype"
-      class="display-5"
-    >
-      Prototype
-    </h2>
-
-    <h3 class="display-5">
-      Why is this a prototype?
-    </h3>
-    <p>
-      We have all kinds of ideas about how the Network of Terms should work. We explore these ideas hands-on with
-      prototypes: small, working applications which we can use to test whether our ideas make sense. The best ideas
-      will subsequently be elaborated into a fully-fledged version of the Network of Terms. The version available from
-      this website is the first prototype.
-    </p>
-
-    <h3 class="display-5">
-      Can I already use the prototype in my organization?
-    </h3>
-    <p>
-      You can, but that is not its intended use. Although the prototype searches real terminology sources and returns
-      real results that you might use, we cannot guarantee the reliability of the results or the stability of the
-      prototype. That is not our goal at this stage.
-    </p>
-
-    <h3 class="display-5">
-      Who created the prototype?
-    </h3>
-    <p>
-      The prototype was initiated by the <a href="https://www.netwerknetwerkdigitaalerfgoed.nl/en">Dutch Digital
-        Heritage Network</a> in collaboration with <a href="https://www.clariah.nl/en">CLARIAH</a>. It was built by
-      developers from organizations who were involved in the <a href="https://www.clariah.nl/en/events/tech-day-2-2018">CLARIAH
-        Tech Day</a> (November 2018), such as the <a href="https://huc.knaw.nl/">KNAW Humanities Cluster</a>,
-      <a href="https://www.beeldengeluid.nl/kennis">Sound and Vision</a> and the <a href="https://www.kb.nl/en">National Library</a>.
-      Information specialists at the <a href="https://english.cultureelerfgoed.nl/">Cultural Heritage Agency</a> assisted in
-      preparing certain terminology sources.
-    </p>
-
-    <h3 class="display-5">
-      Why is terminology source X not listed?
-    </h3>
-    <p>
-      The purpose of the prototype is to give an impression, not to search all possible terminology sources. The
-      current sources have been chosen for technical reasons: they use Linked Data technologies and specific types of
-      publication platforms (such as Getty, OpenSKOS, PoolParty or Wikidata).
-    </p>
-
-    <h3 class="display-5">
-      What’s next?
-    </h3>
-    <p>
-      This prototype is a first step in the development of the Network of Terms. In the coming period we will assess
-      whether the prototype can be used by collection managers and software developers of collection management
-      systems. Based on their feedback we will build a new prototype.
-    </p>
-
     <h2
       id="technology"
       class="display-5"
@@ -122,7 +56,7 @@
     </h2>
 
     <h3 class="display-5">
-      How does the Network of Terms work?
+      How does the Network of Terms work, technically?
     </h3>
     <p>
       Users search the Network of Terms through their client systems, for instance a collection management system or

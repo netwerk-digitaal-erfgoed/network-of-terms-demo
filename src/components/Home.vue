@@ -1,13 +1,5 @@
 <template>
   <div class="text-center">
-    <div id="beta">
-      <span class="note">
-        <router-link
-          :to="{name: 'faq', hash: '#prototype'}"
-        >{{ t('search.messageBeta') }}</router-link>
-      </span>
-    </div>
-
     <h1 class="display-4">
       {{ t('search.title') }}
     </h1>

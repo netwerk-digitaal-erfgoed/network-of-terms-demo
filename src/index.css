@@ -75,24 +75,6 @@ footer p:last-child {
   margin-bottom: 0;
 }
 
-#beta {
-  height: 2em;
-}
-
-.note {
-  position: absolute;
-  background: #fc8c29;
-  font-size: 1em;
-  color: white;
-  padding: 0.15em 0.3em;
-  margin-left: 0.2em;
-  transform: rotate(10deg);
-}
-
-.note a {
-  color: white;
-}
-
 .bootstrap-select>.dropdown-toggle.bs-placeholder,
 .bootstrap-select>.dropdown-toggle.bs-placeholder:active,
 .bootstrap-select>.dropdown-toggle.bs-placeholder:focus,

@@ -133,25 +133,12 @@
       Erfgoed. De instellingen staan in voor de werking en beschikbaarheid van het Termennetwerk.
     </p>
 
-    <h3
-      id="prototype"
-      class="display-5"
-    >
-      Wat is de status van het Termennetwerk?
-    </h3>
-    <p>
-      Het Termennetwerk is in ontwikkeling. Dat doen we aan de hand van prototypes: kleine, werkende applicaties
-      waarmee we testen of onze ideeën hout snijden. Met de beste ideeën gaan we vanaf 2021 een volwaardige versie van
-      het Termennetwerk maken. Die versie is geschikt om breed gebruikt te worden door allerlei instellingen en in
-      allerlei collectiebeheersystemen.
-    </p>
-
     <h3 class="display-5">
-      Kan ik het Termennetwerk nu al gebruiken?
+      Kan ik het Termennetwerk al gebruiken?
     </h3>
     <p>
-      Jazeker! Het Termennetwerk is weliswaar nog in ontwikkeling, maar nu al te gebruiken. We horen dan ook graag wat
-      je ervan vindt. Bijvoorbeeld: zijn de zoekmogelijkheden toereikend? Zijn de zoekresultaten bruikbaar?
+      Jazeker! Het Termenetwerk is geschikt voor gebruik.
+      We horen graag wat je ervan vindt. Bijvoorbeeld: zijn de zoekmogelijkheden toereikend? Zijn de zoekresultaten bruikbaar?
     </p>
     <p>
       Als je een stap verder wilt gaan, dan kun je het Termennetwerk in je collectiebeheersysteem laten implementeren
@@ -259,16 +246,6 @@
     <p>
       Het Termennetwerk wordt gemaakt en beheerd door de samenwerkende erfgoedinstellingen in het Netwerk Digitaal
       Erfgoed. De instellingen staan in voor de werking en beschikbaarheid van het Termennetwerk.
-    </p>
-
-    <h3 class="display-5">
-      Wat is de status van het Termennetwerk?
-    </h3>
-    <p>
-      Het Termennetwerk is in ontwikkeling. Dat doen we aan de hand van prototypes: kleine, werkende applicaties
-      waarmee we testen of onze ideeën hout snijden. Met de beste ideeën gaan we vanaf 2021 een volwaardige versie van
-      het Termennetwerk maken. Die versie is geschikt om breed gebruikt te worden door allerlei instellingen en in
-      allerlei collectiebeheersystemen.
     </p>
 
     <h3 class="display-5">
@@ -550,21 +527,11 @@
     </p>
 
     <h3 class="display-5">
-      Wat is de status van het Termennetwerk?
+      Kan ik het Termennetwerk al gebruiken?
     </h3>
     <p>
-      Het Termennetwerk is in ontwikkeling. Dat doen we aan de hand van prototypes: kleine, werkende applicaties
-      waarmee we testen of onze ideeën hout snijden. Met de beste ideeën gaan we vanaf 2021 een volwaardige versie van
-      het Termennetwerk maken. Die versie is geschikt om breed gebruikt te worden door allerlei instellingen en in
-      allerlei collectiebeheersystemen.
-    </p>
-
-    <h3 class="display-5">
-      Kan ik het Termennetwerk nu al gebruiken?
-    </h3>
-    <p>
-      Jazeker! Het Termennetwerk is weliswaar nog in ontwikkeling, maar nu al te gebruiken. We horen dan ook graag wat
-      je ervan vindt. Bijvoorbeeld: zijn de zoekmogelijkheden toereikend? Is de API bruikbaar?
+      Jazeker! Het Termennetwerk is geschikt voor gebruik.
+      We horen graag wat je ervan vindt. Bijvoorbeeld: zijn de zoekmogelijkheden toereikend? Is de API bruikbaar?
     </p>
     <p>
       Als je een stap verder wilt gaan, dan kun je het Termennetwerk in je collectiebeheersysteem implementeren zodat
