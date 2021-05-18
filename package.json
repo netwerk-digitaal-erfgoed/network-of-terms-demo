@@ -2,11 +2,10 @@
   "name": "network-of-terms-demo",
   "version": "0.0.0",
   "scripts": {
-    "build": "vite build",
-    "compile": "tsc",
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
     "lint": "eslint --ext .ts,.vue src",
-    "fix": "eslint --ext .ts,.vue src --fix",
-    "dev": "vite"
+    "fix": "eslint --ext .ts,.vue src --fix"
   },
   "dependencies": {
     "graphql": "^15.5.0",
@@ -19,6 +18,8 @@
     "@types/jquery": "^3.5.5",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.11",
     "@vue/eslint-config-standard": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
     "eslint": "^7.26.0",
@@ -28,6 +29,7 @@
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.9.0",
     "typescript": "^4.2.4",
-    "vite": "^1.0.0-rc.9"
+    "vite": "^2.3.3",
+    "vue-tsc": "^0.1.4"
   }
 }
