@@ -13,7 +13,7 @@
     "villus": "^1.0.0-rc.4",
     "vue": "^3.0.2",
     "vue-i18n": "^9.1.6",
-    "vue-router": "^4.0.4"
+    "vue-router": "^4.0.8"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.4",
@@ -25,9 +25,9 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-standard": "^4.1.0",
+    "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.9.0",
-    "typescript": "^4.2.2",
+    "typescript": "^4.2.4",
     "vite": "^1.0.0-rc.9"
   }
 }
