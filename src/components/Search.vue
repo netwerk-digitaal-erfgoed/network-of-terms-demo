@@ -38,7 +38,7 @@ import {useI18n} from 'vue-i18n';
 import Datasets from './Datasets.vue';
 import {useClient} from 'villus';
 import state from '../store';
-import {useRouter} from 'vue-router';
+import {useRoute, useRouter} from 'vue-router';
 import Results from './Results.vue';
 import {defineComponent, ref} from 'vue';
 
@@ -53,8 +53,9 @@ export default defineComponent({
     });
 
     const router = useRouter();
-    const q = ref(router.currentRoute.value.query.q);
-    const fromUrl = router.currentRoute.value.query.datasets as string;
+    const route = useRoute();
+    const q = ref(route.query.q as string);
+    const fromUrl = route.query.datasets as string;
     state.selectedDatasets = (fromUrl ? fromUrl.split(',') : []);
 
     function onSubmit () {
