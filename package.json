@@ -9,7 +9,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "graphql": "^15.5.0",
+    "graphql": "^15.5.1",
     "villus": "^1.0.0-rc.17",
     "vue": "^3.1.5",
     "vue-i18n": "^9.1.6",
@@ -21,7 +21,7 @@
     "@typescript-eslint/parser": "^4.28.1",
     "@vue/eslint-config-standard": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
-    "eslint": "^7.27.0",
+    "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
