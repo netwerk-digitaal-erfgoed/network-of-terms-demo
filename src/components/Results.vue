@@ -17,13 +17,13 @@
         >
           <div class="card-body">
             <h5 class="card-title">
-              <a :href="term.uri">{{ term.prefLabel[0] }}</a>
+              <a :href="term.uri">{{ term.prefLabel.join(' • ') }}</a>
             </h5>
             <p
               v-if="term.scopeNote"
               class="card-text text-left"
             >
-              {{ term.scopeNote[0] }}
+              {{ term.scopeNote.join(' • ') }}
             </p>
 
             <p
