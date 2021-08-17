@@ -91,6 +91,7 @@
 import {useQuery} from 'villus';
 import {useI18n} from 'vue-i18n';
 import {defineComponent} from 'vue';
+import ClipboardJS from 'clipboard';
 
 export default defineComponent({
   name: 'Results',

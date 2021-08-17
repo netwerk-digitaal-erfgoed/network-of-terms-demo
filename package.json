@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "lint": "eslint --ext .ts,.vue src",
     "fix": "eslint --ext .ts,.vue src --fix"
   },
   "dependencies": {
+    "clipboard": "^2.0.8",
     "graphql": "^15.5.1",
     "villus": "^1.0.0-rc.20",
     "vue": "^3.2.3",
@@ -15,10 +16,11 @@
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
+    "@types/bootstrap-select": "^1.13.3",
     "@types/jquery": "^3.5.6",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
-    "@vitejs/plugin-vue": "^1.2.2",
+    "@vitejs/plugin-vue": "^1.4.0",
     "@vue/compiler-sfc": "^3.2.3",
     "@vue/eslint-config-standard": "^6.1.0",
     "@vue/eslint-config-typescript": "^7.0.0",
@@ -29,6 +31,7 @@
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.16.0",
     "typescript": "^4.3.5",
-    "vite": "^2.5.0"
+    "vite": "^2.5.0",
+    "vue-tsc": "^0.2.3"
   }
 }
