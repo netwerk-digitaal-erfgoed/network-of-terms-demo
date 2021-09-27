@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "clipboard": "^2.0.8",
-    "graphql": "^15.5.3",
+    "graphql": "^15.6.0",
     "villus": "^1.0.0-rc.21",
     "vue": "^3.2.19",
     "vue-i18n": "^9.1.7",
