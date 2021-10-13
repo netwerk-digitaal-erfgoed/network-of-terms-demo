@@ -2,7 +2,7 @@
   <div v-if="q && data && data">
     <div
       v-for="dataset in data.terms"
-      :key="dataset.uri"
+      :key="dataset.source.uri"
       class="container"
     >
       <h2 class="display-5 text-center py-3">
@@ -42,37 +42,23 @@
               </small>
             </p>
 
-            <p
+            <RelatedTerms
               v-if="term.broader.length > 0"
-              class="card-text text-left"
-            >
-              <small class="text-muted">
-                <strong>{{ t('search.broaderTerm') }}</strong>:
-                <span
-                  v-for="(broaderTerm, index) in term.broader"
-                  :key="broaderTerm"
-                >
-                  <a :href="broaderTerm.uri">{{ broaderTerm.prefLabel[0] }}</a>
-                  <span v-if="index !== term.broader.length - 1"> • </span>
-                </span>
-              </small>
-            </p>
+              :caption="t('search.broaderTerm')"
+              :terms="term.broader"
+            />
 
-            <p
+            <RelatedTerms
               v-if="term.narrower.length > 0"
-              class="card-text text-left"
-            >
-              <small class="text-muted">
-                <strong>{{ t('search.narrowerTerm') }}</strong>:
-                <span
-                  v-for="(narrowerTerm, index) in term.narrower"
-                  :key="narrowerTerm"
-                >
-                  <a :href="narrowerTerm.uri">{{ narrowerTerm.prefLabel[0] }}</a>
-                  <span v-if="index !== term.narrower.length - 1"> • </span>
-                </span>
-              </small>
-            </p>
+              :caption="t('search.narrowerTerm')"
+              :terms="term.narrower"
+            />
+
+            <RelatedTerms
+              v-if="term.related.length > 0"
+              :caption="t('search.relatedTerm')"
+              :terms="term.related"
+            />
 
             <button
               class="btn btn-secondary btn-copy"
@@ -92,9 +78,12 @@ import {useQuery} from 'villus';
 import {useI18n} from 'vue-i18n';
 import {defineComponent} from 'vue';
 import ClipboardJS from 'clipboard';
+import RelatedTerms from './RelatedTerms.vue';
+import {TermsQuery} from '../query';
 
 export default defineComponent({
   name: 'Results',
+  components: {RelatedTerms},
   props: {
     q: {
       type: String,
@@ -115,16 +104,16 @@ export default defineComponent({
       };
     }
 
-    const {data} = useQuery({
+    const {data} = useQuery<TermsQuery>({
       query: `query Terms ($sources: [ID]!, $query: String!) {
                 terms (sources: $sources query: $query) {
-                source {
-                  name
-                  uri
-                }
-                terms {
-                  uri
-                  prefLabel
+                  source {
+                    name
+                    uri
+                  }
+                  terms {
+                    uri
+                    prefLabel
                     altLabel
                     hiddenLabel
                     scopeNote
@@ -133,6 +122,10 @@ export default defineComponent({
                       prefLabel
                     }
                     narrower {
+                      uri
+                      prefLabel
+                    }
+                    related {
                       uri
                       prefLabel
                     }
@@ -151,7 +144,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-
-</style>
