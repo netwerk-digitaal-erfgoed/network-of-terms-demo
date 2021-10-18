@@ -13,7 +13,7 @@
     "villus": "^1.0.0-rc.21",
     "vue": "^3.2.20",
     "vue-i18n": "^9.1.9",
-    "vue-router": "^4.0.11"
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@types/bootstrap-select": "^1.13.3",
