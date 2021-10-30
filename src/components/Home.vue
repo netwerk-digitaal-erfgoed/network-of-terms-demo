@@ -1,9 +1,9 @@
 <template>
-  <div class="text-center">
-    <h1 class="display-4">
+  <div>
+    <h1 class="display-4 text-center">
       {{ t('search.title') }}
     </h1>
-    <p class="lead">
+    <p class="lead text-center">
       {{ t('search.subtitle') }}
     </p>
 

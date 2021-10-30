@@ -15,10 +15,10 @@
     "buttonSearch": "Zoeken",
     "messageNoResultsFound": "Geen resultaten gevonden",
     "termsFound": "geen termen | {n} term | {n} termen",
-    "altLabel": "Alternatief label",
-    "broaderTerm": "Bredere term",
-    "narrowerTerm": "Nauwere term",
-    "relatedTerm": "Gerelateerde term",
+    "altLabel": "Alternatief label | Alternatieve labels",
+    "broaderTerm": "Bredere term | Bredere termen",
+    "narrowerTerm": "Nauwere term | Nauwere termen",
+    "relatedTerm": "Gerelateerde term | Gerelateerde termen",
     "copyUri": "Kopieer URI"
   },
   "language": {

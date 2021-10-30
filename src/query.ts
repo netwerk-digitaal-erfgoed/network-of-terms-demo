@@ -4,6 +4,8 @@ export interface TermsQuery {
       source: {
         uri: string;
         name: string;
+        alternateName: string;
+        creators: Creator[];
       };
       terms: [
         {
@@ -24,4 +26,9 @@ export interface TermsQuery {
 export interface RelatedTerm {
   uri: string;
   prefLabel: string;
+}
+
+export interface Creator {
+  name: string;
+  alternateName: string;
 }

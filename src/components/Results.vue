@@ -1,5 +1,5 @@
 <template>
-  <div v-if="q && data && data">
+  <div v-if="q && data">
     <div
       v-for="dataset in data.terms"
       :key="dataset.source.uri"
@@ -7,58 +7,46 @@
     >
       <h2 class="display-5 text-center py-3">
         {{ dataset.source.name }}
-        <small class="termCount">({{ t('search.termsFound', dataset.terms.length) }})</small>
+        <small v-if="dataset.source.alternateName">({{ dataset.source.alternateName }})</small>
+        <small class="termCount">: {{ t('search.termsFound', dataset.terms.length) }}</small>
+        <p>
+          <small class="termCount">{{ dataset.source.creators[0].name }}</small>
+        </p>
       </h2>
-      <div class="card-columns">
+      <div>
         <div
           v-for="term in dataset.terms"
           :key="term.uri"
-          class="card shadow-sm"
+          class="card shadow-sm mb-3"
         >
           <div class="card-body">
-            <h5 class="card-title">
-              <a :href="term.uri">{{ term.prefLabel.join(' • ') }}</a>
-            </h5>
+            <h3 class="card-title">
+              {{ term.prefLabel.join(' • ') }}
+            </h3>
             <p
               v-if="term.scopeNote"
-              class="card-text text-left"
+              class="card-text"
             >
               {{ term.scopeNote.join(' • ') }}
             </p>
 
-            <p
+            <div
               v-if="term.altLabel.length > 0"
-              class="card-text text-left"
+              class="card-text container"
             >
-              <small class="text-muted">
-                <strong>{{ t('search.altLabel') }}</strong>:
-                <span
-                  v-for="(altLabel, index) in term.altLabel"
-                  :key="altLabel"
-                >
-                  {{ altLabel }}
-                  <span v-if="index !== term.altLabel.length - 1"> • </span>
-                </span>
-              </small>
-            </p>
-
-            <RelatedTerms
-              v-if="term.broader.length > 0"
-              :caption="t('search.broaderTerm')"
-              :terms="term.broader"
-            />
-
-            <RelatedTerms
-              v-if="term.narrower.length > 0"
-              :caption="t('search.narrowerTerm')"
-              :terms="term.narrower"
-            />
-
-            <RelatedTerms
-              v-if="term.related.length > 0"
-              :caption="t('search.relatedTerm')"
-              :terms="term.related"
-            />
+              <dl class="row mb-0">
+                <dt>{{ t('search.altLabel', term.altLabel.length) }}:&nbsp;</dt>
+                <dd>
+                  <span
+                    v-for="(altLabel, index) in term.altLabel"
+                    :key="altLabel"
+                  >
+                    {{ altLabel }}
+                    <span v-if="index !== term.altLabel.length - 1"> • </span>
+                  </span>
+                </dd>
+              </dl>
+            </div>
 
             <button
               class="btn btn-secondary btn-copy"
@@ -66,6 +54,26 @@
             >
               {{ t('search.copyUri') }}
             </button>
+
+            <dl class="mt-4 mb-0">
+              <RelatedTerms
+                v-if="term.broader.length > 0"
+                :caption="t('search.broaderTerm', term.broader.length)"
+                :terms="term.broader"
+              />
+
+              <RelatedTerms
+                v-if="term.narrower.length > 0"
+                :caption="t('search.narrowerTerm', term.narrower.length)"
+                :terms="term.narrower"
+              />
+
+              <RelatedTerms
+                v-if="term.related.length > 0"
+                :caption="t('search.relatedTerm')"
+                :terms="term.related"
+              />
+            </dl>
           </div>
         </div>
       </div>
@@ -110,6 +118,11 @@ export default defineComponent({
                   source {
                     name
                     uri
+                    alternateName
+                    creators {
+                      name
+                      alternateName
+                    }
                   }
                   terms {
                     uri

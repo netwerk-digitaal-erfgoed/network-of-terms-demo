@@ -15,10 +15,10 @@
     "buttonSearch": "Search",
     "messageNoResultsFound": "No results found",
     "termsFound": "no terms | {n} term | {n} terms",
-    "altLabel": "Alternative label",
-    "broaderTerm": "Broader term",
-    "narrowerTerm": "Narrower term",
-    "relatedTerm": "Related term",
+    "altLabel": "Alternative label | Alternative labels",
+    "broaderTerm": "Broader term | Broader terms",
+    "narrowerTerm": "Narrower term | Narrower terms",
+    "relatedTerm": "Related term | Related terms",
     "copyUri": "Copy URI"
   },
   "language": {

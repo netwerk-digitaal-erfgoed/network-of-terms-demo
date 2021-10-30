@@ -1,16 +1,15 @@
 <template>
-  <p class="card-text text-left">
-    <small class="text-muted">
-      <strong>{{ caption }}</strong>:
-      <span
-        v-for="(term, index) in terms"
-        :key="term.uri"
-      >
-        <a :href="term.uri">{{ term.prefLabel[0] }}</a>
-        <span v-if="index !== terms.length - 1"> • </span>
-      </span>
-    </small>
-  </p>
+  <dt class="mb-1 mt-3">
+    {{ caption }}
+  </dt>
+  <dd
+    v-for="term in terms"
+    :key="term.uri"
+    :href="term.uri"
+    class="btn btn-outline-primary mr-2 mb-2"
+  >
+    {{ term.prefLabel[0] }}
+  </dd>
 </template>
 
 <script lang="ts">
