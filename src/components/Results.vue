@@ -17,7 +17,7 @@
         <div
           v-for="term in dataset.terms"
           :key="term.uri"
-          class="card shadow-sm mb-3"
+          class="card bg-light shadow-sm mb-3"
         >
           <div class="card-body">
             <h3 class="card-title">
