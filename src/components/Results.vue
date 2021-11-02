@@ -5,14 +5,15 @@
       :key="dataset.source.uri"
       class="container"
     >
-      <h2 class="display-5 text-center py-3">
-        {{ dataset.source.name }}
-        <small v-if="dataset.source.alternateName">({{ dataset.source.alternateName }})</small>
-        <small class="termCount">: {{ t('search.termsFound', dataset.terms.length) }}</small>
-        <p>
-          <small class="termCount">{{ dataset.source.creators[0].name }}</small>
-        </p>
+      <h2 class="display-5 text-center pt-5">
+        {{ dataset.source.name }}<small v-if="dataset.source.alternateName"> ({{ dataset.source.alternateName }})</small>
       </h2>
+      <h3 class="text-center pb-3 text-muted">
+        {{ dataset.source.creators[0].name }}
+      </h3>
+      <p class="text-center text-muted mb-1">
+        {{ t('search.termsFound', dataset.terms.length) }}
+      </p>
       <div>
         <div
           v-for="term in dataset.terms"
