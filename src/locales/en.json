@@ -19,7 +19,8 @@
     "broaderTerm": "Broader term | Broader terms",
     "narrowerTerm": "Narrower term | Narrower terms",
     "relatedTerm": "Related term | Related terms",
-    "copyUri": "Copy URI"
+    "copyUri": "Copy URI",
+    "viewAtSource": "View at source"
   },
   "language": {
     "label": "Taal"

@@ -19,7 +19,8 @@
     "broaderTerm": "Bredere term | Bredere termen",
     "narrowerTerm": "Nauwere term | Nauwere termen",
     "relatedTerm": "Gerelateerde term | Gerelateerde termen",
-    "copyUri": "Kopieer URI"
+    "copyUri": "Kopieer URI",
+    "viewAtSource": "Bekijk bij bron"
   },
   "language": {
     "label": "Language"

@@ -55,6 +55,14 @@
               {{ t('search.copyUri') }}
             </button>
 
+            <a
+              v-if="term.seeAlso.length > 0"
+              :href="term.seeAlso[0]"
+              class="btn btn-secondary ml-2"
+            >
+              {{ t('search.viewAtSource') }}
+            </a>
+
             <dl class="mt-4 mb-0">
               <RelatedTerms
                 v-if="term.broader.length > 0"
@@ -130,6 +138,7 @@ export default defineComponent({
                     altLabel
                     hiddenLabel
                     scopeNote
+                    seeAlso
                     broader {
                       uri
                       prefLabel
