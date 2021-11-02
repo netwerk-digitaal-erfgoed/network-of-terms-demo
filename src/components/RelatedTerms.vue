@@ -5,7 +5,6 @@
   <dd
     v-for="term in terms"
     :key="term.uri"
-    :href="term.uri"
     class="btn btn-outline-primary mr-2 mb-2"
   >
     {{ term.prefLabel[0] }}
