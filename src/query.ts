@@ -14,6 +14,7 @@ export interface TermsQuery {
           altLabel: string[];
           hiddenLabel: string[];
           scopeNote: string[];
+          seeAlso: string[];
           broader: RelatedTerm[];
           narrower: RelatedTerm[];
           related: RelatedTerm[];
