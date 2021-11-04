@@ -21,9 +21,9 @@
           class="card bg-light shadow-sm mb-3"
         >
           <div class="card-body">
-            <h class="card-title">
+            <h3 class="card-title">
               {{ term.prefLabel.join(' • ') }}
-            </h>
+            </h3>
             <p
               v-if="term.scopeNote"
               class="card-text"
@@ -57,8 +57,7 @@
             </button>
 
             <a
-              v-if="term.seeAlso.length > 0"
-              :href="term.seeAlso[0]"
+              :href="term.seeAlso[0] ?? term.uri"
               class="btn btn-primary ml-2"
             >
               {{ t('search.viewAtSource') }}
