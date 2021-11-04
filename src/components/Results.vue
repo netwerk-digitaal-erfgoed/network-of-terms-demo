@@ -50,7 +50,7 @@
             </div>
 
             <button
-              class="btn btn-secondary btn-copy"
+              class="btn btn-primary btn-copy"
               :data-clipboard-text="term.uri"
             >
               {{ t('search.copyUri') }}
@@ -59,7 +59,7 @@
             <a
               v-if="term.seeAlso.length > 0"
               :href="term.seeAlso[0]"
-              class="btn btn-secondary ml-2"
+              class="btn btn-primary ml-2"
             >
               {{ t('search.viewAtSource') }}
             </a>
