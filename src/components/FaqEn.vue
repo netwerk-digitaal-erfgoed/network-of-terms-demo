@@ -78,7 +78,7 @@
       <a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">https://termennetwerk-api.netwerkdigitaalerfgoed.nl</a>
     </p>
     <p>The prototype’s API can be accessed at the following location:</p>
-    <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql">https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql</a></p>
+    <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">https://termennetwerk-api.netwerkdigitaalerfgoed.nl</a></p>
 
     <h3 class="display-5">
       Is the source code of the prototype available?

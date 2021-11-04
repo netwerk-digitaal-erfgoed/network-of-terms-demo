@@ -496,7 +496,7 @@
       library de API van het Termennetwerk aan te spreken met GraphQL-queries. De API is te bereiken op de volgende
       locatie:
     </p>
-    <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql">https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql</a></p>
+    <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">https://termennetwerk-api.netwerkdigitaalerfgoed.nl</a></p>
 
     <h3 class="display-5">
       Hoe kan ik vanuit mijn collectiebeheersysteem gebruikmaken van het Termennetwerk?
