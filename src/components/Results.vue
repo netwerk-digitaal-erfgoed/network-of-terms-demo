@@ -3,15 +3,15 @@
     <div
       v-for="dataset in data.terms"
       :key="dataset.source.uri"
-      class="container"
+      class="container mb-5"
     >
-      <h2 class="display-5 text-center pt-5">
+      <h2 class="text-center">
         {{ dataset.source.name }}<small v-if="dataset.source.alternateName"> ({{ dataset.source.alternateName }})</small>
       </h2>
-      <h3 class="text-center pb-3 text-muted">
+      <h3 class="text-center text-muted">
         {{ dataset.source.creators[0].name }}
       </h3>
-      <p class="text-center text-muted mb-1">
+      <p class="text-center text-muted">
         {{ t('search.termsFound', dataset.terms.length) }}
       </p>
       <div>
@@ -21,9 +21,9 @@
           class="card bg-light shadow-sm mb-3"
         >
           <div class="card-body">
-            <h3 class="card-title">
+            <h class="card-title">
               {{ term.prefLabel.join(' • ') }}
-            </h3>
+            </h>
             <p
               v-if="term.scopeNote"
               class="card-text"
