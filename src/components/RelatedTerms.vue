@@ -5,7 +5,7 @@
   <dd
     v-for="term in terms"
     :key="term.uri"
-    class="btn btn-outline-primary mr-2 mb-2"
+    class="btn btn-outline-dark mr-2 mb-2"
   >
     {{ term.prefLabel[0] }}
   </dd>
