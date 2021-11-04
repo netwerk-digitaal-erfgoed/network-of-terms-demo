@@ -36,7 +36,8 @@ button.btn-light:focus {
 }
 
 .card:hover {
-  background-color:#f8f9fa;
+  transition: .2s;
+  transform: scale(1.04);
 }
 
 .termCount {
