@@ -37,7 +37,7 @@ button.btn-light:focus {
 
 .card:hover {
   transition: .2s;
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 .termCount {
