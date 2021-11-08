@@ -1,5 +1,6 @@
 <template>
   <select
+    id="datasets"
     v-model="state.selectedDatasets"
     class="form-control form-control-lg selectpicker"
     :title="t('search.placeholderDatasets')"

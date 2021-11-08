@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router';
-import Home from './components/Home.vue';
 import Faq from './components/Faq.vue';
+import SearchForm from './components/SearchForm.vue';
+import LookupForm from './components/LookupForm.vue';
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -9,7 +10,12 @@ export const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Home,
+      component: SearchForm,
+    },
+    {
+      path: '/term',
+      name: 'lookup',
+      component: LookupForm,
     },
     {
       path: '/faq',

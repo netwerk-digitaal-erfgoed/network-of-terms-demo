@@ -2,12 +2,17 @@
   <dt class="mb-1 mt-3">
     {{ caption }}
   </dt>
-  <dd
-    v-for="term in terms"
-    :key="term.uri"
-    class="btn btn-outline-dark mr-2 mb-2"
-  >
-    {{ term.prefLabel[0] }}
+  <dd>
+    <router-link
+      v-for="term in terms"
+      :key="term.uri"
+      class="btn btn-outline-dark mr-2 mb-2"
+      :to="{
+        name: 'lookup', query: {uri: term.uri}
+      }"
+    >
+      {{ term.prefLabel[0] }}
+    </router-link>
   </dd>
 </template>
 
