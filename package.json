@@ -10,7 +10,7 @@
   "dependencies": {
     "clipboard": "^2.0.8",
     "graphql": "^15.7.2",
-    "villus": "^1.0.0",
+    "villus": "^1.0.1",
     "vue": "^3.2.20",
     "vue-i18n": "^9.1.9",
     "vue-router": "^4.0.12"
