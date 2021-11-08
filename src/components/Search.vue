@@ -1,6 +1,9 @@
 <template>
   <div>
-    <form @submit.prevent="onSubmit">
+    <form
+      class="mb-5"
+      @submit.prevent="onSubmit"
+    >
       <div class="form-row">
         <div class="form-group col-md-6">
           <input

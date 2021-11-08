@@ -1,71 +1,87 @@
 <template>
-  <div v-if="q && data && data">
+  <div v-if="q && data">
     <div
       v-for="dataset in data.terms"
       :key="dataset.source.uri"
-      class="container"
+      class="container mb-5"
     >
-      <h2 class="display-5 text-center py-3">
-        {{ dataset.source.name }}
-        <small class="termCount">({{ t('search.termsFound', dataset.terms.length) }})</small>
+      <h2 class="text-center">
+        {{ dataset.source.name }}<small v-if="dataset.source.alternateName"> ({{ dataset.source.alternateName }})</small>
       </h2>
-      <div class="card-columns">
+      <h3 class="text-center text-muted">
+        {{ dataset.source.creators[0].name }}
+      </h3>
+      <p class="text-center text-muted">
+        {{ t('search.termsFound', dataset.terms.length) }}
+      </p>
+      <div>
         <div
           v-for="term in dataset.terms"
           :key="term.uri"
-          class="card shadow-sm"
+          class="card bg-light shadow-sm mb-3"
         >
           <div class="card-body">
-            <h5 class="card-title">
-              <a :href="term.uri">{{ term.prefLabel.join(' • ') }}</a>
-            </h5>
+            <h3 class="card-title">
+              {{ term.prefLabel.join(' • ') }}
+            </h3>
             <p
               v-if="term.scopeNote"
-              class="card-text text-left"
+              class="card-text"
             >
               {{ term.scopeNote.join(' • ') }}
             </p>
 
-            <p
+            <div
               v-if="term.altLabel.length > 0"
-              class="card-text text-left"
+              class="card-text container"
             >
-              <small class="text-muted">
-                <strong>{{ t('search.altLabel') }}</strong>:
-                <span
-                  v-for="(altLabel, index) in term.altLabel"
-                  :key="altLabel"
-                >
-                  {{ altLabel }}
-                  <span v-if="index !== term.altLabel.length - 1"> • </span>
-                </span>
-              </small>
-            </p>
-
-            <RelatedTerms
-              v-if="term.broader.length > 0"
-              :caption="t('search.broaderTerm')"
-              :terms="term.broader"
-            />
-
-            <RelatedTerms
-              v-if="term.narrower.length > 0"
-              :caption="t('search.narrowerTerm')"
-              :terms="term.narrower"
-            />
-
-            <RelatedTerms
-              v-if="term.related.length > 0"
-              :caption="t('search.relatedTerm')"
-              :terms="term.related"
-            />
+              <dl class="row mb-0">
+                <dt>{{ t('search.altLabel', term.altLabel.length) }}:&nbsp;</dt>
+                <dd>
+                  <span
+                    v-for="(altLabel, index) in term.altLabel"
+                    :key="altLabel"
+                  >
+                    {{ altLabel }}
+                    <span v-if="index !== term.altLabel.length - 1"> • </span>
+                  </span>
+                </dd>
+              </dl>
+            </div>
 
             <button
-              class="btn btn-secondary btn-copy"
+              class="btn btn-primary btn-copy"
               :data-clipboard-text="term.uri"
             >
               {{ t('search.copyUri') }}
             </button>
+
+            <a
+              :href="term.seeAlso[0] ?? term.uri"
+              class="btn btn-primary ml-2"
+            >
+              {{ t('search.viewAtSource') }}
+            </a>
+
+            <dl class="mt-4 mb-0">
+              <RelatedTerms
+                v-if="term.broader.length > 0"
+                :caption="t('search.broaderTerm', term.broader.length)"
+                :terms="term.broader"
+              />
+
+              <RelatedTerms
+                v-if="term.narrower.length > 0"
+                :caption="t('search.narrowerTerm', term.narrower.length)"
+                :terms="term.narrower"
+              />
+
+              <RelatedTerms
+                v-if="term.related.length > 0"
+                :caption="t('search.relatedTerm')"
+                :terms="term.related"
+              />
+            </dl>
           </div>
         </div>
       </div>
@@ -110,6 +126,11 @@ export default defineComponent({
                   source {
                     name
                     uri
+                    alternateName
+                    creators {
+                      name
+                      alternateName
+                    }
                   }
                   terms {
                     uri
@@ -117,6 +138,7 @@ export default defineComponent({
                     altLabel
                     hiddenLabel
                     scopeNote
+                    seeAlso
                     broader {
                       uri
                       prefLabel

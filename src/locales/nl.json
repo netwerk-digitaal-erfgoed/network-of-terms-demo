@@ -13,13 +13,13 @@
     "placeholderQuery": "Vul een zoekvraag in, zoals: Fietsen",
     "placeholderDatasets": "Selecteer een of meer terminologiebronnen",
     "buttonSearch": "Zoeken",
-    "messageNoResultsFound": "Geen resultaten gevonden",
-    "termsFound": "geen termen | {n} term | {n} termen",
-    "altLabel": "Alternatief label",
-    "broaderTerm": "Bredere term",
-    "narrowerTerm": "Nauwere term",
-    "relatedTerm": "Gerelateerde term",
-    "copyUri": "Kopieer URI"
+    "termsFound": "geen termen gevonden | {n} term gevonden | {n} termen gevonden",
+    "altLabel": "Alternatief label | Alternatieve labels",
+    "broaderTerm": "Bredere term | Bredere termen",
+    "narrowerTerm": "Nauwere term | Nauwere termen",
+    "relatedTerm": "Gerelateerde term | Gerelateerde termen",
+    "copyUri": "Kopieer URI",
+    "viewAtSource": "Bekijk bij bron"
   },
   "language": {
     "label": "Language"
