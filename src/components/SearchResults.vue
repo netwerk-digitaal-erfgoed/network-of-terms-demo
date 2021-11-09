@@ -3,7 +3,7 @@
     <div
       v-for="dataset in data.terms"
       :key="dataset.source.uri"
-      class="container mb-5 pt-5 mt-5"
+      class="container mb-5 mt-5"
     >
       <SourceHeader :source="dataset.source" />
       <p class="text-center text-muted">
