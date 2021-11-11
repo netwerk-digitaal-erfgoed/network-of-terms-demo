@@ -48,7 +48,7 @@
               class="btn btn-primary btn-lg search"
               type="submit"
             >
-              {{ t('search.buttonSearch') }}
+              {{ t('search.buttonLookup') }}
             </button>
           </div>
         </div>
