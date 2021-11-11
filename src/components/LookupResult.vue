@@ -4,6 +4,7 @@
       <SourceHeader :source="data.lookup[0].source" />
       <TermResult
         v-if="data.lookup[0].result.__typename === 'Term'"
+        class="mt-3"
         :term="data.lookup[0].result"
       />
       <h3
