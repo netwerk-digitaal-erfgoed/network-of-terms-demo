@@ -12,7 +12,7 @@
             for="uri"
             class="col-lg-3 col-form-label col-form-label-lg text-lg-right"
           >{{ t('search.labelUri') }}</label>
-          <div class="col-sm-9">
+          <div class="col-sm-8">
             <input
               id="uri"
               v-model="uri"
