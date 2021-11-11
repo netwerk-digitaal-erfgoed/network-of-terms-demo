@@ -10,10 +10,10 @@
   "search": {
     "title": "Termen­netwerk",
     "subtitle": "Zoeken in gemeenschappelijke thesauri, classificatiesystemen en referentielijsten",
-    "tabSearch": "Zoeken naar termen",
+    "tabSearch": "Zoeken met woorden",
     "tabLookup": "Zoeken met URI",
-    "placeholderUri": "Bijvoorbeeld http://vocab.getty.edu/aat/300033618",
-    "placeholderQuery": "Vul een zoekvraag in, zoals: Fietsen",
+    "placeholderUri": "Bijvoorbeeld: http://vocab.getty.edu/aat/300033618",
+    "placeholderQuery": "Bijvoorbeeld: fietsen, schilderij of Amsterdam",
     "placeholderDatasets": "Selecteer een of meer terminologiebronnen",
     "buttonSearch": "Zoeken",
     "buttonLookup": "Zoeken",
