@@ -13,7 +13,7 @@ export const router = createRouter({
       component: SearchForm,
     },
     {
-      path: '/term',
+      path: '/lookup',
       name: 'lookup',
       component: LookupForm,
     },
