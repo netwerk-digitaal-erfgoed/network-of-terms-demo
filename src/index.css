@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.9/css/bootstrap-select.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/css/bootstrap-select.min.css');
 
 html {
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 h1, h2, h3 {
@@ -16,16 +16,16 @@ a, a:hover {
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    /*font-size: 16px;*/
   }
 }
 
 button.search {
-  width: 200px;
+  width: 10em;
   background-color: #0a3dfa;
 }
 
-button.btn-light {
+.bootstrap-select button.btn-light {
   background-color: #fff;
   border-color: #ced4da;
   color: #495057;
@@ -85,4 +85,15 @@ footer p:last-child {
 
 input:-moz-ui-invalid {
   box-shadow: none;
+}
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 1em;
+}
+
+.nav-tabs {
+  margin-bottom: 0;
 }

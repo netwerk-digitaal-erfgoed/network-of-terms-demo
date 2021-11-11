@@ -10,18 +10,44 @@
   "search": {
     "title": "Network of Terms",
     "subtitle": "Searching shared thesauri, classification systems, and reference lists",
-    "placeholderQuery": "Enter a search query, e.g. Rembrandt",
+    "tabSearch": "Search terms",
+    "tabLookup": "Look up term",
+    "placeholderUri": "For example: http://vocab.getty.edu/aat/300033618",
+    "helpUri": "For example",
+    "examplesUri": [
+      {
+        "uri": "http://vocab.getty.edu/aat/300046300",
+        "label": "photographs"
+      },
+      {
+        "uri": "http://data.bibliotheken.nl/id/thes/p068230656",
+        "label": "Hella Haasse"
+      },
+      {
+        "uri": "http://www.wikidata.org/entity/Q749",
+        "label": "Groningen"
+      }
+    ],
+    "placeholderQuery": "For example: Rembrandt, Amsterdam or painting",
     "placeholderDatasets": "Select one or more terminology sources",
     "buttonSearch": "Search",
+    "buttonLookup": "Look up",
+    "labelQuery": "Search words",
+    "labelTermSources": "Terminology sources",
+    "labelUri": "Term URI",
     "termsFound": "no terms found | {n} term found | {n} terms found",
     "altLabel": "Alternative label | Alternative labels",
     "broaderTerm": "Broader term | Broader terms",
     "narrowerTerm": "Narrower term | Narrower terms",
     "relatedTerm": "Related term | Related terms",
     "copyUri": "Copy URI",
-    "viewAtSource": "View at source"
+    "viewAtSource": "View at source",
+    "sourceNotFound": "No terminology source can provide this URI"
   },
   "language": {
     "label": "Taal"
+  },
+  "api": {
+    "NotFoundError": "No term found with this URI"
   }
 }

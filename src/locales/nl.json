@@ -10,18 +10,44 @@
   "search": {
     "title": "Termen­netwerk",
     "subtitle": "Zoeken in gemeenschappelijke thesauri, classificatiesystemen en referentielijsten",
-    "placeholderQuery": "Vul een zoekvraag in, zoals: Fietsen",
+    "tabSearch": "Zoeken met woorden",
+    "tabLookup": "Zoeken met URI",
+    "placeholderUri": "Bijvoorbeeld: http://vocab.getty.edu/aat/300033618",
+    "helpUri": "Bijvoorbeeld",
+    "examplesUri": [
+      {
+        "uri": "http://vocab.getty.edu/aat/300046300",
+        "label": "foto’s"
+      },
+      {
+        "uri": "http://data.bibliotheken.nl/id/thes/p068230656",
+        "label": "Hella Haasse"
+      },
+      {
+        "uri": "http://www.wikidata.org/entity/Q749",
+        "label": "Groningen"
+      }
+    ],
+    "placeholderQuery": "Bijvoorbeeld: fietsen, schilderij of Amsterdam",
     "placeholderDatasets": "Selecteer een of meer terminologiebronnen",
     "buttonSearch": "Zoeken",
+    "buttonLookup": "Zoeken",
+    "labelQuery": "Zoekwoorden",
+    "labelTermSources": "Terminologiebronnen",
+    "labelUri": "URI van term",
     "termsFound": "geen termen gevonden | {n} term gevonden | {n} termen gevonden",
     "altLabel": "Alternatief label | Alternatieve labels",
     "broaderTerm": "Bredere term | Bredere termen",
     "narrowerTerm": "Nauwere term | Nauwere termen",
     "relatedTerm": "Gerelateerde term | Gerelateerde termen",
     "copyUri": "Kopieer URI",
-    "viewAtSource": "Bekijk bij bron"
+    "viewAtSource": "Bekijk bij bron",
+    "sourceNotFound": "Geen terminologiebron gevonden voor deze URI"
   },
   "language": {
     "label": "Language"
+  },
+  "api": {
+    "NotFoundError": "Geen term gevonden met deze URI"
   }
 }
