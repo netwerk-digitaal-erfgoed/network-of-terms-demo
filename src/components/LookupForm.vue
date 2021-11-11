@@ -22,7 +22,24 @@
               autocomplete="off"
               :placeholder="t('search.placeholderUri')"
               required
+              aria-describedby="uriHelp"
             >
+            <p
+              id="uriHelp"
+              class="form-text text-muted mt-2"
+            >
+              {{ t('search.helpUri') }}&nbsp;
+              <span
+                v-for="(_, i) in 3"
+                :key="t('search.examplesUri[' + i + '].uri')"
+              >
+                <a
+                  class="btn btn-outline-secondary btn-sm"
+                  href=""
+                  @click.prevent="uri = t('search.examplesUri[' + i + '].uri')"
+                >{{ t('search.examplesUri[' + i + '].label') }}</a>&nbsp;
+              </span>
+            </p>
           </div>
         </div>
         <div class="form-group row">

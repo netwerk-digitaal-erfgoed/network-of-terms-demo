@@ -6,7 +6,7 @@
     <router-link
       v-for="term in terms"
       :key="term.uri"
-      class="btn btn-outline-dark mr-2 mb-2"
+      class="btn btn-outline-secondary mr-2 mb-2"
       :to="{
         name: 'lookup', query: {uri: term.uri}
       }"
