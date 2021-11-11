@@ -29,16 +29,16 @@
               class="form-text text-muted mt-2"
             >
               {{ t('search.helpUri') }}&nbsp;
-              <span
-                v-for="(_, i) in 3"
-                :key="t('search.examplesUri[' + i + '].uri')"
+              <template
+                v-for="example in examples"
+                :key="example.uri"
               >
                 <a
                   class="btn btn-outline-secondary btn-sm"
                   href=""
-                  @click.prevent="uri = t('search.examplesUri[' + i + '].uri')"
-                >{{ t('search.examplesUri[' + i + '].label') }}</a>&nbsp;
-              </span>
+                  @click.prevent="uri = example.uri"
+                >{{ example.label }}</a>&nbsp;
+              </template>
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@
 </template>
 
 <script lang="ts">
-import {defineComponent, ref} from 'vue';
+import {computed, defineComponent, ref} from 'vue';
 import {useI18n} from 'vue-i18n';
 import {useClient} from 'villus';
 import {useRoute, useRouter} from 'vue-router';
@@ -76,7 +76,7 @@ export default defineComponent({
     LookupResult,
   },
   setup() {
-    const {t} = useI18n();
+    const {t, tm} = useI18n();
 
     useClient({
       url: import.meta.env.VITE_GRAPHQL_URL,
@@ -90,7 +90,13 @@ export default defineComponent({
       router.replace({name: 'lookup', query: {uri: uri.value}});
     }
 
-    return {t, uri, onSubmit, state};
+    return {
+      t,
+      examples: computed(() => tm('search.examplesUri') as [{uri: string, label: string}]),
+      uri,
+      onSubmit,
+      state,
+    };
   },
 });
 </script>
