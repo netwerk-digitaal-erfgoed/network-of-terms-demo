@@ -12,7 +12,7 @@
             for="uri"
             class="col-lg-3 col-form-label col-form-label-lg text-lg-right"
           >{{ t('search.labelUri') }}</label>
-          <div class="col-sm-8">
+          <div class="col-sm-12 col-lg-8">
             <input
               id="uri"
               v-model="uri"
@@ -26,7 +26,7 @@
             >
             <p
               id="uriHelp"
-              class="form-text text-muted mt-2"
+              class="form-text text-muted"
             >
               {{ t('search.helpUri') }}&nbsp;
               <template
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="form-group row">
-          <div class="col-sm-10 offset-sm-3">
+          <div class="col-sm-10 offset-lg-3">
             <button
               class="btn btn-primary btn-lg search"
               type="submit"
@@ -100,3 +100,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+  p#uriHelp {
+    line-height: 2.5;
+  }
+</style>
