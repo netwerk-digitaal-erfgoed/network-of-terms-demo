@@ -12,7 +12,7 @@
             for="q"
             class="col-lg-3 col-form-label col-form-label-lg text-lg-right"
           >{{ t('search.labelQuery') }}</label>
-          <div class="col-sm-8">
+          <div class="col-sm-12 col-lg-8">
             <input
               id="q"
               v-model="q"
@@ -30,7 +30,7 @@
             for="datasets"
             class="col-lg-3 col-form-label col-form-label-lg text-lg-right"
           >{{ t('search.labelTermSources') }}</label>
-          <div class="col-sm-6">
+          <div class="col-sm-12 col-lg-8">
             <Datasets />
           </div>
         </div>
