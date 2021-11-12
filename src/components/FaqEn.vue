@@ -89,7 +89,7 @@
     <h3 class="display-5">
       I have a technical question. Who can I contact?
     </h3>
-    <p>We are happy to help you if you send an email to <a href="mailto:tech@netwerknetwerkdigitaalerfgoed.nl">tech@netwerknetwerkdigitaalerfgoed.nl</a>.</p>
+    <p>We are happy to help you if you send an email to <a href="mailto:tech@netwerkdigitaalerfgoed.nl">tech@netwerkdigitaalerfgoed.nl</a>.</p>
   </div>
 </template>
 
