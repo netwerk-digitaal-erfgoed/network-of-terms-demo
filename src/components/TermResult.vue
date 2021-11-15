@@ -35,15 +35,25 @@
       <button
         class="btn btn-primary btn-copy"
         :data-clipboard-text="term.uri"
+        @click="copied=true"
+        @mouseout="copied=false"
       >
         {{ t('search.copyUri') }}
+        <ClipboardCheckIcon
+          v-if="copied"
+          class="icon"
+        />
+        <ClipboardIcon
+          v-else
+          class="icon"
+        />
       </button>
-
       <a
         :href="term.seeAlso[0] ?? term.uri"
         class="btn btn-primary ml-2"
       >
         {{ t('search.viewAtSource') }}
+        <ExternalLinkIcon class="icon" />
       </a>
 
       <dl class="mt-4 mb-0">
@@ -70,15 +80,16 @@
 </template>
 
 <script lang="ts">
-import {defineComponent, PropType} from 'vue';
+import {defineComponent, PropType, ref} from 'vue';
 import {Term} from '../query';
 import {useI18n} from 'vue-i18n';
 import RelatedTerms from './RelatedTerms.vue';
 import ClipboardJS from 'clipboard';
+import {ClipboardCheckIcon, ClipboardIcon, ExternalLinkIcon} from '@heroicons/vue/outline';
 
 export default defineComponent({
   name: 'TermResult',
-  components: {RelatedTerms},
+  components: {RelatedTerms, ClipboardIcon, ClipboardCheckIcon, ExternalLinkIcon},
   props: {
     term: {
       type: Object as PropType<Term>,
@@ -89,11 +100,14 @@ export default defineComponent({
     const {t} = useI18n();
     new ClipboardJS('.btn-copy');
 
-    return {t};
+    return {t, copied: ref(false)};
   },
 });
 </script>
 
 <style scoped>
-
+svg {
+  width: 1em;
+  height: 1em;
+}
 </style>

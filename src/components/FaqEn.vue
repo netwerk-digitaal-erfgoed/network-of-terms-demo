@@ -4,6 +4,7 @@
       Network of Terms
     </h2>
 
+    <a id="what-is" />
     <h3 class="display-5">
       What is the Network of Terms?
     </h3>
