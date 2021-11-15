@@ -47,7 +47,7 @@
               {{ t('faq.title') }}
             </router-link>
           </li>
-          <Language />
+          <LanguageToggle />
         </ul>
       </div>
     </div>
@@ -66,15 +66,15 @@
 </template>
 
 <script lang="ts">
-import Language from './components/Language.vue';
 import {useI18n} from 'vue-i18n';
 import {useRoute} from 'vue-router';
 import {computed, defineComponent} from 'vue';
+import LanguageToggle from './components/LanguageToggle.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    Language,
+    LanguageToggle,
   },
   setup() {
     const {t, locale} = useI18n();
