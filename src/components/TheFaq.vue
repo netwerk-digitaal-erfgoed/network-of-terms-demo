@@ -16,7 +16,7 @@ import FaqEn from './FaqEn.vue';
 import FaqNl from './FaqNl.vue';
 
 export default defineComponent({
-  name: 'Faq',
+  name: 'TheFaq',
   components: {FaqEn, FaqNl},
   setup () {
     const {t, locale} = useI18n();

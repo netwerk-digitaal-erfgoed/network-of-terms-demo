@@ -1,5 +1,5 @@
 import {createRouter, createWebHistory} from 'vue-router';
-import Faq from './components/Faq.vue';
+import TheFaq from './components/TheFaq.vue';
 import SearchForm from './components/SearchForm.vue';
 import LookupForm from './components/LookupForm.vue';
 
@@ -20,7 +20,7 @@ export const router = createRouter({
     {
       path: '/faq',
       name: 'faq',
-      component: Faq,
+      component: TheFaq,
     },
   ],
   scrollBehavior (to) {

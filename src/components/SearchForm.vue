@@ -1,5 +1,5 @@
 <template>
-  <Home>
+  <TheHome>
     <div
       id="search"
       class="tab-pane show active"
@@ -31,7 +31,7 @@
             class="col-lg-3 col-form-label col-form-label-lg text-lg-right"
           >{{ t('search.labelTermSources') }}</label>
           <div class="col-sm-12 col-lg-8">
-            <Datasets />
+            <DatasetsSelect />
           </div>
         </div>
         <div class="form-group row">
@@ -46,7 +46,7 @@
         </div>
       </form>
     </div>
-  </Home>
+  </TheHome>
   <SearchResults
     :q="q"
     :datasets="state.selectedDatasets"
@@ -55,17 +55,17 @@
 
 <script lang="ts">
 import {useI18n} from 'vue-i18n';
-import Datasets from './Datasets.vue';
+import DatasetsSelect from './DatasetsSelect.vue';
 import {useClient} from 'villus';
 import state from '../store';
 import {useRoute, useRouter} from 'vue-router';
 import {defineComponent, ref} from 'vue';
-import Home from './Home.vue';
+import TheHome from './TheHome.vue';
 import SearchResults from './SearchResults.vue';
 
 export default defineComponent({
   name: 'SearchForm',
-  components: {SearchResults, Home, Datasets},
+  components: {SearchResults, TheHome, DatasetsSelect},
   setup() {
     const {t} = useI18n();
 

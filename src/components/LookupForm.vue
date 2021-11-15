@@ -1,5 +1,5 @@
 <template>
-  <Home>
+  <TheHome>
     <div
       id="lookup"
       class="tab-pane show active"
@@ -54,7 +54,7 @@
         </div>
       </form>
     </div>
-  </Home>
+  </TheHome>
   <LookupResult
     :uri="uri"
   />
@@ -67,12 +67,12 @@ import {useClient} from 'villus';
 import {useRoute, useRouter} from 'vue-router';
 import state from '../store';
 import LookupResult from './LookupResult.vue';
-import Home from './Home.vue';
+import TheHome from './TheHome.vue';
 
 export default defineComponent({
   name: 'LookupForm',
   components: {
-    Home,
+    TheHome,
     LookupResult,
   },
   setup() {

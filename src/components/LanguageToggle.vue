@@ -33,7 +33,7 @@ import {useI18n} from 'vue-i18n';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
-  name: 'Language',
+  name: 'LanguageToggle',
   setup () {
     const {t, locale} = useI18n();
 

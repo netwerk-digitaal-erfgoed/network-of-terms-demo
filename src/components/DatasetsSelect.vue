@@ -25,7 +25,7 @@ import DatasetOption from './DatasetOption.vue';
 import {defineComponent} from 'vue';
 
 export default defineComponent({
-  name: 'Datasets',
+  name: 'DatasetsSelect',
   components: {DatasetOption},
   setup() {
     const {data} = useQuery({
