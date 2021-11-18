@@ -48,6 +48,14 @@
             </router-link>
           </li>
           <LanguageToggle />
+          <li class="nav-item">
+            <!-- eslint-disable vue/no-v-html -->
+            <a
+              class="nav-link icon"
+              href="https://github.com/netwerk-digitaal-erfgoed/network-of-terms-demo"
+              v-html="githubSvg"
+            />
+          </li>
         </ul>
       </div>
     </div>
@@ -70,6 +78,7 @@ import {useI18n} from 'vue-i18n';
 import {useRoute} from 'vue-router';
 import {computed, defineComponent} from 'vue';
 import LanguageToggle from './components/LanguageToggle.vue';
+import githubSvg from './assets/github.svg?raw';
 
 export default defineComponent({
   name: 'App',
@@ -85,7 +94,7 @@ export default defineComponent({
       return rest;
     });
 
-    return {t, locale, currentLocation};
+    return {t, locale, currentLocation, githubSvg};
   },
 });
 </script>

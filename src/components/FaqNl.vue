@@ -69,6 +69,7 @@
       gebruikt kunnen worden.
     </p>
 
+    <a id="what-is" />
     <h3 class="display-5">
       Wat is het Termennetwerk?
     </h3>

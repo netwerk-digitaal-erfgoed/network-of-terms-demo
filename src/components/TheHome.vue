@@ -5,6 +5,9 @@
     </h1>
     <p class="lead text-center">
       {{ t('search.subtitle') }}
+      <router-link to="faq#what-is">
+        <QuestionMarkCircleIcon class="icon" />
+      </router-link>
     </p>
 
     <ul
@@ -48,10 +51,11 @@
 <script lang="ts">
 import {useI18n} from 'vue-i18n';
 import {defineComponent} from 'vue';
+import {QuestionMarkCircleIcon} from '@heroicons/vue/solid';
 
 export default defineComponent({
   name: 'TheHome',
-  components: {},
+  components: {QuestionMarkCircleIcon},
   setup() {
     const {t} = useI18n();
     return {t};
@@ -60,7 +64,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-  .nav-tabs {
-    font-size: 1.25rem;
-  }
+.nav-tabs {
+  font-size: 1.25rem;
+}
 </style>

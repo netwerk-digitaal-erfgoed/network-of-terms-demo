@@ -97,3 +97,10 @@ input:-moz-ui-invalid {
 .nav-tabs {
   margin-bottom: 0;
 }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+}
