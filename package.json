@@ -20,7 +20,7 @@
     "@types/bootstrap-select": "^1.13.3",
     "@types/jquery": "^3.5.8",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
-    "@typescript-eslint/parser": "^5.3.1",
+    "@typescript-eslint/parser": "^5.4.0",
     "@vitejs/plugin-vue": "^1.9.4",
     "@vue/compiler-sfc": "^3.2.21",
     "@vue/eslint-config-standard": "^6.1.0",
