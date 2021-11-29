@@ -18,7 +18,7 @@
   "devDependencies": {
     "@heroicons/vue": "^1.0.5",
     "@types/bootstrap-select": "^1.13.3",
-    "@types/jquery": "^3.5.8",
+    "@types/jquery": "^3.5.9",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vitejs/plugin-vue": "^1.10.1",
