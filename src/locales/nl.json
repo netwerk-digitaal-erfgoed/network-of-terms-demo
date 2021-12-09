@@ -49,7 +49,7 @@
   },
   "api": {
     "ServerError": "De terminologiebron kon de vraag niet verwerken",
-    "TimeoutError": "De terminologiebron is tijdelijk  niet bereikbaar",
+    "TimeoutError": "De terminologiebron is tijdelijk niet bereikbaar",
     "NotFoundError": "Geen term gevonden met deze URI",
     "Error": "Er is een fout opgetreden"
   }
