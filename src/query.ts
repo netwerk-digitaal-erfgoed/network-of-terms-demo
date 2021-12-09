@@ -1,10 +1,19 @@
-export interface TermsQuery {
+export interface TermsQueryResult {
   terms: [
     {
       source: Source,
-      terms: Term[],
+      result: Terms | Error,
     },
   ]
+}
+
+export interface Terms {
+  terms: Term[];
+}
+
+export interface Error {
+  __typename: string;
+  message: string;
 }
 
 export interface LookupQuery {

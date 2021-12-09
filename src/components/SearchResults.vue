@@ -6,14 +6,25 @@
       class="container mb-5 mt-5"
     >
       <SourceHeader :source="dataset.source" />
-      <p class="text-center text-muted">
-        {{ t('search.termsFound', dataset.terms.length) }}
-      </p>
-      <TermResult
-        v-for="term in dataset.terms"
-        :key="term.uri"
-        :term="term"
-      />
+      <template v-if="'terms' in dataset.result">
+        <p class="text-center text-muted">
+          {{ t('search.termsFound', dataset.result.terms.length) }}
+        </p>
+        <TermResult
+          v-for="term in dataset.result.terms"
+          :key="term.uri"
+          :term="term"
+        />
+      </template>
+      <template v-else>
+        <div
+          class="text-center alert alert-danger"
+          role="alert"
+        >
+          <ExclamationIcon class="icon" />
+          {{ t('api.' + dataset.result.__typename, 'api.Error') }}
+        </div>
+      </template>
     </div>
   </div>
 </template>
@@ -22,13 +33,14 @@
 import {useQuery} from 'villus';
 import {useI18n} from 'vue-i18n';
 import {defineComponent} from 'vue';
-import {TermsQuery} from '../query';
+import {TermsQueryResult} from '../query';
 import TermResult from './TermResult.vue';
 import SourceHeader from './SourceHeader.vue';
+import {ExclamationIcon} from '@heroicons/vue/outline';
 
 export default defineComponent({
   name: 'SearchResults',
-  components: {SourceHeader, TermResult},
+  components: {SourceHeader, TermResult, ExclamationIcon},
   props: {
     q: {
       type: String,
@@ -49,7 +61,7 @@ export default defineComponent({
       };
     }
 
-    const {data} = useQuery<TermsQuery>({
+    const {data} = useQuery<TermsQueryResult>({
       query: `query Terms ($sources: [ID]!, $query: String!) {
                 terms (sources: $sources query: $query) {
                   source {
@@ -61,24 +73,32 @@ export default defineComponent({
                       alternateName
                     }
                   }
-                  terms {
-                    uri
-                    prefLabel
-                    altLabel
-                    hiddenLabel
-                    scopeNote
-                    seeAlso
-                    broader {
-                      uri
-                      prefLabel
+                  result {
+                    ... on Terms {
+                      terms {
+                        uri
+                        prefLabel
+                        altLabel
+                        hiddenLabel
+                        scopeNote
+                        seeAlso
+                        broader {
+                          uri
+                          prefLabel
+                        }
+                        narrower {
+                          uri
+                          prefLabel
+                        }
+                        related {
+                          uri
+                          prefLabel
+                        }
+                      }
                     }
-                    narrower {
-                      uri
-                      prefLabel
-                    }
-                    related {
-                      uri
-                      prefLabel
+                    ... on Error {
+                      __typename
+                      message
                     }
                   }
                 }
