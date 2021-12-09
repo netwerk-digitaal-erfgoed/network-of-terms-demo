@@ -48,6 +48,9 @@
     "label": "Taal"
   },
   "api": {
-    "NotFoundError": "No term found with this URI"
+    "ServerError": "The term source could not process the request",
+    "TimeoutError": "The term source is temporarily unavailable",
+    "NotFoundError": "No term found with this URI",
+    "Error": "An error occurred"
   }
 }
