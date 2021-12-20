@@ -21,7 +21,7 @@
     "@types/jquery": "^3.5.10",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
-    "@vitejs/plugin-vue": "^2.0.0",
+    "@vitejs/plugin-vue": "^2.0.1",
     "@vue/compiler-sfc": "^3.2.21",
     "@vue/eslint-config-standard": "^6.1.0",
     "@vue/eslint-config-typescript": "^9.1.0",
