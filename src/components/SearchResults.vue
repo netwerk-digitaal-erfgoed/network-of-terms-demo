@@ -63,7 +63,7 @@ export default defineComponent({
 
     const {data} = useQuery<TermsQueryResult>({
       query: `query Terms ($sources: [ID]!, $query: String!) {
-                terms (sources: $sources query: $query) {
+                terms (sources: $sources query: $query queryMode: OPTIMIZED) {
                   source {
                     name
                     uri
