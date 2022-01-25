@@ -160,7 +160,7 @@
     <h3 class="display-5">
       Ik heb een vraag. Met wie kan ik contact opnemen?
     </h3>
-    <p>Met <a href="mailto:sjors@sjorsdevalk.nl">Sjors de Valk</a>, projectleider bij het Netwerk Digitaal Erfgoed.</p>
+    <p>We helpen je graag als je een e-mail stuurt naar <a href="mailto:tech@netwerkdigitaalerfgoed.nl">tech@netwerkdigitaalerfgoed.nl</a>.</p>
 
     <h2
       id="beheerders-van-terminologiebronnen"
@@ -278,7 +278,7 @@
     <h3 class="display-5">
       Ik heb een vraag. Met wie kan ik contact opnemen?
     </h3>
-    <p>Met <a href="mailto:sjors@sjorsdevalk.nl">Sjors de Valk</a>, projectleider bij het Netwerk Digitaal Erfgoed.</p>
+    <p>We helpen je graag als je een e-mail stuurt naar <a href="mailto:tech@netwerkdigitaalerfgoed.nl">tech@netwerkdigitaalerfgoed.nl</a>.</p>
 
     <h2
       id="ontwikkelaars"
@@ -542,7 +542,7 @@
     <h3 class="display-5">
       Ik heb een vraag. Met wie kan ik contact opnemen?
     </h3>
-    <p>Met <a href="mailto:sjors@sjorsdevalk.nl">Sjors de Valk</a>, projectleider bij het Netwerk Digitaal Erfgoed.</p>
+    <p>We helpen je graag als je een e-mail stuurt naar <a href="mailto:tech@netwerkdigitaalerfgoed.nl">tech@netwerkdigitaalerfgoed.nl</a>.</p>
   </div>
 </template>
 
