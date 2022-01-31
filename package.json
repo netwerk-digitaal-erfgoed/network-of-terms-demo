@@ -8,7 +8,7 @@
     "fix": "eslint --ext .ts,.vue src --fix"
   },
   "dependencies": {
-    "clipboard": "^2.0.8",
+    "clipboard": "^2.0.9",
     "graphql": "^16.2.0",
     "villus": "^1.0.1",
     "vue": "^3.2.29",
