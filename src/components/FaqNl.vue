@@ -147,6 +147,18 @@
     </p>
 
     <h3 class="display-5">
+      Hoe kan ik OpenRefine gebruiken met het Termennetwerk?
+    </h3>
+    <p>
+      Het Termennetwerk biedt een Reconciliation Service API die je kunt configureren in OpenRefine om je data te
+      matchen met termen. Hieronder vind je een lijst van Reconciliation-endpoints die je kunt gebruiken in OpenRefine.
+    </p>
+
+    <suspense>
+      <ReconciliationEndpoints />
+    </suspense>
+
+    <h3 class="display-5">
       Ik wil een bepaalde terminologiebron gebruiken, maar die komt niet voor in het Termennetwerk.
       Kan die toegevoegd worden?
     </h3>
@@ -548,8 +560,10 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue';
+import ReconciliationEndpoints from './ReconciliationEndpoints.vue';
 
 export default defineComponent({
   name: 'FaqNl',
+  components: {ReconciliationEndpoints},
 });
 </script>
