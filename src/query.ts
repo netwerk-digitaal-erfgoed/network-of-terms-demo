@@ -49,9 +49,15 @@ export interface Source {
   name: string;
   alternateName: string;
   creators: Creator[];
+  features: Feature[];
 }
 
 export interface Creator {
   name: string;
   alternateName: string;
+}
+
+export interface Feature {
+  type: string;
+  url: string;
 }

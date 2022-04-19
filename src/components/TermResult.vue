@@ -32,22 +32,12 @@
         </dl>
       </div>
 
-      <button
-        class="btn btn-primary btn-copy"
-        :data-clipboard-text="term.uri"
-        @click="copied=true"
-        @mouseout="copied=false"
-      >
-        {{ t('search.copyUri') }}
-        <ClipboardCheckIcon
-          v-if="copied"
-          class="icon"
-        />
-        <ClipboardIcon
-          v-else
-          class="icon"
-        />
-      </button>
+      <CopyButton
+        label="search.copyUri"
+        class="btn btn-primary"
+        :text="term.uri"
+      />
+
       <a
         :href="term.seeAlso[0] ?? term.uri"
         class="btn btn-primary ml-2"
@@ -85,11 +75,12 @@ import {Term} from '../query';
 import {useI18n} from 'vue-i18n';
 import RelatedTerms from './RelatedTerms.vue';
 import ClipboardJS from 'clipboard';
-import {ClipboardCheckIcon, ClipboardIcon, ExternalLinkIcon} from '@heroicons/vue/outline';
+import {ExternalLinkIcon} from '@heroicons/vue/outline';
+import CopyButton from './CopyButton.vue';
 
 export default defineComponent({
   name: 'TermResult',
-  components: {RelatedTerms, ClipboardIcon, ClipboardCheckIcon, ExternalLinkIcon},
+  components: {CopyButton, RelatedTerms, ExternalLinkIcon},
   props: {
     term: {
       type: Object as PropType<Term>,
