@@ -146,6 +146,7 @@
       door je leverancier. Wij ondersteunen je hier graag bij.
     </p>
 
+    <a id="openrefine" />
     <h3 class="display-5">
       Hoe kan ik OpenRefine gebruiken met het Termennetwerk?
     </h3>
