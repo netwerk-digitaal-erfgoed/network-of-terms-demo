@@ -3,6 +3,7 @@
     id="datasets"
     v-model="state.selectedDatasets"
     class="form-control form-control-lg selectpicker"
+    data-live-search="true"
     :title="t('search.placeholderDatasets')"
     multiple
     required
