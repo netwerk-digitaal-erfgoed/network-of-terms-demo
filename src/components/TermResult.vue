@@ -61,7 +61,7 @@
 
         <RelatedTerms
           v-if="term.related.length > 0"
-          :caption="t('search.relatedTerm')"
+          :caption="t('search.relatedTerm', term.related.length)"
           :terms="term.related"
         />
       </dl>
