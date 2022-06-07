@@ -146,13 +146,54 @@
       door je leverancier. Wij ondersteunen je hier graag bij.
     </p>
 
-    <a id="openrefine" />
+    <a id="reconciliation" />
     <h3 class="display-5">
-      Hoe kan ik OpenRefine gebruiken met het Termennetwerk?
+      Kan ik het Termennetwerk gebruiken voor <em>reconciliation</em>, bijvoorbeeld in OpenRefine?
     </h3>
     <p>
-      Het Termennetwerk biedt een Reconciliation Service API die je kunt configureren in OpenRefine om je data te
-      matchen met termen. Hieronder vind je een lijst van Reconciliation-endpoints die je kunt gebruiken in OpenRefine.
+      Ja! Het Termennetwerk biedt een <em>Reconciliation Service</em> waarmee je je data kunt
+      matchen met termen. Hierdoor wordt het mogelijk om woorden om te zetten naar URI's, bijvoorbeeld
+      van 'Rembrandt' naar diens URI in de bron RKDartists, <a href="https://data.rkd.nl/artists/66219">https://data.rkd.nl/artists/66219</a>.
+      Dit proces heet <em>reconciliation</em>. Met de Reconciliation Service kun je deze omzettingen
+      geautomatiseerd doen, voor een hele dataset. Dat bespaart je enorm veel tijd.
+    </p>
+    <p>
+      Je kunt de Reconciliation Service gebruiken in <a href="https://openrefine.org/">OpenRefine</a>.
+      Handleidingen hiervoor vind je in de volgende documenten:
+      <ul>
+        <li>Hoofdstuk <a href="https://docs.openrefine.org/manual/reconciling">Reconciling</a> in de documentatie van OpenRefine.</li>
+        <li>Sectie 'Reconciliation service' in de <a href="https://www.adlibug.nl/wp-content/uploads/2015/05/20150430_Handout_Open_Refine_workshop.pdf">Handout Workshop Open Refine</a> (PDF; blz. 4).</li>
+      </ul>
+    </p>
+
+    <h3 class="display-5">
+      Welke aandachtspunten zijn er bij het gebruik van het Termennetwerk voor reconciliation?
+    </h3>
+    <p>
+      Aandachtspunt 1: het Termennetwerk biedt weliswaar de Reconciliation Service, maar het daadwerkelijk
+      matchen van termen wordt gedaan door de terminologiebronnen, niet door het Termennetwerk. Je zoekt dus
+      altijd in de bronnen zelf, waardoor je altijd met actuele termen werkt.
+      Dit betekent ook dat de snelheid waarmee termen gematcht worden, afhankelijk is van de bronnen;
+      soms gaat dit snel, soms duurt dit iets langer. Ga ook verstandig om met de hoeveelheid woorden waarop
+      je zoekt: de bronnen kunnen flink belast worden als het om grote aantallen gaat.
+    </p>
+    <p>
+      Aandachtspunt 2: het Termennetwerk kan slechts eenvoudig zoeken in terminologiebronnen.
+      Het heeft bijvoorbeeld geen weet van de types van termen, bijvoorbeeld of bronnen bestaan uit
+      'personen', 'plaatsen' of 'gebeurtenissen'; voor het Termenetwerk zijn alle termen van het type 'concept' ('skos:Concept').
+      Dit betekent dat het Termennetwerk meer matches kan vinden dan je nodig hebt.
+    </p>
+
+    <h3 class="display-5">
+      Welke terminologiebronnen kan ik gebruiken voor reconciliation?
+    </h3>
+    <p>
+      Hieronder vind je een lijst van beschikbare bronnen. Bij elke bron staat diens URL vermeld.
+      Deze URL heb je bijvoorbeeld nodig om de bron te kunnen inrichten in OpenRefine als zogeheten 'Standaarddienst'.
+    </p>
+    <p>
+      Merk op: het Termennetwerk biedt niet voor alle bronnen een Reconciliation Service.
+      Sommige bronnen hebben zelf al zo'n service, zoals de Art &amp; Architecture Thesaurus (AAT) en Wikidata.
     </p>
 
     <suspense>
