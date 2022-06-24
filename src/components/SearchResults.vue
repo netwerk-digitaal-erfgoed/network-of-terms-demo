@@ -68,6 +68,7 @@ export default defineComponent({
                     name
                     uri
                     alternateName
+                    description
                     creators {
                       name
                       alternateName

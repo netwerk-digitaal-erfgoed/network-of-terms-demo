@@ -15,7 +15,8 @@
           label="faq.copyUrl"
         />
       </div>
-      <pre class="small mb-1 pre-scrollable">{{ source.features[0].url }}</pre>
+      <p>{{ source.description }}</p>
+      <pre class="small mb-1 text-muted pre-scrollable">{{ source.features[0].url }}</pre>
     </a>
   </div>
 </template>
@@ -35,7 +36,7 @@ export default defineComponent({
     useClient({
       url: import.meta.env.VITE_GRAPHQL_URL,
     });
-    const result = await useQuery({query: 'query Sources { sources { name alternateName uri creators { uri alternateName } features { type url } } }'});
+    const result = await useQuery({query: 'query Sources { sources { name alternateName description uri creators { uri alternateName } features { type url } } }'});
     const reconciliationSources = result.data.value.sources.filter((source: Source) => source.features.some((feature: Feature) => feature.type === 'RECONCILIATION'));
 
     return {t, reconciliationSources, copied: ref(false)};
