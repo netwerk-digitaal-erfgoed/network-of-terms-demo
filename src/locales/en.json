@@ -43,6 +43,7 @@
     "relatedTerm": "Related term | Related terms",
     "copyUri": "Copy URI",
     "viewAtSource": "View at source",
+    "seeOtherSource": "View other source",
     "sourceNotFound": "No terminology source can provide this URI"
   },
   "language": {

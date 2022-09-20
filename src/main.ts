@@ -7,6 +7,7 @@ import * as nl from './locales/nl.json';
 import App from './App.vue';
 import './index.css';
 
+// EM: sometimes 'legacy: false', is required?
 const i18n = createI18n({
   locale: 'nl',
   messages: {

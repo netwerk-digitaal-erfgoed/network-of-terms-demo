@@ -39,12 +39,22 @@
       />
 
       <a
-        :href="term.seeAlso[0] ?? term.uri"
+        :href="term.uri"
         class="btn btn-primary ml-2"
       >
         {{ t('search.viewAtSource') }}
         <ExternalLinkIcon class="icon" />
       </a>
+      
+      <span v-if="term.seeAlso.length > 0">
+        <a
+          :href="term.seeAlso[0]"
+          class="btn btn-primary ml-2"
+        >
+          {{ t('search.seeOtherSource') }}
+          <ExternalLinkIcon class="icon" />
+        </a>
+      </span>
 
       <dl class="mt-4 mb-0">
         <RelatedTerms
