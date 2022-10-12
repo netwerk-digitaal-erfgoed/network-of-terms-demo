@@ -193,7 +193,7 @@
     </p>
     <p>
       Merk op: het Termennetwerk biedt niet voor alle bronnen een Reconciliation Service.
-      Sommige bronnen hebben zelf al zo'n service, zoals de Art &amp; Architecture Thesaurus (AAT) en Wikidata.
+      Sommige bronnen hebben zelf al zo'n service, zoals Wikidata.
     </p>
 
     <suspense>
