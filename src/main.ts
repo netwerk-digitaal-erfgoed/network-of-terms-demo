@@ -9,6 +9,7 @@ import './index.css';
 
 const i18n = createI18n({
   locale: 'nl',
+  legacy: false,
   messages: {
     en,
     nl,
