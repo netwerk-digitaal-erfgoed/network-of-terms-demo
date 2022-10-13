@@ -189,7 +189,8 @@
     </h3>
     <p>
       Hieronder vind je een lijst van beschikbare bronnen. Bij elke bron staat diens URL vermeld.
-      Deze URL heb je bijvoorbeeld nodig om de bron te kunnen inrichten in OpenRefine als zogeheten 'Standaarddienst'.
+      Deze URL heb je bijvoorbeeld nodig om de bron te kunnen inrichten in OpenRefine als zogeheten 'Standaarddienst'. 
+      Let op dat bij het reconciliëren de optie 'Reconcile against no particular type' is geselecteerd.
     </p>
     <p>
       Merk op: het Termennetwerk biedt niet voor alle bronnen een Reconciliation Service.
