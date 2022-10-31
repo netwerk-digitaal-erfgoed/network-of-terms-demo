@@ -13,7 +13,7 @@
     "villus": "^2.0.1",
     "vue": "^3.2.41",
     "vue-i18n": "^9.2.2",
-    "vue-router": "^4.1.5"
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@heroicons/vue": "^1.0.6",
