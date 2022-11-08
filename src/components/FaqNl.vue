@@ -189,7 +189,7 @@
     </h3>
     <p>
       Hieronder vind je een lijst van beschikbare bronnen. Bij elke bron staat diens URL vermeld.
-      Deze URL heb je bijvoorbeeld nodig om de bron te kunnen inrichten in OpenRefine als zogeheten 'Standaarddienst'. 
+      Deze URL heb je bijvoorbeeld nodig om de bron te kunnen inrichten in OpenRefine als zogeheten 'Standaarddienst'.
       Let op dat bij het reconciliëren de optie 'Reconcile against no particular type' is geselecteerd.
     </p>
     <p>
@@ -469,9 +469,14 @@
       Thesaurus (AAT) en Cultuurhistorische Thesaurus (CHT).
     </p>
     <pre>query Terms {
-  terms(sources: ["http://vocab.getty.edu/aat/sparql",
-                  "https://data.cultureelerfgoed.nl/PoolParty/sparql/term/id/cht"],
-        query: "schilderij") {
+  terms(
+    sources: [
+      "http://vocab.getty.edu/aat/sparql",
+      "https://data.cultureelerfgoed.nl/PoolParty/sparql/term/id/cht",
+    ]
+    query: "schilderij"
+    queryMode: OPTIMIZED
+  ) {
     source {
       name
     }
@@ -496,9 +501,14 @@
       beschikbaar. Met de volgende vraag geef je aan alle velden terug te willen krijgen:
     </p>
     <pre>query Terms {
-  terms(sources: ["http://vocab.getty.edu/aat/sparql",
-                  "https://data.cultureelerfgoed.nl/PoolParty/sparql/term/id/cht"],
-        query: "schilderij") {
+  terms(
+    sources: [
+      "http://vocab.getty.edu/aat/sparql",
+      "https://data.cultureelerfgoed.nl/PoolParty/sparql/term/id/cht",
+    ]
+    query: "schilderij"
+    queryMode: OPTIMIZED
+  ) {
     source {
       uri
       name
