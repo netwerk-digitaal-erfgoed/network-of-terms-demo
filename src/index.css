@@ -176,7 +176,7 @@ h1.home {
 
 .homecover {
   background: url(/src/assets/9200579_v8fd8rv7.jpg) no-repeat center center fixed;  
-  margin:-1rem calc(50% - 50vw) 2rem;
+  margin:-1rem calc(50% - 50vw + 9px) 2rem;
   padding:3em 10% 6em;
   background-size: cover;
 }

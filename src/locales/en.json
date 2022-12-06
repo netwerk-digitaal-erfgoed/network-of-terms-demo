@@ -2,7 +2,8 @@
   "general": {
     "nde": "Dutch Digital Heritage Network",
     "messageFooter": "The Network of Terms is the result of collaboration within the Digital Heritage Network, in collaboration with CLARIAH, and is managed and maintained by the Cultural Heritage Agency of the Netherlands.",
-    "privacy": "Privacy statement"
+    "privacy": "Privacy statement",
+    "general.volg": "Follow the Digital Heritage Network via"
   },
   "faq": {
     "title": "Frequently asked questions",

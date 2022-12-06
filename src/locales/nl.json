@@ -2,7 +2,8 @@
   "general": {
     "nde": "Netwerk Digitaal Erfgoed",
     "messageFooter": "Het Termennetwerk is het resultaat van de samenwerking binnen het Netwerk Digitaal Erfgoed, in samenwerking met CLARIAH, en wordt beheerd en onderhouden door de Rijksdienst voor het Cultureel Erfgoed.",
-    "privacy": "Privacyverklaring"
+    "privacy": "Privacyverklaring",
+    "general.volg": "Volg het Netwerk Digitaal Erfgoed via"
   },
   "faq": {
     "title": "Veelgestelde vragen",
