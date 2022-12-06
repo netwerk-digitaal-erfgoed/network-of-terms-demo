@@ -1,12 +1,20 @@
 {
   "general": {
     "nde": "Netwerk Digitaal Erfgoed",
-    "messageFooter": "Een initiatief van het <a href=\"https://www.netwerkdigitaalerfgoed.nl/\">Netwerk Digitaal Erfgoed</a>, in samenwerking met <a href=\"https://www.clariah.nl/\">CLARIAH</a>"
+    "messageFooter": "Het Termennetwerk is het resultaat van de samenwerking binnen het Netwerk Digitaal Erfgoed, in samenwerking met CLARIAH, en wordt beheerd en onderhouden door de Rijksdienst voor het Cultureel Erfgoed.",
+    "privacy": "Privacyverklaring"
   },
   "faq": {
-    "title": "FAQ",
+    "title": "Veelgestelde vragen",
     "subtitle": "Veelgestelde vragen over het Termennetwerk",
-    "copyUrl": "Kopieer URL"
+    "copyUrl": "Kopieer URL",
+    "voor_c": "voor collectiebeheerders",
+    "voor_b": "voor beheerders van teminologiebronnen",
+    "voor_o": "voor ontwikkelaars van erfgoedsoftware",
+    "reconciliation": "Reconciliatie",
+    "title_b":"Veelgestelde vragen over het Termennetwerk voor beheerders van terminologiebronnen",
+    "title_c":"Veelgestelde vragen over het Termennetwerk voor collectiebeheerders bij erfgoedinstellingen",
+    "title_o":"Veelgestelde vragen over het Termennetwerk voor ontwikkelaars van erfgoedsoftware"
   },
   "search": {
     "title": "Termen­netwerk",

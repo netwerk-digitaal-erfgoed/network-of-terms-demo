@@ -8,11 +8,20 @@ html {
 
 h1, h2, h3 {
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin:1.2em 0;
+}
+
+p, li {
+  font-size: 1.2rem;
 }
 
 a, a:hover {
-  color: #0a3dfa;
+  color: #021b78;
 }
+
+.content a{
+  text-decoration: underline;
+} 
 
 @media (min-width: 768px) {
   html {
@@ -22,7 +31,7 @@ a, a:hover {
 
 button.search {
   width: 10em;
-  background-color: #0a3dfa;
+  background-color: #154273;
 }
 
 .bootstrap-select button.btn-light {
@@ -58,14 +67,14 @@ button.btn-light:focus {
 }
 
 .content h3 {
-  color: #0a3dfa;
+  color: #021b78;
 }
 
 footer {
   margin-top: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #fbfbfb;
+  background-color: #ffb612;
   box-shadow: 0 50vh 0 50vh #fbfbfb;
 }
 
@@ -100,8 +109,88 @@ input:-moz-ui-invalid {
 }
 
 .icon {
-  width: 1em;
-  height: 1em;
-  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-table;
   vertical-align: -0.175em;
+  color:#154273!important;
+  background-color:#f8f9fa;
+  border-radius:50%;
+  padding: 10px 14px;
+  margin-left:20px;
+}
+
+.navbar {
+  background-color: #ffb612;
+}
+
+ul {
+  line-height:2.4em;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer {
+  margin-top: auto;
+}
+
+footer p {
+  color: #021b78;
+}
+
+footer a { 
+  text-decoration: underline;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo .wrapper {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  align-items: flex-start;
+  margin-inline-end: -16px;
+  margin-inline-start: -16px;
+  justify-content: center;
+}
+
+.tab-content, .active .router-link-exact-active .nav-link {
+  background-color: #f8f9fa
+}
+
+h1.home {
+  color:#154273;
+  text-shadow: 0px 0px 5px #ffb612;
+}
+
+.homecover {
+  background: url(/src/assets/9200579_v8fd8rv7.jpg) no-repeat center center fixed;  
+  margin:-1rem calc(50% - 50vw) 2rem;
+  padding:3em 10% 6em;
+  background-size: cover;
+}
+
+.hometargets {
+  background-color: #f3f3f377;
+  border:2px solid #ffb612;
+  padding:20px;
+  font-size:1.4rem;
+  text-align:center;
+  color:black;
+}
+
+.homepipe {
+  color:#ffb612;
+  margin:0.5em;
 }
