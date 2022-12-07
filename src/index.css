@@ -165,6 +165,13 @@ footer a {
   justify-content: center;
 }
 
+.logo .wrapper span {
+  -webkit-margin-start: -50px;
+  margin-inline-start: -50px;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
 .tab-content, .active .router-link-exact-active .nav-link {
   background-color: #f8f9fa
 }

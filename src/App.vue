@@ -72,7 +72,7 @@
             <p><router-link :to="{name: 'contact'}"  href="#contact">Contact</router-link></p>
           </div>
           <div class="col-6 text-right">
-            <p>Volg het Netwerk Digitaal Erfgoed via:</p>
+            <p>{{ t('general.volg') }}:</p>
           
             <!-- eslint-disable vue/no-v-html -->
             <a
