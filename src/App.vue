@@ -7,7 +7,7 @@
         <span v-if="locale === 'en'" v-html="logoRCEEnSvg"></span>
       </div>
     </div>
-    <nav class="navbar navbar-expand-sm navbar-light border-bottom shadow-sm">
+    <nav class="navbar navbar-expand-sm navbar border-bottom shadow-sm">
       <div class="container">
         <router-link
           :to="{name: 'home'}"
