@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <p>Heb je vragen over het Termennetwerk, problemen of wensen?</p>
-    <p>Neem dan contact op met <a href="mailto:info@nationaalarchief.nl">info@nationaalarchief.nl</a>.</p>
+    <p>Neem dan contact op met <a href="mailto:thesauri@cultureelerfgoed.nl">thesauri@cultureelerfgoed.nl</a>.</p>
   </div>
 </template>
 

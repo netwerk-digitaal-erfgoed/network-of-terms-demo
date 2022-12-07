@@ -264,9 +264,13 @@
     </p>
 
     <h3 class="display-5">
-      Ik heb een vraag. Met wie kan ik contact opnemen?
+      Ik heb een vraag, probleem of wens. Met wie kan ik contact opnemen?
     </h3>
-    <p>We helpen je graag als je een e-mail stuurt naar <a href="mailto:tech@netwerkdigitaalerfgoed.nl">tech@netwerkdigitaalerfgoed.nl</a>.</p>
+    <p>
+      Het Termennetwerk wordt beheerd en onderhouden door de Rijksdienst voor het Cultureel Erfgoed.<br>
+      Wij zijn bereikbaar via <a href="mailto:thesauri@cultureelerfgoed.nl">thesauri@cultureelerfgoed.nl</a>.
+    </p>
+    
   </div>
 </template>
 
