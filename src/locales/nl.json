@@ -43,7 +43,8 @@
     "relatedTerm": "Gerelateerde term | Gerelateerde termen",
     "copyUri": "Kopieer URI",
     "viewAtSource": "Bekijk bij bron",
-    "sourceNotFound": "Geen terminologiebron gevonden voor deze URI"
+    "sourceNotFound": "Geen terminologiebron gevonden voor deze URI",
+    "termFound": "Term gevonden"
   },
   "language": {
     "label": "Language"

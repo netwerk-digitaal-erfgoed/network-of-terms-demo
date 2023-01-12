@@ -2,11 +2,16 @@
   <div v-if="data">
     <div v-if="data.lookup && data.lookup[0].source.__typename === 'Source'">
       <SourceHeader :source="data.lookup[0].source" />
-      <TermResult
-        v-if="data.lookup[0].result.__typename === 'Term'"
-        class="mt-3"
-        :term="data.lookup[0].result"
-      />
+      <template v-if="data.lookup[0].result.__typename === 'Term'">
+        <p class="text-center text-muted">
+          {{ t('search.termFound') }} in {{ data.lookup[0].responseTimeMs }} ms
+        </p>
+        <TermResult
+          v-if="data.lookup[0].result.__typename === 'Term'"
+          class="mt-3"
+          :term="data.lookup[0].result"
+        />
+      </template>
       <h3
         v-else
         class="text-center mt-5"
@@ -87,6 +92,7 @@ export default defineComponent({
                       }
                     }
                   }
+                  responseTimeMs
                 }
               }`,
       variables: {

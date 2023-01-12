@@ -8,7 +8,7 @@
       <SourceHeader :source="dataset.source" />
       <template v-if="'terms' in dataset.result">
         <p class="text-center text-muted">
-          {{ t('search.termsFound', dataset.result.terms.length) }}
+          {{ t('search.termsFound', dataset.result.terms.length) }} (in {{ dataset.responseTimeMs }} ms)
         </p>
         <TermResult
           v-for="term in dataset.result.terms"
@@ -102,6 +102,7 @@ export default defineComponent({
                       message
                     }
                   }
+                  responseTimeMs
                 }
               }`,
       variables: {

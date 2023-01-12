@@ -4,7 +4,9 @@
       source.alternateName
     }})</small>
   </h2>
-  <p class="text-center">{{ source.description }}</p>
+  <p class="text-center">
+    {{ source.description }}
+  </p>
   <h3 class="text-center text-muted">
     {{ source.creators[0].name }}
   </h3>
