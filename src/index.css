@@ -26,6 +26,7 @@ a, a:hover {
 button.search {
   width: 10em;
   background-color: #154273;
+  text-align: left;
 }
 
 .bootstrap-select button.btn-light {
@@ -103,15 +104,18 @@ input:-moz-ui-invalid {
 }
 
 .icon {
-  width: 1.2em;
-  height: 1.2em;
+  width: 1em;
+  height: 1em;
   display: inline-table;
-  vertical-align: -0.175em;
   color:#154273!important;
   background-color:#f8f9fa;
   border-radius:50%;
-  padding: 10px 14px;
-  margin-left:20px;
+  padding: 5px;
+  margin-left:10px;
+}
+
+svg, path { 
+  box-sizing: unset;
 }
 
 .navbar {
@@ -159,20 +163,14 @@ footer a {
   justify-content: center;
 }
 
-.logo .wrapper span {
-  -webkit-margin-start: -50px;
-  margin-inline-start: -50px;
-  -webkit-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
 .tab-content, .active .router-link-exact-active .nav-link {
   background-color: #f8f9fa
 }
 
 h1.home {
-  color:#154273;
-  text-shadow: 0px 0px 5px #ffb612;
+  color: #000000;
+  font-weight: bolder;
+  text-shadow: 0px 0px 10px #fff;
 }
 
 .homecover {
@@ -183,7 +181,7 @@ h1.home {
 }
 
 .hometargets {
-  background-color: #f3f3f377;
+  background-color: #f3f3f3;
   border:2px solid #ffb612;
   padding:20px;
   font-size:1.4rem;
@@ -191,7 +189,70 @@ h1.home {
   color:black;
 }
 
+.hometargets a {
+  display:inline-block;
+}
+
 .homepipe {
   color:#ffb612;
   margin:0.5em;
+}
+
+/* loading.io */
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 20px;
+  margin-left:20px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
 }

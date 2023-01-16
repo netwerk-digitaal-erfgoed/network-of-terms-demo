@@ -2,11 +2,16 @@
   <div v-if="data">
     <div v-if="data.lookup && data.lookup[0].source.__typename === 'Source'">
       <SourceHeader :source="data.lookup[0].source" />
-      <TermResult
-        v-if="data.lookup[0].result.__typename === 'Term'"
-        class="mt-3"
-        :term="data.lookup[0].result"
-      />
+      <template v-if="data.lookup[0].result.__typename === 'Term'">
+        <p class="text-center text-muted">
+          {{ t('search.termFound') }} in {{ data.lookup[0].responseTimeMs }} ms
+        </p>
+        <TermResult
+          v-if="data.lookup[0].result.__typename === 'Term'"
+          class="mt-3"
+          :term="data.lookup[0].result"
+        />
+      </template>
       <h3
         v-else
         class="text-center mt-5"
@@ -29,6 +34,7 @@ import {useQuery} from 'villus';
 import {LookupQuery} from '../query';
 import TermResult from './TermResult.vue';
 import SourceHeader from './SourceHeader.vue';
+import state from '../store';
 
 export default defineComponent({
   name: 'LookupResult',
@@ -49,7 +55,7 @@ export default defineComponent({
       };
     }
 
-    const {data} = useQuery<LookupQuery>({
+    const {data,isFetching} = useQuery<LookupQuery>({
       query: `query ($uris: [ID]!) {
                 lookup (uris: $uris) {
                   source {
@@ -87,6 +93,7 @@ export default defineComponent({
                       }
                     }
                   }
+                  responseTimeMs
                 }
               }`,
       variables: {
@@ -94,7 +101,12 @@ export default defineComponent({
       },
     });
 
-    return {data, t};
+    return {data, isFetching, t};
+  },
+  watch: {
+    isFetching(newState,oldState) {
+        state.loading=newState;
+    }
   },
 });
 </script>

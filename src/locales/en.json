@@ -51,7 +51,8 @@
     "relatedTerm": "Related term | Related terms",
     "copyUri": "Copy URI",
     "viewAtSource": "View at source",
-    "sourceNotFound": "No terminology source can provide this URI"
+    "sourceNotFound": "No terminology source can provide this URI",
+    "termFound": "Found term"
   },
   "language": {
     "label": "Taal"

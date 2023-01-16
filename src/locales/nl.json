@@ -10,7 +10,7 @@
     "subtitle": "Veelgestelde vragen over het Termennetwerk",
     "copyUrl": "Kopieer URL",
     "voor_c": "voor collectiebeheerders",
-    "voor_b": "voor beheerders van teminologiebronnen",
+    "voor_b": "voor beheerders van terminologiebronnen",
     "voor_o": "voor ontwikkelaars van erfgoedsoftware",
     "reconciliation": "Reconciliatie",
     "title_b":"Veelgestelde vragen over het Termennetwerk voor beheerders van terminologiebronnen",
@@ -52,7 +52,8 @@
     "relatedTerm": "Gerelateerde term | Gerelateerde termen",
     "copyUri": "Kopieer URI",
     "viewAtSource": "Bekijk bij bron",
-    "sourceNotFound": "Geen terminologiebron gevonden voor deze URI"
+    "sourceNotFound": "Geen terminologiebron gevonden voor deze URI",
+    "termFound": "Term gevonden"
   },
   "language": {
     "label": "Language"

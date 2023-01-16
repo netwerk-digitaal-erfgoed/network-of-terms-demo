@@ -40,7 +40,7 @@
               class="btn btn-lg btn-primary btn-block search"
               type="submit"
             >
-              {{ t('search.buttonSearch') }}
+              {{ t('search.buttonSearch') }}<div v-show="state.loading" class="lds-ellipsis" role="status"><div></div><div></div><div></div><div></div></div>
             </button>
           </div>
         </div>
@@ -80,6 +80,7 @@ export default defineComponent({
     state.selectedDatasets = (fromUrl ? fromUrl.split(',') : []);
 
     function onSubmit() {
+      state.loading = true;
       router.replace({name: 'home', query: {q: q.value, datasets: state.selectedDatasets.join(',')}});
     }
 

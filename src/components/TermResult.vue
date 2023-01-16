@@ -34,13 +34,13 @@
 
       <CopyButton
         label="search.copyUri"
-        class="btn btn-primary"
+        class="btn btn-warning"
         :text="term.uri"
       />
 
       <a
         :href="term.seeAlso[0] ?? term.uri"
-        class="btn btn-primary ml-2"
+        class="btn btn-warning ml-2"
       >
         {{ t('search.viewAtSource') }}
         <ExternalLinkIcon class="icon" />

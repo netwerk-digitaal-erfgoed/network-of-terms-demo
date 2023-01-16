@@ -8,7 +8,7 @@
       <SourceHeader :source="dataset.source" />
       <template v-if="'terms' in dataset.result">
         <p class="text-center text-muted">
-          {{ t('search.termsFound', dataset.result.terms.length) }}
+          {{ t('search.termsFound', dataset.result.terms.length) }} (in {{ dataset.responseTimeMs }} ms)
         </p>
         <TermResult
           v-for="term in dataset.result.terms"
@@ -37,6 +37,7 @@ import {TermsQueryResult} from '../query';
 import TermResult from './TermResult.vue';
 import SourceHeader from './SourceHeader.vue';
 import {ExclamationIcon} from '@heroicons/vue/outline';
+import state from '../store';
 
 export default defineComponent({
   name: 'SearchResults',
@@ -61,7 +62,7 @@ export default defineComponent({
       };
     }
 
-    const {data} = useQuery<TermsQueryResult>({
+    const {data, isFetching} = useQuery<TermsQueryResult>({
       query: `query Terms ($sources: [ID]!, $query: String!) {
                 terms (sources: $sources query: $query queryMode: OPTIMIZED) {
                   source {
@@ -102,6 +103,7 @@ export default defineComponent({
                       message
                     }
                   }
+                  responseTimeMs
                 }
               }`,
       variables: {
@@ -110,7 +112,12 @@ export default defineComponent({
       },
     });
 
-    return {data, t};
+    return {data, isFetching, t};
+  },
+  watch: {
+    isFetching(newState,oldState) {
+        state.loading=newState;
+    }
   },
 });
 </script>
