@@ -161,6 +161,7 @@
       Je kunt de Reconciliation Service gebruiken in <a href="https://openrefine.org/">OpenRefine</a>.
       Handleidingen hiervoor vind je in de volgende documenten:
       <ul>
+        <li><a href="https://zenodo.org/record/7728880#.ZBxJWC8w1f0">Verrijk je collectie met termen: Handleiding Reconciliation met OpenRefine en het Termennetwerk</a></li>
         <li>Hoofdstuk <a href="https://docs.openrefine.org/manual/reconciling">Reconciling</a> in de documentatie van OpenRefine.</li>
         <li>Sectie 'Reconciliation service' in de <a href="https://www.adlibug.nl/wp-content/uploads/2015/05/20150430_Handout_Open_Refine_workshop.pdf">Handout Workshop Open Refine</a> (PDF; blz. 4).</li>
       </ul>
