@@ -19,7 +19,7 @@ jobs:
           echo "::set-output name=docker_image::ghcr.io/netwerk-digitaal-erfgoed/network-of-terms-demo"
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2.2.1
+        uses: docker/setup-buildx-action@v2.5.0
         with:
           # See https://github.com/docker/build-push-action/issues/126.
           driver-opts: image=moby/buildkit:master
@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.CONTAINER_REGISTRY_TOKEN }}
 
       - name: Build and push image to registry
-        uses: docker/build-push-action@v3.2.0
+        uses: docker/build-push-action@v4.0.0
         with:
           context: .
           push: true
