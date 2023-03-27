@@ -23,6 +23,12 @@ a, a:hover {
   text-decoration: underline;
 } 
 
+@media (min-width: 768px) {
+  html {
+    /*font-size: 16px;*/
+  }
+}
+
 button.search {
   width: 10em;
   background-color: #154273;
@@ -39,6 +45,10 @@ button.btn-light:focus {
   border-color: #80bdff;
 }
 
+.btn-primary {
+  background-color:#154273;
+  border-color:#154273;
+}
 .card:hover {
   transition: .1s;
   border: 1px solid rgba(0, 0, 0, .3);
@@ -119,7 +129,7 @@ svg, path {
 }
 
 .navbar {
-  background-color: #ffb612;
+  /* background-color: #ffb612; */
 }
 
 ul {
@@ -169,21 +179,24 @@ footer a {
 
 h1.home {
   color: #000000;
-  font-weight: bolder;
+  font-weight: 400;
   text-shadow: 0px 0px 10px #fff;
+  margin: 0.5em 0;
 }
 
 .homecover {
-  background: url(/src/assets/9200579_v8fd8rv7.jpg) no-repeat center center fixed;  
-  margin:-1rem calc(50% - 50vw + 9px) 2rem;
-  padding:3em 10% 6em;
-  background-size: cover;
+  /* background: url(/src/assets/9200579_v8fd8rv7.jpg) no-repeat center center fixed;  */
+  /* background-size: cover; */
+  margin:-1rem calc(50% - 50vw + 9px) 4rem;
+  padding:0.5em 10% 2em;
+  box-shadow: 0px 0px 10px gray;
+  background-color: #f8f9fa;
 }
 
 .hometargets {
-  background-color: #f3f3f3;
-  border:2px solid #ffb612;
-  padding:20px;
+  /*background-color: #f3f3f3;*/
+  /* border:2px solid #ffb612; */
+  padding:10px;
   font-size:1.4rem;
   text-align:center;
   color:black;
@@ -194,7 +207,7 @@ h1.home {
 }
 
 .homepipe {
-  color:#ffb612;
+  color:#000000;
   margin:0.5em;
 }
 
@@ -256,3 +269,5 @@ h1.home {
     transform: translate(24px, 0);
   }
 }
+
+#logo-cultureelerfgoed-en, #logo-cultureelerfgoed-nl { max-width:100% }

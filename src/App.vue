@@ -1,12 +1,5 @@
 <template>
   <div class="flex-wrapper">
-
-    <div class="logo">
-      <div class="wrapper">
-        <span v-if="locale === 'nl'" v-html="logoRCENlSvg"></span>
-        <span v-if="locale === 'en'" v-html="logoRCEEnSvg"></span>
-      </div>
-    </div>
     <nav class="navbar navbar-expand-sm navbar border-bottom shadow-sm">
       <div class="container">
         <router-link
@@ -106,7 +99,15 @@
         </div>
         <br>
         <!-- eslint-disable vue/no-v-html -->
-        <p v-html="t('general.messageFooter')" />
+        <div class="row">
+          <div class="col-3">
+            <span v-if="locale === 'nl'" v-html="logoRCENlSvg"></span>
+            <span v-if="locale === 'en'" v-html="logoRCEEnSvg"></span>
+          </div>
+          <div class="col-9">
+            <p v-html="t('general.messageFooter')" />
+          </div>
+        </div>
       </div>
     </footer>
   </div>
