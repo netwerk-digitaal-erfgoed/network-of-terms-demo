@@ -56,15 +56,15 @@
     <footer class="border-top">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-md-3">
             <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">GraphQL Playground</a></p>
             <p><router-link :to="{name: 'reconciliation'}"  href="#reconciliation">{{ t('faq.reconciliation') }}</router-link></p>
           </div>
-          <div class="col-3">
+          <div class="col-md-3">
             <p><router-link :to="{name: 'privacy'}"  href="#privacy">{{ t('general.privacy') }}</router-link></p>
             <p><router-link :to="{name: 'contact'}"  href="#contact">Contact</router-link></p>
           </div>
-          <div class="col-6 text-right">
+          <div class="col-md-6 text-right">
             <p>{{ t('general.volg') }}:</p>
           
             <!-- eslint-disable vue/no-v-html -->
@@ -100,11 +100,11 @@
         <br>
         <!-- eslint-disable vue/no-v-html -->
         <div class="row">
-          <div class="col-3">
+          <div class="col-md-3">
             <span v-if="locale === 'nl'" v-html="logoRCENlSvg"></span>
             <span v-if="locale === 'en'" v-html="logoRCEEnSvg"></span>
           </div>
-          <div class="col-9">
+          <div class="col-md-9">
             <p v-html="t('general.messageFooter')" />
           </div>
         </div>
