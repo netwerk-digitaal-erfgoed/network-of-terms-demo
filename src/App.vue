@@ -1,6 +1,6 @@
 <template>
   <div class="flex-wrapper">
-    <nav class="navbar navbar-expand-sm navbar border-bottom shadow-sm">
+    <nav class="navbar navbar-expand-sm navbar border-bottom shadow-sm navbar-light">
       <div class="container">
         <router-link
           :to="{name: 'home'}"
@@ -101,7 +101,7 @@
         <!-- eslint-disable vue/no-v-html -->
         <div class="row">
           <div class="col-md-3">
-            <a href="https://www.cultureelerfgoed.nl/">
+            <a href="https://www.cultureelerfgoed.nl/" title="Rijksdienst voor het Cultureel Erfgoed (RCE)">
               <span v-if="locale === 'nl'" v-html="logoRCENlSvg"></span>
               <span v-if="locale === 'en'" v-html="logoRCEEnSvg"></span>
             </a>
