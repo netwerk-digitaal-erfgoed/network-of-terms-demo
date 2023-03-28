@@ -2,207 +2,151 @@
   <div class="content">
     
     <h3 class="display-5">
-      Wat zijn termen?
+      What are terms?
     </h3>
     <p>
-      Termen beschrijven waar erfgoed over gaat. Termen zijn bijvoorbeeld onderwerpen, personen of plaatsen. Neem De
-      Nachtwacht: het is een ‘schilderij’, vervaardigd door ‘Rembrandt’ in ‘Amsterdam’.
+      Terms describe what heritage is about. Terms are, for example, subjects, persons or places. For example the
+      Night watch: it is a 'painting', made by 'Rembrandt' in 'Amsterdam'.
     </p>
     <p>
-      Toch is een term meer dan een woord. Elke term heeft namelijk een identifier, een zogeheten
-      <a href="https://nl.wikipedia.org/wiki/Uniform_resource_identifier">URI</a>. Een URI is een uniek adres
-      waardoor ondubbelzinnig duidelijk is welke term bedoeld wordt. Bijvoorbeeld de term ‘noodweer’: wordt hier het
-      juridische concept bedoeld of een bepaalde weersgesteldheid? De betekenis wordt duidelijk als je de URI van de
-      term gebruikt, zoals <a href="http://www.wikidata.org/entity/Q741507">http://www.wikidata.org/entity/Q741507</a>.
+      Yet a term is more than a word. Each term has an identifier, a so-called
+      <a href="https://en.wikipedia.org/wiki/Uniform_resource_identifier">URI</a>. A URI is a unique address
+      which makes it unambiguously clear which term is meant. For example, the (Dutch) term 'noodweer' could be a
+      legal concept or really bad weather? The meaning becomes clear when you read the URI of the
+      term, such as <a href="http://www.wikidata.org/entity/Q741507">http://www.wikidata.org/entity/Q741507</a>.
     </p>
     <p>
-      Daarnaast kan een term extra informatie bevatten, zoals een definitie of een alternatieve benaming. Bijvoorbeeld
-      de term ‘schilderij’ met de URI <a href="http://vocab.getty.edu/aat/300177435">http://vocab.getty.edu/aat/300177435</a>.
-      De extra informatie over deze term maakt duidelijk dat het een synoniem heeft, ‘schilderstuk’.
+      In addition, a term can contain additional information, such as a definition or an alternative name. For example
+      the term "painting" with the URI <a href="http://vocab.getty.edu/aat/300177435">http://vocab.getty.edu/aat/300177435</a>.
+      The extra information about this term makes it clear that it has a synonym (in Dutch), 'schilderstuk'.
     </p>
 
     <h3 class="display-5">
-      Waarom zijn termen belangrijk?
+      Why are terms important?
     </h3>
     <p>
-      Termen stellen gebruikers – zoals leerlingen, journalisten of wetenschappers – in staat om erfgoed op het web
-      beter te vinden. Bijvoorbeeld: als een gebruiker enkel zoekt naar het <em>woord</em> ‘schilderij’, vindt hij
-      alleen het erfgoed waarin dit woord voorkomt, niet het erfgoed met het synoniem ‘schilderstuk’. Maar als een
-      gebruiker zoekt naar de <em>term</em> ‘schilderij’, vindt hij ook het erfgoed waarin ‘schilderstuk’ voorkomt.
-      Gebruik van termen zorgt dus voor betere vindbaarheid.
+      Terms enable users – such as students, journalists or scientists – to understand heritage on the web
+      better to find. For example: if a user just searches for the <em>word</em> 'painting', he will find
+      only the heritage in which this word occurs, not the heritage with the synonym 'schilderstuk'. But if one
+      user searches for the <em>term</em> 'painting', he also finds the heritage in which 'schilderstuk' occurs.
+      The use of terms therefore ensures better findability.
     </p>
 
     <h3 class="display-5">
-      Wat zijn terminologiebronnen?
+      What are terminology resources?
     </h3>
     <p>
-      Termen worden beheerd in terminologiebronnen, zoals thesauri, referentielijsten of classificatiesystemen. Zo
-      zijn er bronnen met informatie over plaatsen, zoals <a href="https://www.geonames.org/">GeoNames</a>, en bronnen
-      met informatie over personen, zoals <a href="https://rkd.nl/nl/explore/artists">RKDartists</a>. Ook zijn er
-      algemene bronnen met informatie over allerlei onderwerpen, zoals <a href="https://www.wikidata.org/">Wikidata</a>,
-      en specifieke bronnen met informatie over gerichte onderwerpen, zoals
-      de <a href="https://vtmk.data.momu.be/id.html">Visuele Thesaurus voor Mode en Kostuums</a>.
+      Terms are managed in terminology resources, such as thesauri, reference lists, or classification systems. There
+      are there resources with information about places, such as <a href="https://www.geonames.org/">GeoNames</a>, and resources
+      with information about individuals, such as <a href="https://rkd.nl/nl/explore/artists">RKDartists</a>. Also there are
+      general resources with information on a variety of topics, such as <a href="https://www.wikidata.org/">Wikidata</a>,
+      and specific sources of information on targeted topics, such as the 
+      <a href="https://vtmk.data.momu.be/id.html">Visual Thesaurus for Fashion and Costumes</a>.
     </p>
 
     <h3 class="display-5">
-      Waarom zijn terminologiebronnen belangrijk?
+      Why are terminology resources important?
     </h3>
     <p>
-      Termen zijn niet zomaar wat begrippen: het zijn officiële aanduidingen. De beheerders van terminologiebronnen
-      staan in voor de kwaliteit ervan. Bijvoorbeeld inhoudelijk: termen moeten accuraat en actueel zijn. Maar ook wat
-      betreft de houdbaarheid: beheerders zorgen ervoor dat hun termen duurzaam beschikbaar zijn en voor lange tijd
-      gebruikt kunnen worden.
-    </p>
-
-    <a id="what-is" />
-    <h3 class="display-5">
-      Wat is het Termennetwerk?
-    </h3>
-    <p>
-      Het Termennetwerk is een zoekmachine voor termen. Je voert er een zoekvraag in – zoals ‘Rembrandt’ – en het
-      Termennetwerk zoekt vervolgens rechtstreeks, realtime in terminologiebronnen naar overeenkomende termen. Uit de
-      termen die dit oplevert kun je een keuze maken. Bijvoorbeeld ‘Rembrandt’ in RKDartists of ‘Rembrandt Harmensz.
-      van Rijn’ in de Nederlandse Thesaurus van Auteursnamen.
+      Terms are not just concepts: they are official designations. The administrators of terminology resources
+      guarantee its quality. For example, content: terms must be accurate and up-to-date. But also what
+      with regard to sustainability: managers ensure that their terms are available sustainably and for a long time
+      can be used.
     </p>
 
     <h3 class="display-5">
-      Waarom is het Termennetwerk belangrijk?
+      What is the Network of Terms?
     </h3>
     <p>
-      Het Termennetwerk maakt het eenvoudiger om te zoeken in terminologiebronnen. Een collectiebeheerder hoeft enkel
-      het Termennetwerk te raadplegen, niet meer de individuele bronnen. En een ontwikkelaar van erfgoedsoftware hoeft
-      enkel te koppelen met het Termennetwerk, niet meer met de individuele bronnen. Dit scheelt tijd en geld.
+      The Network of Terms is a search engine for terms. You enter a query - such as 'Rembrandt' - and the
+      Network of Terms then searches terminology sources directly, in real time, for matching terms. From the
+      terms that this produces you can make a choice. For example 'Rembrandt' in RKDartists or 'Rembrandt Harmensz.
+      van Rijn' in the Dutch Thesaurus of Authors' Names.
     </p>
 
     <h3 class="display-5">
-      Hoe kan ik het Termennetwerk gebruiken?
+      Why is the Network of Terms important?
     </h3>
     <p>
-      Je gebruikt het Termennetwerk in je collectiebeheersysteem. Je hoeft dus niet tussen beide te <em>switchen</em>.
-      Hoe je het Termennetwerk precies kunt gebruiken, ligt aan de mogelijkheden die de leverancier van je systeem
-      biedt. Dat kan er bijvoorbeeld als volgt uitzien:
-    </p>
-    <p>
-      Stel, je bent in je systeem bezig met het beschrijven van een erfgoedobject, zoals De Nachtwacht. Bij het veld
-      ‘Vervaardiger’ wil je aangeven wie de maker van het object is. Daartoe voer je in het veld een zoekvraag in,
-      zoals ‘Rembrandt’, en geef je aan in welke terminologiebron je wilt zoeken, zoals RKDartists. Vervolgens stuurt
-      het collectiebeheersysteem deze informatie naar het Termennetwerk. Het Termennetwerk antwoordt daarop met termen
-      die voldoen aan de zoekvraag. Het collectiebeheersysteem toont jou de antwoorden in een lijst. Je kiest daarna
-      de term die het beste past. Onder water, onzichtbaar, slaat het collectiebeheersysteem de identifier – de URI –
-      van de gekozen term op, zoals <a href="https://data.rkd.nl/artists/66219">https://data.rkd.nl/artists/66219</a>.
-      Daarmee is er een link gelegd tussen jouw erfgoedobject en de terminologiebron.
+      The Network of Terms makes it easier to search terminology sources. A collection manager needs only to 
+      consult the Network of Terms, no longer the individual sources. And a heritage software developer doesn't have to
+      interface with the individual sources, just one interface to the Network of Terms. This saves time and money.
     </p>
 
     <h3 class="display-5">
-      Hoe kan ik het Termennetwerk uitproberen?
+      How can I use the Network of Terms?
     </h3>
     <p>
-      Je kunt gebruikmaken van onze <em>demonstrator</em>, een website waarmee je zoekvragen aan het Termennetwerk
-      kunt stellen. De demonstrator is te bereiken op de volgende locatie:
+      You use the Network of Terms in your collection management system. So you don't have to <em>switch</em> between the two.
+      Exactly how you can use the Network of Terms depends on the possibilities offered by the supplier of your system. 
+      For example, it could look like this:
+    </p>
+    <p>
+      Suppose you are busy describing a heritage object in your system, such as The Night Watch. At the field
+      'Manufacturer' you want to indicate who the maker of the object is. To do this, enter a search query in the field,
+      such as "Rembrandt", and indicate which terminology source you want to search, such as RKDartists. 
+      The collection management system sends this information to the Network of Terms. The Network of Terms responds with terms
+      that match the query. The collection management system shows you the answers in a list. You then choose
+      the term that fits best. Under water, invisible, the collection management system stores the identifier – the URI –
+      of the chosen term, such as <a href="https://data.rkd.nl/artists/66219">https://data.rkd.nl/artists/66219</a>.
+      This creates a link between your heritage object and the terminology source.
+    </p>
+
+    <h3 class="display-5">
+      How can I try out the Network of Terms?
+    </h3>
+    <p>
+      You can use our <em>demonstrator</em>, a website that allows you to submit queries to the Network of Terms. 
+      The demonstrator can be reached at the following location:
     </p>
     <p><a href="https://termennetwerk.netwerkdigitaalerfgoed.nl/">https://termennetwerk.netwerkdigitaalerfgoed.nl/</a></p>
     <p>
-      Bovenaan de pagina kun je je zoekvraag invullen en aangeven in welke terminologiebron of -bronnen je wilt
-      zoeken. Als je klikt op de knop <em>Zoeken</em> wordt je zoekvraag verwerkt. Onderaan de pagina verschijnen
-      vervolgens de termen die gevonden zijn in de terminologiebronnen.
+      At the top of the page you can enter your search query and indicate which terminology source or sources you want
+      to search. If you click on the <em>Search</em> button, your query will be processed. Appear at the bottom of the page
+      then the terms found in the terminology sources.
     </p>
     <p>
-      Let op: de demonstrator en het Termennetwerk zijn verschillende toepassingen. De demonstrator illustreert de
-      werking van het Termennetwerk, maar is geen onderdeel van het Termennetwerk.
-    </p>
-
-    <h3 class="display-5">
-      Wie maakt en beheert het Termennetwerk?
-    </h3>
-    <p>
-      Het Termennetwerk wordt gemaakt en beheerd door de samenwerkende erfgoedinstellingen in het Netwerk Digitaal
-      Erfgoed. De instellingen staan in voor de werking en beschikbaarheid van het Termennetwerk.
+      Please note that the demonstrator and the Network of Terms are different applications. The demonstrator illustrates the
+      operation of the Network of Terms, but is not part of the Network of Terms.
     </p>
 
     <h3 class="display-5">
-      Kan ik het Termennetwerk al gebruiken?
+      Who creates and manages the Network of Terms?
     </h3>
     <p>
-      Jazeker! Het Termenetwerk is geschikt voor gebruik.
-      We horen graag wat je ervan vindt. Bijvoorbeeld: zijn de zoekmogelijkheden toereikend? Zijn de zoekresultaten bruikbaar?
-    </p>
-    <p>
-      Als je een stap verder wilt gaan, dan kun je het Termennetwerk in je collectiebeheersysteem laten implementeren
-      door je leverancier. Wij ondersteunen je hier graag bij.
-    </p>
-
-    <a id="reconciliation" />
-    <h3 class="display-5">
-      Kan ik het Termennetwerk gebruiken voor <em>reconciliation</em>, bijvoorbeeld in OpenRefine?
-    </h3>
-    <p>
-      Ja! Het Termennetwerk biedt een <em>Reconciliation Service</em> waarmee je je data kunt
-      matchen met termen. Hierdoor wordt het mogelijk om woorden om te zetten naar URI's, bijvoorbeeld
-      van 'Rembrandt' naar diens URI in de bron RKDartists, <a href="https://data.rkd.nl/artists/66219">https://data.rkd.nl/artists/66219</a>.
-      Dit proces heet <em>reconciliation</em>. Met de Reconciliation Service kun je deze omzettingen
-      geautomatiseerd doen, voor een hele dataset. Dat bespaart je enorm veel tijd.
-    </p>
-    <p>
-      Je kunt de Reconciliation Service gebruiken in <a href="https://openrefine.org/">OpenRefine</a>.
-      Handleidingen hiervoor vind je in de volgende documenten:
-      <ul>
-        <li>Hoofdstuk <a href="https://docs.openrefine.org/manual/reconciling">Reconciling</a> in de documentatie van OpenRefine.</li>
-        <li>Sectie 'Reconciliation service' in de <a href="https://www.adlibug.nl/wp-content/uploads/2015/05/20150430_Handout_Open_Refine_workshop.pdf">Handout Workshop Open Refine</a> (PDF; blz. 4).</li>
-      </ul>
+      The Network of Terms is created and managed by the collaborating heritage institutions in the Network Digital
+      Heritage. Theses organisations are responsible for the operation and availability of the Network of Terms.
     </p>
 
     <h3 class="display-5">
-      Welke aandachtspunten zijn er bij het gebruik van het Termennetwerk voor reconciliation?
+      Can I already use the Network of Terms?
     </h3>
     <p>
-      Aandachtspunt 1: het Termennetwerk biedt weliswaar de Reconciliation Service, maar het daadwerkelijk
-      matchen van termen wordt gedaan door de terminologiebronnen, niet door het Termennetwerk. Je zoekt dus
-      altijd in de bronnen zelf, waardoor je altijd met actuele termen werkt.
-      Dit betekent ook dat de snelheid waarmee termen gematcht worden, afhankelijk is van de bronnen;
-      soms gaat dit snel, soms duurt dit iets langer. Ga ook verstandig om met de hoeveelheid woorden waarop
-      je zoekt: de bronnen kunnen flink belast worden als het om grote aantallen gaat.
+      Of course! The Terme network is ready for use.
+      We'd love to hear what you think. For example: are the search options sufficient? Are the search results useful?
     </p>
     <p>
-      Aandachtspunt 2: het Termennetwerk kan slechts eenvoudig zoeken in terminologiebronnen.
-      Het heeft bijvoorbeeld geen weet van de types van termen, bijvoorbeeld of bronnen bestaan uit
-      'personen', 'plaatsen' of 'gebeurtenissen'; voor het Termenetwerk zijn alle termen van het type 'concept' ('skos:Concept').
-      Dit betekent dat het Termennetwerk meer matches kan vinden dan je nodig hebt.
+      If you want to go a step further, you can have the Network of Terms implemented in your collection management system
+      by your supplier. We are happy to support you in this.
     </p>
 
     <h3 class="display-5">
-      Welke terminologiebronnen kan ik gebruiken voor reconciliation?
+      I want to use a particular terminology source, but it is not in the Network of Terms.
+      Can it be added?
     </h3>
     <p>
-      Hieronder vind je een lijst van beschikbare bronnen. Bij elke bron staat diens URL vermeld.
-      Deze URL heb je bijvoorbeeld nodig om de bron te kunnen inrichten in OpenRefine als zogeheten 'Standaarddienst'.
-      Let op dat bij het reconciliëren de optie 'Reconcile against no particular type' is geselecteerd.
-    </p>
-    <p>
-      Merk op: het Termennetwerk biedt niet voor alle bronnen een Reconciliation Service.
-      Sommige bronnen hebben zelf al zo'n service, zoals Wikidata.
-    </p>
-
-    <suspense>
-      <ReconciliationEndpoints />
-    </suspense>
-
-    <h3 class="display-5">
-      Ik wil een bepaalde terminologiebron gebruiken, maar die komt niet voor in het Termennetwerk.
-      Kan die toegevoegd worden?
-    </h3>
-    <p>
-      Laat ons weten welke bron het is en we kijken er graag naar. We gaan onderzoeken of de bron aan een aantal
-      voorwaarden voldoet. Zo moet de bron als ‘open data’ beschikbaar zijn, bepaalde metadatastandaarden gebruiken en
-      bepaalde zoekmogelijkheden bieden. Als de bron hier niet aan voldoet, dient de beheerder zijn bron eerst aan te
-      passen voordat deze kan worden toegevoegd aan het Termennetwerk.
+      Let us know what source it is and we'll be happy to look into it. We are going to investigate if the source meets
+      the conditions. For example, the source must be available as 'open data', use certain metadata standards and
+      provide certain search options. If the source does not meet these requirements, the administrator must first create his source
+      before it can be added to the Network of Terms.
     </p>
 
     <h3 class="display-5">
-      Ik heb een vraag, probleem of wens. Met wie kan ik contact opnemen?
+      I have a question, problem or wish. Who can I contact?
     </h3>
     <p>
-      Het Termennetwerk wordt beheerd en onderhouden door de Rijksdienst voor het Cultureel Erfgoed.<br>
-      Wij zijn bereikbaar via <a href="mailto:thesauri@cultureelerfgoed.nl">thesauri@cultureelerfgoed.nl</a>.
+      The Network of Terms is managed and maintained by the Cultural Heritage Agency of the Netherlands.<br>
+      We can be reached at <a href="mailto:thesauri@cultureelerfgoed.nl">thesauri@cultureelerfgoed.nl</a>.
     </p>
     
   </div>
