@@ -1,6 +1,6 @@
 <template>
 
-  <div class="homecover" title="Image credit: Osteocytes, canaliculi and haversian canals in bone, LM. Kevin Mackenzie, University of Aberdeen. Attribution 4.0 International (CC BY 4.0) ">
+  <div class="homecover">
     <h1 class="display-4 text-center home">
       {{ t('search.subtitle') }}
     </h1>

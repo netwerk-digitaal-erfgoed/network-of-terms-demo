@@ -101,8 +101,10 @@
         <!-- eslint-disable vue/no-v-html -->
         <div class="row">
           <div class="col-md-3">
-            <span v-if="locale === 'nl'" v-html="logoRCENlSvg"></span>
-            <span v-if="locale === 'en'" v-html="logoRCEEnSvg"></span>
+            <a href="https://www.cultureelerfgoed.nl/">
+              <span v-if="locale === 'nl'" v-html="logoRCENlSvg"></span>
+              <span v-if="locale === 'en'" v-html="logoRCEEnSvg"></span>
+            </a>
           </div>
           <div class="col-md-9">
             <p v-html="t('general.messageFooter')" />
