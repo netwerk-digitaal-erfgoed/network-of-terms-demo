@@ -13,7 +13,7 @@ import PrivacyEn from './PrivacyEn.vue';
 import PrivacyNl from './PrivacyNl.vue';
 
 export default defineComponent({
-  name: 'Privacy',
+  name: 'PrivacyStatement',
   components: {PrivacyEn, PrivacyNl},
   setup () {
     const {t, locale} = useI18n();

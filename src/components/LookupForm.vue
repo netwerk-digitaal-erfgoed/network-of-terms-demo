@@ -48,7 +48,13 @@
               class="btn btn-primary btn-lg search"
               type="submit"
             >
-              {{ t('search.buttonLookup') }}<div v-show="state.loading" class="lds-ellipsis" role="status"><div></div><div></div><div></div><div></div></div>
+              {{ t('search.buttonLookup') }}<div
+                v-show="state.loading"
+                class="lds-ellipsis"
+                role="status"
+              >
+                <div /><div /><div /><div />
+              </div>
             </button>
           </div>
         </div>

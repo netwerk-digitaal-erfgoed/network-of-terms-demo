@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-
     <h3 class="display-5">
       What are terms?
     </h3>
@@ -114,7 +113,6 @@
       The Network of Terms is managed and maintained by the Cultural Heritage Agency of the Netherlands.<br>
       We can be reached at <a href="mailto:thesauri@cultureelerfgoed.nl">thesauri@cultureelerfgoed.nl</a>.
     </p>
-    
   </div>
 </template>
 
@@ -122,6 +120,6 @@
 import {defineComponent} from 'vue';
 
 export default defineComponent({
-  name: 'FaqEn2'
+  name: 'FaqEn2',
 });
 </script>

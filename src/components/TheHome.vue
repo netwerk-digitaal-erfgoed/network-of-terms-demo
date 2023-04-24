@@ -1,15 +1,32 @@
 <template>
-
   <div class="homecover">
     <h1 class="display-4 text-center home">
       {{ t('search.subtitle') }}
     </h1>
     <div class="hometargets">
-      <router-link :to="{name: 'faq1'}" class="hbox" href="#faq1">{{ t('faq.voor_c') }}</router-link>
+      <router-link
+        :to="{name: 'faq1'}"
+        class="hbox"
+        href="#faq1"
+      >
+        {{ t('faq.voor_c') }}
+      </router-link>
       <span class="homepipe">|</span>
-      <router-link :to="{name: 'faq2'}" class="hbox" href="#faq2">{{ t('faq.voor_b') }}</router-link>
+      <router-link
+        :to="{name: 'faq2'}"
+        class="hbox"
+        href="#faq2"
+      >
+        {{ t('faq.voor_b') }}
+      </router-link>
       <span class="homepipe">|</span>
-      <router-link :to="{name: 'faq3'}" class="hbox" href="#faq3">{{ t('faq.voor_o') }}</router-link>
+      <router-link
+        :to="{name: 'faq3'}"
+        class="hbox"
+        href="#faq3"
+      >
+        {{ t('faq.voor_o') }}
+      </router-link>
     </div>  
   </div>
   <div>

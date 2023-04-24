@@ -55,7 +55,7 @@ export default defineComponent({
       };
     }
 
-    const {data,isFetching} = useQuery<LookupQuery>({
+    const {data, isFetching} = useQuery<LookupQuery>({
       query: `query ($uris: [ID]!) {
                 lookup (uris: $uris) {
                   source {
@@ -104,9 +104,9 @@ export default defineComponent({
     return {data, isFetching, t};
   },
   watch: {
-    isFetching(newState,oldState) {
-        state.loading=newState;
-    }
+    isFetching(newState) {
+      state.loading = newState;
+    },
   },
 });
 </script>

@@ -3,9 +3,9 @@ import TheFaq from './components/TheFaq.vue';
 import TheFaq1 from './components/TheFaq1.vue';
 import TheFaq2 from './components/TheFaq2.vue';
 import TheFaq3 from './components/TheFaq3.vue';
-import Recon from './components/Recon.vue';
-import Contact from './components/Contact.vue';
-import Privacy from './components/Privacy.vue';
+import ReconciliationService from './components/ReconciliationService.vue';
+import Contact from './components/ContactInfo.vue';
+import PrivacyStatement from './components/PrivacyStatementNl.vue';
 import SearchForm from './components/SearchForm.vue';
 import LookupForm from './components/LookupForm.vue';
 
@@ -46,7 +46,7 @@ export const router = createRouter({
     {
       path: '/reconciliation',
       name: 'reconciliation',
-      component: Recon,
+      component: ReconciliationService,
     },
     {
       path: '/contact',
@@ -56,7 +56,7 @@ export const router = createRouter({
     {
       path: '/privacy',
       name: 'privacy',
-      component: Privacy,
+      component: PrivacyStatement,
     },
   ],
   scrollBehavior (to) {

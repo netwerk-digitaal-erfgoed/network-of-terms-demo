@@ -115,9 +115,9 @@ export default defineComponent({
     return {data, isFetching, t};
   },
   watch: {
-    isFetching(newState,oldState) {
-        state.loading=newState;
-    }
+    isFetching(newState) {
+      state.loading = newState;
+    },
   },
 });
 </script>

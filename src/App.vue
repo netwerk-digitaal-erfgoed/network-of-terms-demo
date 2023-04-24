@@ -6,10 +6,17 @@
           :to="{name: 'home'}"
           class="navbar-brand"
         >
-          <span v-if="locale === 'nl'" v-html="logoNlSvg"></span>
-          <span v-if="locale === 'en'" v-html="logoEnSvg"></span>
+          <!-- eslint-disable vue/no-v-html -->
+          <span
+            v-if="locale === 'nl'"
+            v-html="logoNlSvg"
+          />
+          <span
+            v-if="locale === 'en'"
+            v-html="logoEnSvg"
+          />
         </router-link>
-        
+
         <button
           class="navbar-toggler"
           type="button"
@@ -38,9 +45,27 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-              <router-link :to="{name: 'faq1'}" class="dropdown-item" href="#faq1">{{ t('faq.voor_c') }}</router-link>
-              <router-link :to="{name: 'faq2'}" class="dropdown-item" href="#faq2">{{ t('faq.voor_b') }}</router-link>
-              <router-link :to="{name: 'faq3'}" class="dropdown-item" href="#faq3">{{ t('faq.voor_o') }}</router-link>
+                <router-link
+                  :to="{name: 'faq1'}"
+                  class="dropdown-item"
+                  href="#faq1"
+                >
+                  {{ t('faq.voor_c') }}
+                </router-link>
+                <router-link
+                  :to="{name: 'faq2'}"
+                  class="dropdown-item"
+                  href="#faq2"
+                >
+                  {{ t('faq.voor_b') }}
+                </router-link>
+                <router-link
+                  :to="{name: 'faq3'}"
+                  class="dropdown-item"
+                  href="#faq3"
+                >
+                  {{ t('faq.voor_o') }}
+                </router-link>
               </div>
             </li>
             <LanguageToggle />
@@ -58,42 +83,60 @@
         <div class="row">
           <div class="col-md-3">
             <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">GraphQL Playground</a></p>
-            <p><router-link :to="{name: 'reconciliation'}"  href="#reconciliation">{{ t('faq.reconciliation') }}</router-link></p>
+            <p>
+              <router-link
+                :to="{name: 'reconciliation'}"
+              >
+                {{ t('faq.reconciliation') }}
+              </router-link>
+            </p>
           </div>
           <div class="col-md-3">
-            <p><router-link :to="{name: 'privacy'}"  href="#privacy">{{ t('general.privacy') }}</router-link></p>
-            <p><router-link :to="{name: 'contact'}"  href="#contact">Contact</router-link></p>
+            <p>
+              <router-link
+                :to="{name: 'privacy'}"
+              >
+                {{ t('general.privacy') }}
+              </router-link>
+            </p>
+            <p>
+              <router-link
+                :to="{name: 'contact'}"
+              >
+                Contact
+              </router-link>
+            </p>
           </div>
           <div class="col-md-6 text-right">
             <p>{{ t('general.volg') }}:</p>
-          
+
             <!-- eslint-disable vue/no-v-html -->
             <a
               class="nav-link icon"
               href="https://twitter.com/DigitaalErfgoed"
-              v-html="twitterSvg"
               title="Follow us on Twitter"
+              v-html="twitterSvg"
             />
             <!-- eslint-disable vue/no-v-html -->
             <a
               class="nav-link icon"
               href="https://github.com/netwerk-digitaal-erfgoed/network-of-terms-demo"
-              v-html="githubSvg"
               title="Follow us at Github"
+              v-html="githubSvg"
             />
             <!-- eslint-disable vue/no-v-html -->
             <a
               class="nav-link icon"
               href="https://www.linkedin.com/company/netwerkdigitaalerfgoed/?originalSubdomain=nl"
-              v-html="linkedinSvg"
               title="Follow us at LinkedIn"
+              v-html="linkedinSvg"
             />
             <!-- eslint-disable vue/no-v-html -->
             <a
               class="nav-link icon"
               href="https://www.youtube.com/channel/UCvHDarEQeREkRVLdzJSbKWw"
-              v-html="youtubeSvg"
               title="Follow us at YouTube"
+              v-html="youtubeSvg"
             />
           </div>
         </div>
@@ -101,9 +144,18 @@
         <!-- eslint-disable vue/no-v-html -->
         <div class="row">
           <div class="col-md-3">
-            <a href="https://www.cultureelerfgoed.nl/" title="Rijksdienst voor het Cultureel Erfgoed (RCE)">
-              <span v-if="locale === 'nl'" v-html="logoRCENlSvg"></span>
-              <span v-if="locale === 'en'" v-html="logoRCEEnSvg"></span>
+            <a
+              href="https://www.cultureelerfgoed.nl/"
+              title="Rijksdienst voor het Cultureel Erfgoed (RCE)"
+            >
+              <span
+                v-if="locale === 'nl'"
+                v-html="logoRCENlSvg"
+              />
+              <span
+                v-if="locale === 'en'"
+                v-html="logoRCEEnSvg"
+              />
             </a>
           </div>
           <div class="col-md-9">

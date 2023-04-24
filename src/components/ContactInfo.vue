@@ -1,20 +1,20 @@
 <template>
   <h1 class="display-5">
-    {{ t('faq.reconciliation') }}
+    Contact
   </h1>
-  <ReconEn v-if="locale === 'en'" />
-  <ReconNl v-else />
+  <ContactEn v-if="locale === 'en'" />
+  <ContactNl v-else />
 </template>
 
 <script lang="ts">
 import {defineComponent} from 'vue';
 import {useI18n} from 'vue-i18n';
-import ReconEn from './ReconEn.vue';
-import ReconNl from './ReconNl.vue';
+import ContactEn from './ContactEn.vue';
+import ContactNl from './ContactNl.vue';
 
 export default defineComponent({
-  name: 'Recon',
-  components: {ReconEn, ReconNl},
+  name: 'ContactInfo',
+  components: {ContactEn, ContactNl},
   setup () {
     const {t, locale} = useI18n();
 
@@ -22,7 +22,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-
-</style>

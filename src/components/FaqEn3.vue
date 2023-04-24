@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-
     <h3 class="display-5">
       What are terms?
     </h3>
@@ -240,7 +239,7 @@
       of the Network of Terms. The Network of Terms responds with terms that meet the search query. It
       collection management system shows the answers in a list to the collection manager. The collection manager chooses
       then the term that best fits. It hits underwater, invisible to the collection manager
-      collection management system the identifier – the URI – of the chosen term, such as <a href="https://data.rkd.nl/artists/66219">https://data.rkd.nl/artists/66219</a >.
+      collection management system the identifier – the URI – of the chosen term, such as <a href="https://data.rkd.nl/artists/66219">https://data.rkd.nl/artists/66219</a>.
     </p>
 
     <h3 class="display-5">
@@ -277,6 +276,6 @@
 import {defineComponent} from 'vue';
 
 export default defineComponent({
-  name: 'FaqEn3'
+  name: 'FaqEn3',
 });
 </script>

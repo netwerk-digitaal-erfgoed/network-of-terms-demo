@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-
     <h3 class="display-5">
       Wat zijn termen?
     </h3>
@@ -270,7 +269,6 @@
       Het Termennetwerk wordt beheerd en onderhouden door de Rijksdienst voor het Cultureel Erfgoed.<br>
       Wij zijn bereikbaar via <a href="mailto:thesauri@cultureelerfgoed.nl">thesauri@cultureelerfgoed.nl</a>.
     </p>
-    
   </div>
 </template>
 
@@ -278,6 +276,6 @@
 import {defineComponent} from 'vue';
 
 export default defineComponent({
-  name: 'FaqNl3'
+  name: 'FaqNl3',
 });
 </script>

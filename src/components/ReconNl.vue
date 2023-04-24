@@ -24,17 +24,20 @@
       Welke aandachtspunten zijn er bij het gebruik van het Termennetwerk voor reconciliation?
     </h3>
     <ul>
-      <li>het Termennetwerk biedt weliswaar de Reconciliation Service, maar het daadwerkelijk
-      matchen van termen wordt gedaan door de terminologiebronnen, niet door het Termennetwerk. Je zoekt dus
-      altijd in de bronnen zelf, waardoor je altijd met actuele termen werkt.
-      Dit betekent ook dat de snelheid waarmee termen gematcht worden, afhankelijk is van de bronnen;
-      soms gaat dit snel, soms duurt dit iets langer. Ga ook verstandig om met de hoeveelheid woorden waarop
-      je zoekt: de bronnen kunnen flink belast worden als het om grote aantallen gaat.
+      <li>
+        het Termennetwerk biedt weliswaar de Reconciliation Service, maar het daadwerkelijk
+        matchen van termen wordt gedaan door de terminologiebronnen, niet door het Termennetwerk. Je zoekt dus
+        altijd in de bronnen zelf, waardoor je altijd met actuele termen werkt.
+        Dit betekent ook dat de snelheid waarmee termen gematcht worden, afhankelijk is van de bronnen;
+        soms gaat dit snel, soms duurt dit iets langer. Ga ook verstandig om met de hoeveelheid woorden waarop
+        je zoekt: de bronnen kunnen flink belast worden als het om grote aantallen gaat.
       </li>
-      <li>het Termennetwerk kan slechts eenvoudig zoeken in terminologiebronnen.
-      Het heeft bijvoorbeeld geen weet van de types van termen, bijvoorbeeld of bronnen bestaan uit
-      'personen', 'plaatsen' of 'gebeurtenissen'; voor het Termenetwerk zijn alle termen van het type 'concept' ('skos:Concept').
-      Dit betekent dat het Termennetwerk meer matches kan vinden dan je nodig hebt.</li>
+      <li>
+        het Termennetwerk kan slechts eenvoudig zoeken in terminologiebronnen.
+        Het heeft bijvoorbeeld geen weet van de types van termen, bijvoorbeeld of bronnen bestaan uit
+        'personen', 'plaatsen' of 'gebeurtenissen'; voor het Termenetwerk zijn alle termen van het type 'concept' ('skos:Concept').
+        Dit betekent dat het Termennetwerk meer matches kan vinden dan je nodig hebt.
+      </li>
       <li>bij het reconciliëren in OpenRefine moet je de optie <strong>Reconcile against no particular type</strong> selecteren.</li>
     </ul>
 
@@ -44,7 +47,6 @@
     <p>
       Hieronder vind je een lijst van beschikbare bronnen. Bij elke bron staat diens URL vermeld.
       Deze URL heb je bijvoorbeeld nodig om de bron te kunnen inrichten in OpenRefine als zogeheten 'Standaarddienst'.
-      
     </p>
     <p>
       Merk op: het Termennetwerk biedt niet voor alle bronnen een Reconciliation Service.
@@ -54,7 +56,6 @@
     <suspense>
       <ReconciliationEndpoints />
     </suspense>
-
   </div>
 </template>
 
