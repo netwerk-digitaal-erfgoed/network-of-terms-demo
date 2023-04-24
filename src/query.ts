@@ -3,6 +3,7 @@ export interface TermsQueryResult {
     {
       source: Source,
       result: Terms | Error,
+      responseTimeMs: number,
     },
   ]
 }
@@ -21,6 +22,7 @@ export interface LookupQuery {
     {
       source: Source,
       result: Term,
+      responseTimeMs: number,
     },
   ]
 }
@@ -48,6 +50,7 @@ export interface Source {
   uri: string;
   name: string;
   alternateName: string;
+  description: string;
   creators: Creator[];
   features: Feature[];
 }
