@@ -274,7 +274,6 @@ p img {
   padding:5px
 }
 
-
 h1.display-4,h1 { font-size:1.5rem }
 
 @media (min-width:600px)  { 
@@ -291,4 +290,3 @@ h1.display-4,h1 { font-size:1.5rem }
     box-shadow: 0px 0px 10px gray;
   }
  }
-
