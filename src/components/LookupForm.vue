@@ -48,7 +48,13 @@
               class="btn btn-primary btn-lg search"
               type="submit"
             >
-              {{ t('search.buttonLookup') }}
+              {{ t('search.buttonLookup') }}<div
+                v-show="state.loading"
+                class="lds-ellipsis"
+                role="status"
+              >
+                <div /><div /><div /><div />
+              </div>
             </button>
           </div>
         </div>
@@ -87,6 +93,7 @@ export default defineComponent({
     const uri = ref(route.query.uri as string);
 
     function onSubmit() {
+      state.loading = true;
       router.replace({name: 'lookup', query: {uri: uri.value}});
     }
 

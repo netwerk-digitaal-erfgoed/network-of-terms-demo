@@ -1,15 +1,35 @@
 <template>
-  <div>
-    <h1 class="display-4 text-center">
-      {{ t('search.title') }}
-    </h1>
-    <p class="lead text-center">
+  <div class="homecover">
+    <h1 class="display-4 text-center home">
       {{ t('search.subtitle') }}
-      <router-link to="faq#what-is">
-        <QuestionMarkCircleIcon class="icon" />
+    </h1>
+    <div class="hometargets">
+      <router-link
+        :to="{name: 'faq1'}"
+        class="hbox"
+        href="#faq1"
+      >
+        {{ t('faq.voor_c') }}
       </router-link>
-    </p>
-
+      <span class="homepipe">|</span>
+      <router-link
+        :to="{name: 'faq2'}"
+        class="hbox"
+        href="#faq2"
+      >
+        {{ t('faq.voor_b') }}
+      </router-link>
+      <span class="homepipe">|</span>
+      <router-link
+        :to="{name: 'faq3'}"
+        class="hbox"
+        href="#faq3"
+      >
+        {{ t('faq.voor_o') }}
+      </router-link>
+    </div>  
+  </div>
+  <div>
     <ul
       class="nav nav-tabs mt-5"
       role="tablist"
@@ -51,11 +71,9 @@
 <script lang="ts">
 import {useI18n} from 'vue-i18n';
 import {defineComponent} from 'vue';
-import {QuestionMarkCircleIcon} from '@heroicons/vue/solid';
 
 export default defineComponent({
   name: 'TheHome',
-  components: {QuestionMarkCircleIcon},
   setup() {
     const {t} = useI18n();
     return {t};

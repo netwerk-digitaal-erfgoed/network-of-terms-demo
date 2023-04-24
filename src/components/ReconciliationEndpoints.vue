@@ -4,6 +4,7 @@
       v-for="source in reconciliationSources"
       :key="source.uri"
       class="list-group-item list-group-item-action"
+      style="text-decoration: none"
     >
       <div class="d-flex pb-1 w-100 justify-content-between">
         <h5 class="mb-1">{{ source.name }}

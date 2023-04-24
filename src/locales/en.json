@@ -1,16 +1,24 @@
 {
   "general": {
     "nde": "Dutch Digital Heritage Network",
-    "messageFooter": "Initiated by the <a href=\"https://www.netwerkdigitaalerfgoed.nl/en\">Dutch Digital Heritage Network</a> in collaboration with <a href=\"https://www.clariah.nl/en\">CLARIAH</a>"
+    "messageFooter": "The Network of Terms is the result of collaboration within the Digital Heritage Network, in collaboration with CLARIAH, and is managed and maintained by the Cultural Heritage Agency of the Netherlands.",
+    "privacy": "Privacy statement",
+    "volg": "Follow the Digital Heritage Network via"
   },
   "faq": {
-    "title": "FAQ",
+    "title": "Frequently asked questions",
     "subtitle": "Frequently asked questions about the Network of Terms",
-    "copyUrl": "Copy URL"
+    "copyUrl": "Copy URL",
+    "voor_c": "for collection administrators",
+    "voor_b": "for administrators of terminology resources",
+    "voor_o": "for heritage software developers",
+    "title_b":"Frequently Asked Questions about the Network of Terms for administrators of terminology resources",
+    "title_c":"Frequently asked questions about the Network of Terms for collection administrators at heritage institutions",
+    "title_o":"Frequently Asked Questions about the Network of Terms for heritage software developers"
   },
   "search": {
     "title": "Network of Terms",
-    "subtitle": "Searching shared thesauri, classification systems, and reference lists",
+    "subtitle": "Searching shared thesauri, classification systems,     and reference lists",
     "tabSearch": "Search terms",
     "tabLookup": "Look up term",
     "placeholderUri": "For example: http://vocab.getty.edu/aat/300033618",

@@ -1,20 +1,20 @@
 <template>
   <h1 class="display-5">
-    {{ t('faq.subtitle') }}
+    {{ t('faq.title_c') }}
   </h1>
-  <FaqEn v-if="locale === 'en'" />
-  <FaqNl v-else />
+  <FaqEn1 v-if="locale === 'en'" />
+  <FaqNl1 v-else />
 </template>
 
 <script lang="ts">
 import {defineComponent} from 'vue';
 import {useI18n} from 'vue-i18n';
-import FaqEn from './FaqEn.vue';
-import FaqNl from './FaqNl.vue';
+import FaqEn1 from './FaqEn1.vue';
+import FaqNl1 from './FaqNl1.vue';
 
 export default defineComponent({
-  name: 'TheFaq',
-  components: {FaqEn, FaqNl},
+  name: 'TheFaq1',
+  components: {FaqEn1, FaqNl1},
   setup () {
     const {t, locale} = useI18n();
 

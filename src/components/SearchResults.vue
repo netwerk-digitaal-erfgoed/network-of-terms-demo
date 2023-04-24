@@ -37,6 +37,7 @@ import {TermsQueryResult} from '../query';
 import TermResult from './TermResult.vue';
 import SourceHeader from './SourceHeader.vue';
 import {ExclamationIcon} from '@heroicons/vue/outline';
+import state from '../store';
 
 export default defineComponent({
   name: 'SearchResults',
@@ -61,7 +62,7 @@ export default defineComponent({
       };
     }
 
-    const {data} = useQuery<TermsQueryResult>({
+    const {data, isFetching} = useQuery<TermsQueryResult>({
       query: `query Terms ($sources: [ID]!, $query: String!) {
                 terms (sources: $sources query: $query queryMode: OPTIMIZED) {
                   source {
@@ -111,7 +112,12 @@ export default defineComponent({
       },
     });
 
-    return {data, t};
+    return {data, isFetching, t};
+  },
+  watch: {
+    isFetching(newState) {
+      state.loading = newState;
+    },
   },
 });
 </script>

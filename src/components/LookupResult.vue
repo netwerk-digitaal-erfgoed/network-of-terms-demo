@@ -34,6 +34,7 @@ import {useQuery} from 'villus';
 import {LookupQuery} from '../query';
 import TermResult from './TermResult.vue';
 import SourceHeader from './SourceHeader.vue';
+import state from '../store';
 
 export default defineComponent({
   name: 'LookupResult',
@@ -54,7 +55,7 @@ export default defineComponent({
       };
     }
 
-    const {data} = useQuery<LookupQuery>({
+    const {data, isFetching} = useQuery<LookupQuery>({
       query: `query ($uris: [ID]!) {
                 lookup (uris: $uris) {
                   source {
@@ -100,7 +101,12 @@ export default defineComponent({
       },
     });
 
-    return {data, t};
+    return {data, isFetching, t};
+  },
+  watch: {
+    isFetching(newState) {
+      state.loading = newState;
+    },
   },
 });
 </script>

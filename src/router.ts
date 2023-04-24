@@ -1,5 +1,11 @@
 import {createRouter, createWebHistory} from 'vue-router';
 import TheFaq from './components/TheFaq.vue';
+import TheFaq1 from './components/TheFaq1.vue';
+import TheFaq2 from './components/TheFaq2.vue';
+import TheFaq3 from './components/TheFaq3.vue';
+import ReconciliationService from './components/ReconciliationService.vue';
+import Contact from './components/ContactInfo.vue';
+import PrivacyStatement from './components/PrivacyStatementNl.vue';
 import SearchForm from './components/SearchForm.vue';
 import LookupForm from './components/LookupForm.vue';
 
@@ -21,6 +27,36 @@ export const router = createRouter({
       path: '/faq',
       name: 'faq',
       component: TheFaq,
+    },
+    {
+      path: '/faq1',
+      name: 'faq1',
+      component: TheFaq1,
+    },
+    {
+      path: '/faq2',
+      name: 'faq2',
+      component: TheFaq2,
+    },
+    {
+      path: '/faq3',
+      name: 'faq3',
+      component: TheFaq3,
+    },
+    {
+      path: '/reconciliation',
+      name: 'reconciliation',
+      component: ReconciliationService,
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact,
+    },
+    {
+      path: '/privacy',
+      name: 'privacy',
+      component: PrivacyStatement,
     },
   ],
   scrollBehavior (to) {

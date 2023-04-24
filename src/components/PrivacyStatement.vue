@@ -1,20 +1,20 @@
 <template>
   <h1 class="display-5">
-    {{ t('faq.subtitle') }}
+    {{ t('general.privacy') }}
   </h1>
-  <FaqEn v-if="locale === 'en'" />
-  <FaqNl v-else />
+  <PrivacyEn v-if="locale === 'en'" />
+  <PrivacyNl v-else />
 </template>
 
 <script lang="ts">
 import {defineComponent} from 'vue';
 import {useI18n} from 'vue-i18n';
-import FaqEn from './FaqEn.vue';
-import FaqNl from './FaqNl.vue';
+import PrivacyEn from './PrivacyEn.vue';
+import PrivacyNl from './PrivacyNl.vue';
 
 export default defineComponent({
-  name: 'TheFaq',
-  components: {FaqEn, FaqNl},
+  name: 'PrivacyStatement',
+  components: {PrivacyEn, PrivacyNl},
   setup () {
     const {t, locale} = useI18n();
 

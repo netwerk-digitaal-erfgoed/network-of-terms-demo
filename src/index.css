@@ -8,21 +8,25 @@ html {
 
 h1, h2, h3 {
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin:1.2em 0;
+}
+
+p, li {
+  font-size: 1.2rem;
 }
 
 a, a:hover {
-  color: #0a3dfa;
+  color: #021b78;
 }
 
-@media (min-width: 768px) {
-  html {
-    /*font-size: 16px;*/
-  }
-}
+.content a{
+  text-decoration: underline;
+} 
 
 button.search {
   width: 10em;
-  background-color: #0a3dfa;
+  background-color: #154273;
+  text-align: left;
 }
 
 .bootstrap-select button.btn-light {
@@ -35,6 +39,10 @@ button.btn-light:focus {
   border-color: #80bdff;
 }
 
+.btn-primary {
+  background-color:#154273;
+  border-color:#154273;
+}
 .card:hover {
   transition: .1s;
   border: 1px solid rgba(0, 0, 0, .3);
@@ -58,14 +66,14 @@ button.btn-light:focus {
 }
 
 .content h3 {
-  color: #0a3dfa;
+  color: #021b78;
 }
 
 footer {
   margin-top: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #fbfbfb;
+  background-color: #ffb612;
   box-shadow: 0 50vh 0 50vh #fbfbfb;
 }
 
@@ -102,6 +110,183 @@ input:-moz-ui-invalid {
 .icon {
   width: 1em;
   height: 1em;
-  display: inline-block;
-  vertical-align: -0.175em;
+  display: inline-table;
+  color:#154273!important;
+  background-color:#f8f9fa;
+  border-radius:50%;
+  padding: 5px;
+  margin-left:10px;
 }
+
+svg, path { 
+  box-sizing: unset;
+}
+
+.navbar {
+  /* background-color: #ffb612; */
+}
+
+ul {
+  line-height:2.4em;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer {
+  margin-top: auto;
+}
+
+footer p {
+  color: #021b78;
+}
+
+footer a { 
+  text-decoration: underline;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo .wrapper {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  align-items: flex-start;
+  margin-inline-end: -16px;
+  margin-inline-start: -16px;
+  justify-content: center;
+}
+
+.tab-content, .active .router-link-exact-active .nav-link {
+  background-color: #f8f9fa
+}
+
+h1.home {
+  color: #000000;
+  font-weight: 400;
+  text-shadow: 0px 0px 10px #fff;
+  margin: 0.5em 0;
+}
+
+.hometargets {
+  /*background-color: #f3f3f3;*/
+  /* border:2px solid #ffb612; */
+  padding:10px;
+  font-size:1.4rem;
+  text-align:center;
+  color:black;
+}
+
+.hometargets a {
+  display:inline-block;
+}
+
+
+/* loading.io */
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 20px;
+  margin-left:20px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+#logo-cultureelerfgoed-en, #logo-cultureelerfgoed-nl { max-width:100% }
+
+p img { 
+  max-width:100%
+}
+
+.homecover {
+  /* background: url(/src/assets/9200579_v8fd8rv7.jpg) no-repeat center center fixed;  */
+  /* background-size: cover; */
+  background-color: #f8f9fa;
+  padding:0.5em 10% 2em;
+  margin: -16px;
+}
+
+.homepipe {
+  color:#000000;
+  margin:0.5em;
+  font-size:0; 
+  display:block;
+  border-bottom:1px solid #ccc;
+  padding:5px
+}
+
+h1.display-4,h1 { font-size:1.5rem }
+
+@media (min-width:600px)  { 
+  .homepipe { 
+    font-size: 1.4rem; 
+    display:inline;
+    padding:0
+  }
+  .homecover h1.display-4 { 
+    font-size:3.5rem 
+  }
+  .homecover {
+    margin:-1rem calc(50% - 50vw + 9px) 4rem;
+    box-shadow: 0px 0px 10px gray;
+  }
+ }
