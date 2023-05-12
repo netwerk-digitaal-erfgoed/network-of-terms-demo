@@ -131,6 +131,18 @@
     </p>
 
     <h3 class="display-5">
+      Hoe zijn de zoekresultaten gesorteerd?
+    </h3>
+    <p>
+      Wanneer een terminologiebron zoekresultaten op relevantie kan sorteren, neemt het Termennetwerk die volgorde over.
+      De relevantste resultaten staan dan bovenaan.
+    </p>
+    <p>
+      Resultaten uit terminologiebronnen die geen ondersteuning bieden voor relevantie, worden (bij gebrek aan beter)
+      alfabetisch weergegeven.
+    </p>
+
+    <h3 class="display-5">
       Ik wil een bepaalde terminologiebron gebruiken, maar die komt niet voor in het Termennetwerk.
       Kan die toegevoegd worden?
     </h3>
