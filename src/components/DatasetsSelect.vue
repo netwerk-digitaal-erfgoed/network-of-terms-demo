@@ -53,6 +53,8 @@ export default defineComponent({
 
     // Refresh select after options have loaded.
     $('select').selectpicker('refresh');
+
+    $('.bs-searchbox input').on('input', (event) => $(event.target).attr('spellcheck', 'false'));
   },
 });
 </script>
