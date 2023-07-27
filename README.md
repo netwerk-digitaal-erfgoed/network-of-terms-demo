@@ -11,7 +11,7 @@ This implementation is a TypeScript/Vue 3 browser client app.
 
 ## Development
 
-Start by cloning the repository
+Start by cloning the repository:
 
 ```bash 
 $ git clone https://github.com/netwerk-digitaal-erfgoed/network-of-terms-demo.git
