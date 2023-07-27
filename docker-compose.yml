@@ -5,8 +5,6 @@ services:
     user: node
     volumes:
       - .:/app
-    ports:
-      - "3000:3000"
     working_dir: /app
     network_mode: "host"
     command: [ "sh", "-c", "npm install && npm run dev" ]
