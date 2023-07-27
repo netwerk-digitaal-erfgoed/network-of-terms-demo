@@ -11,9 +11,14 @@ This implementation is a TypeScript/Vue 3 browser client app.
 
 ## Development
 
-Run the dev server:
+Run the dev version using node:
 
 ```bash 
 $ npm install
 $ npm run dev
+```
+
+Run the dev version using docker:
+```bash
+$ docker compose run --service-ports --rm node
 ```
