@@ -11,9 +11,23 @@ This implementation is a TypeScript/Vue 3 browser client app.
 
 ## Development
 
-Run the dev server:
+Start by cloning the repository:
+
+```bash 
+$ git clone https://github.com/netwerk-digitaal-erfgoed/network-of-terms-demo.git
+$ cd network-of-terms-demo
+```
+
+To run the development version using docker:
+```bash
+$ docker compose run --service-ports --rm node
+```
+
+To run the development version using node:
 
 ```bash 
 $ npm install
 $ npm run dev
 ```
+
+
