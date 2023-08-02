@@ -9,3 +9,5 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: "graphql" # https://github.com/netwerk-digitaal-erfgoed/network-of-terms-demo/issues/866
