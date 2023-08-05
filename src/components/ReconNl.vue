@@ -35,10 +35,29 @@
       <li>
         het Termennetwerk kan slechts eenvoudig zoeken in terminologiebronnen.
         Het heeft bijvoorbeeld geen weet van de types van termen, bijvoorbeeld of bronnen bestaan uit
-        'personen', 'plaatsen' of 'gebeurtenissen'; voor het Termenetwerk zijn alle termen van het type 'concept' ('skos:Concept').
+        'personen', 'plaatsen' of 'gebeurtenissen'; voor het Termennetwerk zijn alle termen van het type 'concept' ('skos:Concept').
         Dit betekent dat het Termennetwerk meer matches kan vinden dan je nodig hebt.
       </li>
       <li>bij het reconciliëren in OpenRefine moet je de optie <strong>Reconcile against no particular type</strong> selecteren.</li>
+    </ul>
+
+    <h3 class="display-5">
+      Wat betekent het getal tussen haakjes achter elk zoekresultaat?
+    </h3>
+    <p>
+      Dat is de procentuele relevantiescore van de zoekresultaten (op een schaal van 1 t/m 100).
+      De score geeft aan in hoeverre elke gevonden term overeenkomt met de zoekwoorden.
+      Omdat de terminologiebronnen dit niet zelf ondersteunen, wordt de score toegekend door het Termennetwerk.
+      De score wordt bepaald op basis van de letterlijke overeenkomst tussen enerzijds de zoekwoorden uit je data en
+      anderzijds de naam en alternatieve labels van elke term.
+    </p>
+    <p>
+      Wanneer bijvoorbeeld het woord ‘glas’ voorkomt in je data:
+    </p>
+    <ul>
+      <li>krijgt een gevonden term met naam ‘glas’ score 100%</li>
+      <li>een term met naam ‘breukglas’ score 55%</li>
+      <li>en een term met naam ‘borosilicaatglas’ en alternatief label ‘boraxglas’ ook score 55%.</li>
     </ul>
 
     <h3 class="display-5">
