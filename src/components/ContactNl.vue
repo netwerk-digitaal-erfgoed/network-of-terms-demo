@@ -2,6 +2,7 @@
   <div class="content">
     <p>Heb je vragen over het Termennetwerk, problemen of wensen?</p>
     <p>Neem dan contact op met <a href="mailto:thesauri@cultureelerfgoed.nl">thesauri@cultureelerfgoed.nl</a>.</p>
+    <p>We streven ernaar op binnen één werkdag te reageren.</p>
   </div>
 </template>
 
