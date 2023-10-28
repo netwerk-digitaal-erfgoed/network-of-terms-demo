@@ -39,6 +39,8 @@
     ],
     "placeholderQuery": "For example: Rembrandt, Amsterdam or painting",
     "placeholderDatasets": "Select one or more terminology sources",
+    "selectAll": "Select all",
+    "selectNone": "Select none",
     "buttonSearch": "Search",
     "buttonLookup": "Look up",
     "labelQuery": "Search words",

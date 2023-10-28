@@ -4,6 +4,9 @@
     v-model="state.selectedDatasets"
     class="form-control form-control-lg selectpicker"
     data-live-search="true"
+    :data-deselect-all-text="t('search.selectNone')"
+    :data-select-all-text="t('search.selectAll')"
+    data-actions-box="true"
     :title="t('search.placeholderDatasets')"
     multiple
     required
