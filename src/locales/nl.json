@@ -40,6 +40,8 @@
     ],
     "placeholderQuery": "Bijvoorbeeld: fietsen, schilderij of Amsterdam",
     "placeholderDatasets": "Selecteer een of meer terminologiebronnen",
+    "selectAll": "Selecteer alle",
+    "selectNone": "Selecteer geen",
     "buttonSearch": "Zoeken",
     "buttonLookup": "Zoeken",
     "labelQuery": "Zoekwoorden",
