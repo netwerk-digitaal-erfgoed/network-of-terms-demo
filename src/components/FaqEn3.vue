@@ -35,13 +35,13 @@
       Who assigns terms to heritage?
     </h3>
     <p>
-      Terms are assigned by collection managers of heritage institutions. They are subject matter experts and 
+      Terms are assigned by collection managers of heritage institutions. They are subject matter experts and
       know which terms best describe the heritage in their collections.
     </p>
     <p>
-      When assigning a term to a heritage object, the collection manager records the URI of the term, not the word. 
-      If the administrator were to record the word, its meaning could be unclear. Take, for example, the 
-      word <em>bank</em>: is it a seat or a credit institution? The URI, on the other hand, indicates very 
+      When assigning a term to a heritage object, the collection manager records the URI of the term, not the word.
+      If the administrator were to record the word, its meaning could be unclear. Take, for example, the
+      word <em>bank</em>: is it a seat or a credit institution? The URI, on the other hand, indicates very
       precisely which term is meant, so that there are never any misunderstandings about the meaning.
     </p>
 
@@ -53,7 +53,7 @@
       are there resources with information about places, such as <a href="https://www.geonames.org/">GeoNames</a>, and resources
       with information about individuals, such as <a href="https://rkd.nl/nl/explore/artists">RKDartists</a>. Also there are
       general resources with information on a variety of topics, such as <a href="https://www.wikidata.org/">Wikidata</a>,
-      and specific sources of information on targeted topics, such as the 
+      and specific sources of information on targeted topics, such as the
       <a href="https://vtmk.data.momu.be/id.html">Visual Thesaurus for Fashion and Costumes</a>.
     </p>
 
@@ -81,7 +81,7 @@
       Why is the Network of Terms important?
     </h3>
     <p>
-      The Network of Terms makes it easier to search terminology sources. A collection manager needs only to 
+      The Network of Terms makes it easier to search terminology sources. A collection manager needs only to
       consult the Network of Terms, no longer the individual sources. And a heritage software developer doesn't have to
       interface with the individual sources, just one interface to the Network of Terms. This saves time and money.
     </p>
@@ -109,7 +109,7 @@
       The API uses <a href="https://graphql.org/">GraphQL</a> as the query language. GraphQL enables developers to
       indicate very precisely what information they want to receive back from the Network of Terms. This makes the API
       flexible and versatile. The API uses <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> as data format.
-      JSON is technology independent and therefore suitable for all kinds of applications. Finally, the API uses 
+      JSON is technology independent and therefore suitable for all kinds of applications. Finally, the API uses
       <a href="https://www.w3.org/TR/skos-reference/">SKOS</a> as a metadata standard. SKOS is an accessible,
       commonly used model to structure information about terms.
     </p>
@@ -197,6 +197,10 @@
             uri
             prefLabel
           }
+          exactMatch {
+            uri
+            prefLabel
+          }
         }
       }
       ... on Error {
@@ -214,7 +218,7 @@
       How can I access the Network of Terms API?
     </h3>
     <p>
-      The first step is to select a GraphQL <em>client library</em> that fits your technology used in your 
+      The first step is to select a GraphQL <em>client library</em> that fits your technology used in your
       collection management system, such as Java, .NET or Python. A list of available libraries can be found at the
       <a href="https://graphql.org/code/#graphql-clients">GraphQL website</a>. The second step is use this
       library to access the API of the Network of Terms with GraphQL queries. The API can be reached at the following
