@@ -197,6 +197,10 @@
             uri
             prefLabel
           }
+          exactMatch {
+            uri
+            prefLabel
+          }
         }
       }
       ... on Error {
