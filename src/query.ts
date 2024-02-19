@@ -38,6 +38,7 @@ export interface Term {
   broader: RelatedTerm[];
   narrower: RelatedTerm[];
   related: RelatedTerm[];
+  exactMatch: RelatedTerm[];
 }
 
 export interface RelatedTerm {

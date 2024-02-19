@@ -52,6 +52,7 @@
     "broaderTerm": "Bredere term | Bredere termen",
     "narrowerTerm": "Nauwere term | Nauwere termen",
     "relatedTerm": "Gerelateerde term | Gerelateerde termen",
+    "exactMatch": "Overeenkomstige term | Overeenkomstige termen",
     "copyUri": "Kopieer URI",
     "viewAtSource": "Bekijk bij bron",
     "sourceNotFound": "Geen terminologiebron gevonden voor deze URI",

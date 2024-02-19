@@ -51,6 +51,7 @@
     "broaderTerm": "Broader term | Broader terms",
     "narrowerTerm": "Narrower term | Narrower terms",
     "relatedTerm": "Related term | Related terms",
+    "exactMatch": "Matching term | Matching terms",
     "copyUri": "Copy URI",
     "viewAtSource": "View at source",
     "sourceNotFound": "No terminology source can provide this URI",

@@ -1,6 +1,5 @@
 <template>
   <button
-    class="btn-copy"
     :data-clipboard-text="text"
     @click="copied=true"
     @mouseout="copied=false"
@@ -21,7 +20,7 @@
 import {defineComponent, ref} from 'vue';
 import ClipboardJS from 'clipboard';
 import {useI18n} from 'vue-i18n';
-import {ClipboardDocumentCheckIcon, ClipboardDocumentIcon} from '@heroicons/vue/24/outline';
+import {ClipboardDocumentCheckIcon, ClipboardDocumentIcon} from '@heroicons/vue/16/solid';
 
 export default defineComponent({
   name: "CopyButton",

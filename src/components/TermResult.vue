@@ -64,6 +64,13 @@
           :caption="t('search.relatedTerm', term.related.length)"
           :terms="term.related"
         />
+
+        <RelatedTerms
+          v-if="term.exactMatch.length > 0"
+          :caption="t('search.exactMatch', term.exactMatch.length)"
+          :lookup-link="false"
+          :terms="term.exactMatch"
+        />
       </dl>
     </div>
   </div>
@@ -75,7 +82,7 @@ import {Term} from '../query';
 import {useI18n} from 'vue-i18n';
 import RelatedTerms from './RelatedTerms.vue';
 import ClipboardJS from 'clipboard';
-import {ArrowTopRightOnSquareIcon} from '@heroicons/vue/24/outline';
+import {ArrowTopRightOnSquareIcon} from '@heroicons/vue/16/solid';
 import CopyButton from './CopyButton.vue';
 
 export default defineComponent({

@@ -37,7 +37,7 @@ import {defineComponent, ref} from 'vue';
 import {Feature, Source} from '../query';
 import {useI18n} from 'vue-i18n';
 import CopyButton from './CopyButton.vue';
-import {ArrowTopRightOnSquareIcon} from '@heroicons/vue/24/outline';
+import {ArrowTopRightOnSquareIcon} from '@heroicons/vue/16/solid';
 
 export default defineComponent({
   name: "ReconciliationEndpoints",

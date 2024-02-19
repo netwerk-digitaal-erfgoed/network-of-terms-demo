@@ -96,6 +96,10 @@ export default defineComponent({
                           uri
                           prefLabel
                         }
+                        exactMatch {
+                          uri
+                          prefLabel
+                        }
                       }
                     }
                     ... on Error {
