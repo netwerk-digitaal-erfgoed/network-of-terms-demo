@@ -43,7 +43,7 @@
         class="btn btn-primary ml-2"
       >
         {{ t('search.viewAtSource') }}
-        <ExternalLinkIcon class="icon" />
+        <ArrowTopRightOnSquareIcon class="icon" />
       </a>
 
       <dl class="mt-4 mb-0">
@@ -75,12 +75,12 @@ import {Term} from '../query';
 import {useI18n} from 'vue-i18n';
 import RelatedTerms from './RelatedTerms.vue';
 import ClipboardJS from 'clipboard';
-import {ExternalLinkIcon} from '@heroicons/vue/outline';
+import {ArrowTopRightOnSquareIcon} from '@heroicons/vue/24/outline';
 import CopyButton from './CopyButton.vue';
 
 export default defineComponent({
   name: 'TermResult',
-  components: {CopyButton, RelatedTerms, ExternalLinkIcon},
+  components: {CopyButton, RelatedTerms, ArrowTopRightOnSquareIcon},
   props: {
     term: {
       type: Object as PropType<Term>,
