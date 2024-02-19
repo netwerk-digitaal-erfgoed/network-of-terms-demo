@@ -6,11 +6,11 @@
     @mouseout="copied=false"
   >
     {{ t(label) }}
-    <ClipboardCheckIcon
+    <ClipboardDocumentCheckIcon
       v-if="copied"
       class="icon"
     />
-    <ClipboardIcon
+    <ClipboardDocumentIcon
       v-else
       class="icon"
     />
@@ -21,11 +21,11 @@
 import {defineComponent, ref} from 'vue';
 import ClipboardJS from 'clipboard';
 import {useI18n} from 'vue-i18n';
-import {ClipboardCheckIcon, ClipboardIcon} from '@heroicons/vue/outline';
+import {ClipboardDocumentCheckIcon, ClipboardDocumentIcon} from '@heroicons/vue/24/outline';
 
 export default defineComponent({
   name: "CopyButton",
-  components: {ClipboardIcon, ClipboardCheckIcon},
+  components: {ClipboardDocumentIcon, ClipboardDocumentCheckIcon},
   props: {
     text: {
       type: String,

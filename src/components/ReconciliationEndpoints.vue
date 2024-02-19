@@ -21,7 +21,7 @@
             class="btn btn-sm btn-primary ml-2"
           >
             {{ t('search.viewAtSource') }}
-            <ExternalLinkIcon class="icon" />
+            <ArrowTopRightOnSquareIcon class="icon" />
           </a>
         </div>
       </div>
@@ -37,11 +37,11 @@ import {defineComponent, ref} from 'vue';
 import {Feature, Source} from '../query';
 import {useI18n} from 'vue-i18n';
 import CopyButton from './CopyButton.vue';
-import {ExternalLinkIcon} from '@heroicons/vue/outline';
+import {ArrowTopRightOnSquareIcon} from '@heroicons/vue/24/outline';
 
 export default defineComponent({
   name: "ReconciliationEndpoints",
-  components: {ExternalLinkIcon, CopyButton},
+  components: {ArrowTopRightOnSquareIcon, CopyButton},
   async setup() {
     const {t} = useI18n();
     useClient({

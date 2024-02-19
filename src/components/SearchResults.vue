@@ -21,7 +21,7 @@
           class="text-center alert alert-danger"
           role="alert"
         >
-          <ExclamationIcon class="icon" />
+          <ExclamationCircleIcon class="icon" />
           {{ t('api.' + dataset.result.__typename, 'api.Error') }}
         </div>
       </template>
@@ -36,12 +36,12 @@ import {defineComponent} from 'vue';
 import {TermsQueryResult} from '../query';
 import TermResult from './TermResult.vue';
 import SourceHeader from './SourceHeader.vue';
-import {ExclamationIcon} from '@heroicons/vue/outline';
+import {ExclamationCircleIcon} from '@heroicons/vue/24/outline';
 import state from '../store';
 
 export default defineComponent({
   name: 'SearchResults',
-  components: {SourceHeader, TermResult, ExclamationIcon},
+  components: {SourceHeader, TermResult, ExclamationCircleIcon},
   props: {
     q: {
       type: String,
