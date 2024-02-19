@@ -2,7 +2,7 @@
   <dt class="mb-1 mt-3">
     {{ caption }}
   </dt>
-  <dd>
+  <dd v-if="lookupLink">
     <router-link
       v-for="term in terms"
       :key="term.uri"
@@ -13,6 +13,15 @@
     >
       {{ term.prefLabel[0] }}
     </router-link>
+  </dd>
+  <dd v-if="!lookupLink">
+    <span
+      v-for="term in terms"
+      :key="term.uri"
+      class="btn btn-outline-secondary mr-2 mb-2 disabled user-select-all"
+    >
+      {{ term.prefLabel[0] ?? term.uri }}
+    </span>
   </dd>
 </template>
 
@@ -31,6 +40,16 @@ export default defineComponent({
       type: Object as PropType<RelatedTerm[]>,
       required: true,
     },
+    lookupLink: {
+      type: Boolean,
+      default: true,
+    },
   },
 });
 </script>
+
+<style scoped>
+span.disabled {
+  opacity: initial;
+}
+</style>
