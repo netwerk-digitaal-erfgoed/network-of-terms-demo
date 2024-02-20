@@ -3,11 +3,13 @@ module.exports = {
   parser: 'vue-eslint-parser',
 
   env: {
-    node: true,
+    browser: true,
+    es2021: true
   },
 
   plugins: [
     '@typescript-eslint',
+    'vue',
   ],
 
   extends: [
@@ -17,7 +19,8 @@ module.exports = {
   ],
 
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
   },
 
   rules: {
