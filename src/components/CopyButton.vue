@@ -1,5 +1,6 @@
 <template>
   <button
+    class="btn-copy"
     :data-clipboard-text="text"
     @click="copied=true"
     @mouseout="copied=false"
