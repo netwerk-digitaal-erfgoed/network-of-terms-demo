@@ -21,7 +21,7 @@ a, a:hover {
 
 .content a{
   text-decoration: underline;
-} 
+}
 
 button.search {
   width: 10em;
@@ -107,18 +107,14 @@ input:-moz-ui-invalid {
   margin-bottom: 0;
 }
 
+
 .icon {
   width: 1em;
   height: 1em;
-  display: inline-table;
-  color:#154273!important;
-  background-color:#f8f9fa;
-  border-radius:50%;
-  padding: 5px;
-  margin-left:10px;
+  margin-bottom: .1em;
 }
 
-svg, path { 
+svg, path {
   box-sizing: unset;
 }
 
@@ -145,7 +141,7 @@ footer p {
   color: #021b78;
 }
 
-footer a { 
+footer a {
   text-decoration: underline;
 }
 
@@ -253,7 +249,7 @@ h1.home {
 
 #logo-cultureelerfgoed-en, #logo-cultureelerfgoed-nl { max-width:100% }
 
-p img { 
+p img {
   max-width:100%
 }
 
@@ -268,7 +264,7 @@ p img {
 .homepipe {
   color:#000000;
   margin:0.5em;
-  font-size:0; 
+  font-size:0;
   display:block;
   border-bottom:1px solid #ccc;
   padding:5px
@@ -276,14 +272,14 @@ p img {
 
 h1.display-4,h1 { font-size:1.5rem }
 
-@media (min-width:600px)  { 
-  .homepipe { 
-    font-size: 1.4rem; 
+@media (min-width:600px)  {
+  .homepipe {
+    font-size: 1.4rem;
     display:inline;
     padding:0
   }
-  .homecover h1.display-4 { 
-    font-size:3.5rem 
+  .homecover h1.display-4 {
+    font-size:3.5rem
   }
   .homecover {
     margin:-1rem calc(50% - 50vw + 9px) 4rem;

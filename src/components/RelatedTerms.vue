@@ -15,22 +15,27 @@
     </router-link>
   </dd>
   <dd v-if="!lookupLink">
-    <span
+    <a
       v-for="term in terms"
       :key="term.uri"
-      class="btn btn-outline-secondary mr-2 mb-2 disabled user-select-all"
+      :href="term.uri"
+      class="btn btn-outline-secondary mr-2 mb-2"
+      target="_blank"
     >
       {{ term.prefLabel[0] ?? term.uri }}
-    </span>
+      <ArrowTopRightOnSquareIcon class="icon" />
+    </a>
   </dd>
 </template>
 
 <script lang="ts">
 import {defineComponent, PropType} from 'vue';
 import {RelatedTerm} from '../query';
+import {ArrowTopRightOnSquareIcon} from '@heroicons/vue/16/solid';
 
 export default defineComponent({
   name: "RelatedTerms",
+  components: {ArrowTopRightOnSquareIcon},
   props: {
     caption: {
       type: String,
