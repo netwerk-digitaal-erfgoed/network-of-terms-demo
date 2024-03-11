@@ -33,6 +33,6 @@
     "eslint-plugin-vue": "^9.22.0",
     "typescript": "^5.4.2",
     "vite": "^5.1.4",
-    "vue-tsc": "^2.0.3"
+    "vue-tsc": "^2.0.6"
   }
 }
