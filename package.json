@@ -20,7 +20,7 @@
     "@heroicons/vue": "^2.1.1",
     "@types/bootstrap-select": "^1.13.7",
     "@types/jquery": "^3.5.29",
-    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.1.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/compiler-sfc": "^3.4.21",
