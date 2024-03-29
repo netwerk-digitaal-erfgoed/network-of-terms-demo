@@ -11,7 +11,6 @@
       >
         {{ t('faq.voor_c') }}
       </router-link>
-      <span class="homepipe">|</span>
       <router-link
         :to="{name: 'faq2'}"
         class="hbox"
@@ -19,7 +18,13 @@
       >
         {{ t('faq.voor_b') }}
       </router-link>
-      <span class="homepipe">|</span>
+      <router-link
+        :to="{name: 'faq4'}"
+        class="hbox"
+        href="#faq4"
+      >
+        {{ t('faq.voor_r') }}
+      </router-link>
       <router-link
         :to="{name: 'faq3'}"
         class="hbox"

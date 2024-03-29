@@ -8,7 +8,7 @@
           :to="{name: 'faq1'}"
           href="/faq1"
         >
-          or collection managers
+          for managers of heritage collections
         </router-link>
       </li>
       <li>
@@ -17,6 +17,14 @@
           href="/faq2"
         >
           for managers of terminology resources
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{name: 'faq4'}"
+          href="/faq4"
+        >
+          for terminology resource providers
         </router-link>
       </li>
       <li>

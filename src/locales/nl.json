@@ -9,13 +9,15 @@
     "title": "Veelgestelde vragen",
     "subtitle": "Veelgestelde vragen over het Termennetwerk",
     "copyUrl": "Kopieer URL",
-    "voor_c": "voor collectiebeheerders",
+    "voor_c": "voor beheerders van erfgoedcollecties",
     "voor_b": "voor beheerders van terminologiebronnen",
     "voor_o": "voor ontwikkelaars van erfgoedsoftware",
+    "voor_r": "voor aanbieders van terminologiebronnen",
     "reconciliation": "Reconciliatie",
     "title_b":"Veelgestelde vragen over het Termennetwerk voor beheerders van terminologiebronnen",
     "title_c":"Veelgestelde vragen over het Termennetwerk voor collectiebeheerders bij erfgoedinstellingen",
-    "title_o":"Veelgestelde vragen over het Termennetwerk voor ontwikkelaars van erfgoedsoftware"
+    "title_o":"Veelgestelde vragen over het Termennetwerk voor ontwikkelaars van erfgoedsoftware",
+    "title_r":"Handleiding terminologiebron aansluiten op het Termennetwerk"
   },
   "search": {
     "title": "Termen­netwerk",

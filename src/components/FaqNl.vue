@@ -8,7 +8,7 @@
           :to="{name: 'faq1'}"
           href="/faq1"
         >
-          voor collectiebeheerders
+          voor beheerders van erfgoedcollecties
         </router-link>
       </li>
       <li>
@@ -17,6 +17,14 @@
           href="/faq2"
         >
           voor beheerders van terminologiebronnen
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          :to="{name: 'faq4'}"
+          href="/faq4"
+        >
+          voor aanbieders van terminologiebronnen
         </router-link>
       </li>
       <li>
