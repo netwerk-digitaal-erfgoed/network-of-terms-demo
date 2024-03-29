@@ -9,12 +9,14 @@
     "title": "Frequently asked questions",
     "subtitle": "Frequently asked questions about the Network of Terms",
     "copyUrl": "Copy URL",
-    "voor_c": "for collection administrators",
+    "voor_c": "for managers of heritage collections",
     "voor_b": "for administrators of terminology resources",
     "voor_o": "for heritage software developers",
-    "title_b":"Frequently Asked Questions about the Network of Terms for administrators of terminology resources",
+    "voor_r": "for terminology resource providers",
+    "title_b":"Frequently Asked Questions about the Network of Terms for managers of heritage collections",
     "title_c":"Frequently asked questions about the Network of Terms for collection administrators at heritage institutions",
-    "title_o":"Frequently Asked Questions about the Network of Terms for heritage software developers"
+    "title_o":"Frequently Asked Questions about the Network of Terms for heritage software developers",
+    "title_r":"Manual for connecting a terminology source to the the Network of Terms"
   },
   "search": {
     "title": "Network of Terms",

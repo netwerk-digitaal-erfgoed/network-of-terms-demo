@@ -3,6 +3,7 @@ import TheFaq from './components/TheFaq.vue';
 import TheFaq1 from './components/TheFaq1.vue';
 import TheFaq2 from './components/TheFaq2.vue';
 import TheFaq3 from './components/TheFaq3.vue';
+import TheFaq4 from './components/TheFaq4.vue';
 import ReconciliationService from './components/ReconciliationService.vue';
 import Contact from './components/ContactInfo.vue';
 import PrivacyStatement from './components/PrivacyStatementNl.vue';
@@ -44,6 +45,10 @@ export const router = createRouter({
       component: TheFaq3,
     },
     {
+      path: '/faq4',
+      name: 'faq4',
+      component: TheFaq4,
+    },    {
       path: '/reconciliation',
       name: 'reconciliation',
       component: ReconciliationService,

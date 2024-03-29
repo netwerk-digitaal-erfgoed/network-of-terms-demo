@@ -60,6 +60,13 @@
                   {{ t('faq.voor_b') }}
                 </router-link>
                 <router-link
+                  :to="{name: 'faq4'}"
+                  class="dropdown-item"
+                  href="#faq4"
+                >
+                  {{ t('faq.voor_r') }}
+                </router-link>
+                <router-link
                   :to="{name: 'faq3'}"
                   class="dropdown-item"
                   href="#faq3"

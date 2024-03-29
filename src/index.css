@@ -163,6 +163,10 @@ footer a {
   justify-content: center;
 }
 
+.nav-link {
+	display:inline-block;
+}
+
 .tab-content, .active .router-link-exact-active .nav-link {
   background-color: #f8f9fa
 }
@@ -173,17 +177,18 @@ h1.home {
   text-shadow: 0px 0px 10px #fff;
   margin: 0.5em 0;
 }
-
+	
 .hometargets {
-  /*background-color: #f3f3f3;*/
-  /* border:2px solid #ffb612; */
-  padding:10px;
-  font-size:1.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  font-size:1.3rem;
   text-align:center;
   color:black;
 }
 
 .hometargets a {
+  padding:10px;
   display:inline-block;
 }
 
@@ -261,25 +266,11 @@ p img {
   margin: -16px;
 }
 
-.homepipe {
-  color:#000000;
-  margin:0.5em;
-  font-size:0;
-  display:block;
-  border-bottom:1px solid #ccc;
-  padding:5px
-}
-
 h1.display-4,h1 { font-size:1.5rem }
 
 @media (min-width:600px)  {
-  .homepipe {
-    font-size: 1.4rem;
-    display:inline;
-    padding:0
-  }
   .homecover h1.display-4 {
-    font-size:3.5rem
+    font-size:3rem
   }
   .homecover {
     margin:-1rem calc(50% - 50vw + 9px) 4rem;
