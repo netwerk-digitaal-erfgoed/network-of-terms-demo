@@ -48,7 +48,7 @@
     <h3 class="display-5">
       Aanvullende overwegingen en voorkeuren
     </h3>
-    <p>De hierboven beschreven inhoudelijke en technische voorwaarden zijn in meer detail na te lezen in het document met requirements van het Termennetwerk. In dit document vind je daarnaast meer aanbevelingen en ‘nice-to-haves’ die je kunt overwegen als je een terminologiebron wilt aanbieden.</p>
+    <p>De hierboven beschreven inhoudelijke en technische voorwaarden zijn in meer detail na te lezen in het <a href="https://netwerk-digitaal-erfgoed.github.io/requirements-terminologiebronnen/">document met requirements van het Termennetwerk</a>. In dit document vind je daarnaast meer aanbevelingen en ‘nice-to-haves’ die je kunt overwegen als je een terminologiebron wilt aanbieden.</p>
   </div>
 </template>
 

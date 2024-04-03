@@ -48,7 +48,7 @@
     <h3 class="display-5">
       Additional Considerations and Preferences
     </h3>
-    <p>The substantive and technical requirements described above can be further detailed in the Network of Terms requirements document. In this document, you will also find more recommendations and 'nice-to-haves' to consider when offering a terminology source.</p>
+    <p>The substantive and technical requirements described above can be further detailed in the <a href="https://netwerk-digitaal-erfgoed.github.io/requirements-terminologiebronnen/">Network of Terms requirements document</a>. In this document, you will also find more recommendations and 'nice-to-haves' to consider when offering a terminology source.</p>
   </div>
 </template>
 
