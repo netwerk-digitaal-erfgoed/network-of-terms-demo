@@ -118,7 +118,7 @@
       How can I try out the Network of Terms?
     </h3>
     <p>
-      You can use <a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl/playground">GraphQL Playground</a>,
+      You can use <a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">GraphQL Playground</a>,
       an interactive editor that allows you to submit GraphQL questions to the Network of Terms through your browser.
     </p>
     <p>
@@ -224,7 +224,7 @@
       library to access the API of the Network of Terms with GraphQL queries. The API can be reached at the following
       location:
     </p>
-    <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">https://termennetwerk-api.netwerkdigitaalerfgoed.nl</a></p>
+    <p>https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql</p>
 
     <h3 class="display-5">
       How can I use the Network of Terms from my collection management system?

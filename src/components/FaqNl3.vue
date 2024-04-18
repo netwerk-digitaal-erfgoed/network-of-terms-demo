@@ -118,7 +118,7 @@
       Hoe kan ik het Termennetwerk uitproberen?
     </h3>
     <p>
-      Je kunt gebruikmaken van <a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl/playground">GraphQL Playground</a>,
+      Je kunt gebruikmaken van <a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">GraphQL Playground</a>,
       een interactieve editor waarmee je GraphQL-vragen aan het Termennetwerk kunt stellen via je browser.
     </p>
     <p>
@@ -224,7 +224,7 @@
       library de API van het Termennetwerk aan te spreken met GraphQL-queries. De API is te bereiken op de volgende
       locatie:
     </p>
-    <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">https://termennetwerk-api.netwerkdigitaalerfgoed.nl</a></p>
+    <p>https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphql</p>
 
     <h3 class="display-5">
       Hoe kan ik vanuit mijn collectiebeheersysteem gebruikmaken van het Termennetwerk?
