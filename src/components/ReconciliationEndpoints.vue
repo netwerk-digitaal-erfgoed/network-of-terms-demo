@@ -26,6 +26,15 @@
         </div>
       </div>
       <p>{{ source.description }}</p>
+      <p>
+        <span
+          v-for="genre in source.genres.sort((a: { 'name': string}, b: {'name': string}) => a.name.localeCompare(b.name))"
+          :key="genre.uri"
+          class="badge badge-pill badge-secondary"
+        >
+          {{ genre.name }}
+        </span>
+      </p>
       <pre class="small mb-1 text-muted pre-scrollable">{{ source.features[0].url }}</pre>
     </a>
   </div>
@@ -47,7 +56,7 @@ export default defineComponent({
     useClient({
       url: import.meta.env.VITE_GRAPHQL_URL,
     });
-    const result = await useQuery({query: 'query Sources { sources { name alternateName mainEntityOfPage description uri creators { uri alternateName } features { type url } } }'});
+    const result = await useQuery({query: 'query Sources { sources { name alternateName mainEntityOfPage description uri creators { uri alternateName } genres { uri name } features { type url } } }'});
     const reconciliationSources = result.data.value.sources.filter((source: Source) => source.features.some((feature: Feature) => feature.type === 'RECONCILIATION'));
 
     return {t, reconciliationSources, copied: ref(false)};
@@ -62,5 +71,8 @@ svg {
 }
 a.btn {
   text-decoration: none;
+}
+.badge {
+  margin-right: 0.2em;
 }
 </style>
