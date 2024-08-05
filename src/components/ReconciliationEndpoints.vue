@@ -30,7 +30,7 @@
         <span
           v-for="genre in source.genres.sort((a: { 'name': string}, b: {'name': string}) => a.name.localeCompare(b.name))"
           :key="genre.uri"
-          class="badge badge-pill badge-secondary"
+          class="badge rounded-pill text-bg-secondary"
         >
           {{ genre.name }}
         </span>

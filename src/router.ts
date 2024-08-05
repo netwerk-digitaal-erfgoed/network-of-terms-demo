@@ -9,6 +9,7 @@ import Contact from './components/ContactInfo.vue';
 import PrivacyStatement from './components/PrivacyStatementNl.vue';
 import SearchForm from './components/SearchForm.vue';
 import LookupForm from './components/LookupForm.vue';
+import TerminologySources from './components/TerminologySources.vue';
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -48,7 +49,13 @@ export const router = createRouter({
       path: '/faq4',
       name: 'faq4',
       component: TheFaq4,
-    },    {
+    },
+    {
+      path: '/sources',
+      name: 'sources',
+      component: TerminologySources,
+    },
+    {
       path: '/reconciliation',
       name: 'reconciliation',
       component: ReconciliationService,

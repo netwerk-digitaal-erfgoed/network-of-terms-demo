@@ -48,6 +48,8 @@
     "buttonLookup": "Zoeken",
     "labelQuery": "Zoekwoorden",
     "labelTermSources": "Terminologiebronnen",
+    "helpTermSources": "Of bekijk de",
+    "termSourcesLink": "lijst van terminologiebronnen",
     "labelUri": "URI van term",
     "termsFound": "geen termen gevonden | {n} term gevonden | {n} termen gevonden",
     "altLabel": "Alternatief label | Alternatieve labels",
@@ -62,6 +64,13 @@
   },
   "language": {
     "label": "Language"
+  },
+  "termSources": {
+    "title": "Lijst van terminologiebronnen",
+    "selectGenres": "Selecteer een of meer genres:",
+    "matchingSources": "geen overeenkomstige bronnen | {n} overeenkomstige bron | {n} overeenkomstige bronnen",
+    "search": "Zoeken in deze bronnen",
+    "intro": "Dit is de lijst van terminologiebronnen die je via het Termennetwerk kunt raadplegen."
   },
   "api": {
     "ServerError": "De terminologiebron kon de vraag niet verwerken",

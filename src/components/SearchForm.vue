@@ -32,6 +32,12 @@
           >{{ t('search.labelTermSources') }}</label>
           <div class="col-sm-12 col-lg-8">
             <DatasetsSelect />
+            <p class="form-text ms-1">
+              {{ t('search.helpTermSources') }}
+              <router-link to="sources">
+                {{ t('search.termSourcesLink') }}
+              </router-link>
+            </p>
           </div>
         </div>
         <div class="form-group row">

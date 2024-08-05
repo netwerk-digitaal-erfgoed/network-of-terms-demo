@@ -93,6 +93,13 @@
             <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">GraphQL Playground</a></p>
             <p>
               <router-link
+                :to="{name: 'sources'}"
+              >
+                {{ t('termSources.title') }}
+              </router-link>
+            </p>
+            <p>
+              <router-link
                 :to="{name: 'reconciliation'}"
               >
                 {{ t('faq.reconciliation') }}
