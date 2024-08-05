@@ -54,7 +54,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-span.disabled {
-  opacity: initial;
+.btn {
+  margin-right: .5em;
 }
 </style>

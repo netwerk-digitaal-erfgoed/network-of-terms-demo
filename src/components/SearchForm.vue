@@ -7,10 +7,10 @@
       aria-labelledby="search-tab"
     >
       <form @submit.prevent="onSubmit">
-        <div class="form-group row mt-3">
+        <div class="row mt-3 mb-3">
           <label
             for="q"
-            class="col-lg-3 col-form-label col-form-label-lg text-lg-right"
+            class="col-lg-3 col-form-label col-form-label-lg text-end"
           >{{ t('search.labelQuery') }}</label>
           <div class="col-sm-12 col-lg-8">
             <input
@@ -25,19 +25,19 @@
             >
           </div>
         </div>
-        <div class="form-group row">
+        <div class="row mb-3">
           <label
             for="datasets"
-            class="col-lg-3 col-form-label col-form-label-lg text-lg-right"
+            class="col-lg-3 col-form-label col-form-label-lg text-end"
           >{{ t('search.labelTermSources') }}</label>
           <div class="col-sm-12 col-lg-8">
             <DatasetsSelect />
           </div>
         </div>
         <div class="form-group row">
-          <div class="col-sm-10 offset-lg-3">
+          <div class="d-grid col-sm-3 offset-lg-3">
             <button
-              class="btn btn-lg btn-primary btn-block search"
+              class="btn btn-primary btn-lg text-start"
               type="submit"
             >
               {{ t('search.buttonSearch') }}<div
