@@ -54,6 +54,7 @@ export interface Source {
   description: string;
   creators: Creator[];
   features: Feature[];
+  genres: Genre[];
 }
 
 export interface Creator {
@@ -64,4 +65,9 @@ export interface Creator {
 export interface Feature {
   type: string;
   url: string;
+}
+
+export interface Genre {
+  uri: string;
+  name: string;
 }

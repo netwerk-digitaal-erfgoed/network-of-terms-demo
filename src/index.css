@@ -32,8 +32,17 @@ button.btn-light:focus {
 }
 
 button.btn-primary, a.btn-primary {
-  background-color:#154273;
-  border-color:#154273;
+  background-color: #154273;
+  border-color: #154273;
+}
+
+label.btn-outline-primary {
+  border-color: #154273;
+  color: #154273;
+}
+
+.btn-check {
+  background-color: red !important;
 }
 
 .card:hover {
