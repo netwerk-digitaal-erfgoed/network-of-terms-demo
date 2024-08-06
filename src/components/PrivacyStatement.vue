@@ -9,8 +9,8 @@
 <script lang="ts">
 import {defineComponent} from 'vue';
 import {useI18n} from 'vue-i18n';
-import PrivacyEn from './PrivacyEn.vue';
-import PrivacyNl from './PrivacyNl.vue';
+import PrivacyEn from './PrivacyStatementEn.vue';
+import PrivacyNl from './PrivacyStatementNl.vue';
 
 export default defineComponent({
   name: 'PrivacyStatement',
