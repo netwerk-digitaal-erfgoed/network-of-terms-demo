@@ -5,7 +5,7 @@
     <p>Deze website is eigendom van en wordt beheerd en onderhouden door de Rijksdienst voor het Cultureel Erfgoed. Je kunt ons bereiken via <a href="mailto:info@cultureelerfgoed.nl">info@cultureelerfgoed.nl</a>.</p>
     <h3>Deze dienst</h3>
     <p>De website en de API's van het Termennetwerk maken geen gebruik van cookies voor tracking of analytische doeleinden.</p>
-    <p>Bevragingen van website en API worden vastgelegd in een logbestand. Deze technische informatie, waaronder het IP-adres dat de bevraging doet, is alleen toegankelijk door technische beheerders en wordt gebruikt om inzicht te krijgen in het gebruik van het Termennetwerk.</p>      
+    <p>Bevragingen van website en API worden vastgelegd in een logbestand. Deze technische informatie, waaronder het IP-adres dat de bevraging doet, is alleen toegankelijk door technische beheerders en wordt gebruikt om inzicht te krijgen in het gebruik van het Termennetwerk.</p>
   </div>
 </template>
 
