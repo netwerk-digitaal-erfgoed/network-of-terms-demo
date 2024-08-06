@@ -1,47 +1,48 @@
 <template>
   <div class="flex-wrapper">
-    <nav class="navbar navbar-expand-sm navbar border-bottom shadow-sm navbar-light">
+    <nav class="navbar navbar-expand-sm">
       <div class="container">
-        <router-link
-          :to="{name: 'home'}"
-          class="navbar-brand"
-        >
-          <!-- eslint-disable vue/no-v-html -->
-          <span
-            v-if="locale === 'nl'"
-            v-html="logoNlSvg"
-          />
-          <span
-            v-if="locale === 'en'"
-            v-html="logoEnSvg"
-          />
-        </router-link>
-
         <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
         >
           <span class="navbar-toggler-icon" />
         </button>
+
         <div
           id="navbarSupportedContent"
           class="collapse navbar-collapse"
         >
-          <ul class="navbar-nav ml-auto">
+          <router-link
+            :to="{name: 'home'}"
+            class="navbar-brand"
+          >
+            <!-- eslint-disable vue/no-v-html -->
+            <span
+              v-if="locale === 'nl'"
+              v-html="logoNlSvg"
+            />
+            <span
+              v-if="locale === 'en'"
+              v-html="logoEnSvg"
+            />
+          </router-link>
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown">
               <a
                 id="faqDropdownMenuLink"
                 class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
                 href="#"
-                data-toggle="dropdown"
-                aria-haspopup="true"
+                role="button"
                 aria-expanded="false"
               >{{ t('faq.title') }}</a>
-              <div
+              <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
@@ -73,7 +74,7 @@
                 >
                   {{ t('faq.voor_o') }}
                 </router-link>
-              </div>
+              </ul>
             </li>
             <LanguageToggle />
           </ul>
@@ -90,6 +91,13 @@
         <div class="row">
           <div class="col-md-3">
             <p><a href="https://termennetwerk-api.netwerkdigitaalerfgoed.nl">GraphQL Playground</a></p>
+            <p>
+              <router-link
+                :to="{name: 'sources'}"
+              >
+                {{ t('termSources.title') }}
+              </router-link>
+            </p>
             <p>
               <router-link
                 :to="{name: 'reconciliation'}"

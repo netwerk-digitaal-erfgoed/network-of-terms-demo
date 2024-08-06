@@ -10,9 +10,9 @@
     "subtitle": "Frequently asked questions about the Network of Terms",
     "copyUrl": "Copy URL",
     "voor_c": "for managers of heritage collections",
-    "voor_b": "for administrators of terminology resources",
+    "voor_b": "for administrators of terminology sources",
     "voor_o": "for heritage software developers",
-    "voor_r": "for terminology resource providers",
+    "voor_r": "for terminology source providers",
     "title_b":"Frequently Asked Questions about the Network of Terms for managers of heritage collections",
     "title_c":"Frequently asked questions about the Network of Terms for collection administrators at heritage institutions",
     "title_o":"Frequently Asked Questions about the Network of Terms for heritage software developers",
@@ -47,6 +47,8 @@
     "buttonLookup": "Look up",
     "labelQuery": "Search words",
     "labelTermSources": "Terminology sources",
+    "helpTermSources": "Or consult the",
+    "termSourcesLink": "list of terminology sources",
     "labelUri": "Term URI",
     "termsFound": "no terms found | {n} term found | {n} terms found",
     "altLabel": "Alternative label | Alternative labels",
@@ -61,6 +63,13 @@
   },
   "language": {
     "label": "Taal"
+  },
+  "termSources": {
+    "title": "List of terminology sources",
+    "selectGenres": "Select one or more genres:",
+    "matchingSources": "no matching sources | {n} matching source | {n} matching sources",
+    "search": "Search in these sources",
+    "intro": "This is the list of terminology sources that you can consult through the Network of Terms."
   },
   "api": {
     "ServerError": "The term source could not process the request",

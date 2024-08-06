@@ -16,7 +16,7 @@
 
       <div
         v-if="term.altLabel.length > 0"
-        class="card-text container"
+        class="card-text"
       >
         <dl class="row mb-0">
           <dt>{{ t('search.altLabel', term.altLabel.length) }}:&nbsp;</dt>
@@ -32,19 +32,21 @@
         </dl>
       </div>
 
-      <CopyButton
-        label="search.copyUri"
-        class="btn btn-primary"
-        :text="term.uri"
-      />
+      <div class="d-grid gap-2 d-md-flex">
+        <CopyButton
+          :text="term.uri"
+          class="btn btn-primary"
+          label="search.copyUri"
+        />
 
-      <a
-        :href="term.seeAlso[0] ?? term.uri"
-        class="btn btn-primary ml-2"
-      >
-        {{ t('search.viewAtSource') }}
-        <ArrowTopRightOnSquareIcon class="icon" />
-      </a>
+        <a
+          :href="term.seeAlso[0] ?? term.uri"
+          class="btn btn-primary ml-2"
+        >
+          {{ t('search.viewAtSource') }}
+          <ArrowTopRightOnSquareIcon class="icon" />
+        </a>
+      </div>
 
       <dl class="mt-4 mb-0">
         <RelatedTerms

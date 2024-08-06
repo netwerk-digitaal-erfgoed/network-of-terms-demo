@@ -7,10 +7,10 @@
       aria-labelledby="lookup-tab"
     >
       <form @submit.prevent="onSubmit">
-        <div class="form-group row mt-3">
+        <div class="row mt-3 mb-3">
           <label
             for="uri"
-            class="col-lg-3 col-form-label col-form-label-lg text-lg-right"
+            class="col-lg-3 col-form-label col-form-label-lg text-end"
           >{{ t('search.labelUri') }}</label>
           <div class="col-sm-12 col-lg-8">
             <input
@@ -42,10 +42,10 @@
             </p>
           </div>
         </div>
-        <div class="form-group row">
-          <div class="col-sm-10 offset-lg-3">
+        <div class="form-group row mb-2">
+          <div class="d-grid col-sm-3 offset-lg-3">
             <button
-              class="btn btn-primary btn-lg search"
+              class="btn btn-primary btn-lg text-start"
               type="submit"
             >
               {{ t('search.buttonLookup') }}<div

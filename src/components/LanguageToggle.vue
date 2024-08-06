@@ -4,8 +4,7 @@
       id="navbarDropdownMenuLink"
       class="nav-link dropdown-toggle"
       href="#"
-      data-toggle="dropdown"
-      aria-haspopup="true"
+      data-bs-toggle="dropdown"
       aria-expanded="false"
     >{{ t('language.label') }}</a>
     <div

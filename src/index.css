@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
-@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/css/bootstrap-select.min.css');
 
 html {
   font-size: 1rem;
@@ -15,18 +13,12 @@ p, li {
   font-size: 1.2rem;
 }
 
-a, a:hover {
+body a, a:hover {
   color: #021b78;
 }
 
-.content a{
+.content a {
   text-decoration: underline;
-}
-
-button.search {
-  width: 10em;
-  background-color: #154273;
-  text-align: left;
 }
 
 .bootstrap-select button.btn-light {
@@ -39,10 +31,20 @@ button.btn-light:focus {
   border-color: #80bdff;
 }
 
-.btn-primary {
-  background-color:#154273;
-  border-color:#154273;
+button.btn-primary, a.btn-primary {
+  background-color: #154273;
+  border-color: #154273;
 }
+
+label.btn-outline-primary {
+  border-color: #154273;
+  color: #154273;
+}
+
+.btn-check {
+  background-color: red !important;
+}
+
 .card:hover {
   transition: .1s;
   border: 1px solid rgba(0, 0, 0, .3);
@@ -177,7 +179,7 @@ h1.home {
   text-shadow: 0px 0px 10px #fff;
   margin: 0.5em 0;
 }
-	
+
 .hometargets {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
