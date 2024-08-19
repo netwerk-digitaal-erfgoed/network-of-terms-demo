@@ -67,7 +67,7 @@
   },
   "termSources": {
     "title": "Lijst van terminologiebronnen",
-    "selectGenres": "Selecteer een of meer genres:",
+    "selectGenres": "Selecteer een of meer onderwerpen:",
     "matchingSources": "geen overeenkomstige bronnen | {n} overeenkomstige bron | {n} overeenkomstige bronnen",
     "search": "Zoeken in deze bronnen",
     "intro": "Dit is de lijst van terminologiebronnen die je via het Termennetwerk kunt raadplegen."
