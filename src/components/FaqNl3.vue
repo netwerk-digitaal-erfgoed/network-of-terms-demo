@@ -247,6 +247,19 @@
     </p>
 
     <h3 class="display-5">
+      Welke terminologiebronnen moet ik doorzoeken?
+    </h3>
+    <p>
+      Welke terminologiebronnen relevant zijn om te doorzoeken, is afhankelijk van de aard van de beheerde collecties.
+      De selectie van bronnen kun je daarom het beste maken in overleg met de gebruikers van je collectiebeheersysteem.
+      Een mogelijkheid is dat gebruikers zelf de selectie maken per collectie of per veld.
+    </p>
+    <p>
+      Hoe dan ook is het belangrijk om niet onnodig veel, laat staan <em>alle</em>, bronnen te doorzoeken.
+      Dat leidt namelijk tot onnodig lange wachttijden en verwarrende resultaten.
+    </p>
+
+    <h3 class="display-5">
       Wie maakt en beheert het Termennetwerk?
     </h3>
     <p>
