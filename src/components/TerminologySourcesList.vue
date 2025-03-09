@@ -85,13 +85,18 @@ export default defineComponent({
   name: 'TerminologySourcesList',
   components: {ArrowRightCircleIcon, ArrowTopRightOnSquareIcon},
   async setup() {
-    const {t} = useI18n();
+    const {t, locale} = useI18n();
     useClient({
       url: import.meta.env.VITE_GRAPHQL_URL,
     });
+    const variables = reactive({locale: locale}); // Use query variables to cache per locale and re-fetch when locale changes.
+    const headers = reactive({'Accept-Language': locale});
     const {data} = await useQuery({
       query: 'query Sources { sources { name alternateName mainEntityOfPage description uri creators { uri alternateName } genres { uri name } features { type url } } }',
-      cachePolicy: 'network-only',
+      context: {
+        headers,
+      },
+      variables,
     });
 
     const selectedGenres = ref([] as string[]);
