@@ -11,9 +11,9 @@
     multiple
     required
   >
-    <template v-if="datasets">
+    <template v-if="data">
       <DatasetOption
-        v-for="dataset in datasets.sources"
+        v-for="dataset in data.sources"
         :key="dataset.uri"
         :dataset="dataset"
       />
@@ -21,43 +21,39 @@
   </select>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import {useI18n} from 'vue-i18n';
 import {useQuery} from 'villus';
 import state from '../store';
 import DatasetOption from './DatasetOption.vue';
-import {defineComponent} from 'vue';
+import {onUpdated, reactive, watch} from 'vue';
 
-export default defineComponent({
-  name: 'DatasetsSelect',
-  components: {DatasetOption},
-  setup() {
-    const {data} = useQuery({
-      query: 'query Sources { sources { name alternateName uri creators { uri alternateName } } }',
-    });
-
-    const {t, locale} = useI18n();
-
-    return {t, datasets: data, state: state, locale, placeholder: t('search.placeholderDatasets')};
+const {t, locale} = useI18n();
+const variables = reactive({locale: locale}); // Use query variables to cache per locale and re-fetch when locale changes.
+const headers = reactive({'Accept-Language': locale});
+const {data} = useQuery({
+  query: 'query Sources { sources { name alternateName uri creators { uri alternateName } } }',
+  context: {
+    headers,
   },
-  watch: {
-    // The select doesn't pick up the change of its HTML select element’s title (= placeholder),
-    // so refresh the placeholder manually.
-    locale() {
-      $('select').selectpicker({
-        title: this.t('search.placeholderDatasets'),
-      });
-      $('select').selectpicker('refresh');
-    },
-  },
+  variables,
+});
 
-  updated() {
-    $('select').selectpicker('show');
+watch(locale, async () => {
+  // The select doesn't pick up the change of its HTML select element’s title (= placeholder),
+  // so refresh the placeholder manually.
+  $('select').selectpicker({
+    title: t('search.placeholderDatasets'),
+  });
+  $('select').selectpicker('refresh');
+});
 
-    // Refresh select after options have loaded.
-    $('select').selectpicker('refresh');
+onUpdated(() => {
+  $('select').selectpicker('show');
 
-    $('.bs-searchbox input').on('input', (event) => $(event.target).attr('spellcheck', 'false'));
-  },
+  // Refresh select after options have loaded.
+  $('select').selectpicker('refresh');
+
+  $('.bs-searchbox input').on('input', (event) => $(event.target).attr('spellcheck', 'false'));
 });
 </script>
