@@ -32,7 +32,7 @@
 <script lang="ts">
 import {useQuery} from 'villus';
 import {useI18n} from 'vue-i18n';
-import {defineComponent} from 'vue';
+import {defineComponent, reactive} from 'vue';
 import {TermsQueryResult} from '../query';
 import TermResult from './TermResult.vue';
 import SourceHeader from './SourceHeader.vue';
@@ -53,7 +53,7 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const {t} = useI18n();
+    const {t, locale} = useI18n();
 
     if (!props.q || !props.datasets) {
       return {
@@ -113,6 +113,10 @@ export default defineComponent({
       variables: {
         sources: props.datasets,
         query: props.q,
+        locale: locale.value,
+      },
+      context: {
+        headers: reactive({'Accept-Language': locale}),
       },
     });
 
