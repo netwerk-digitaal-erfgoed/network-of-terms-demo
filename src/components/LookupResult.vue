@@ -28,7 +28,7 @@
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue';
+import {defineComponent, reactive} from 'vue';
 import {useI18n} from 'vue-i18n';
 import {useQuery} from 'villus';
 import {LookupQuery} from '../query';
@@ -46,7 +46,7 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const {t} = useI18n();
+    const {t, locale} = useI18n();
 
     if (!props.uri) {
       return {
@@ -102,6 +102,10 @@ export default defineComponent({
               }`,
       variables: {
         uris: [props.uri],
+        locale: locale.value,
+      },
+      context: {
+        headers: reactive({'Accept-Language': locale}),
       },
     });
 
