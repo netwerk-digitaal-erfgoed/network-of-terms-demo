@@ -5,28 +5,28 @@
   >
     <div class="card-body">
       <h3 class="card-title">
-        {{ term.prefLabel.join(' • ') }}
+        {{ filterLanguageStrings(term.prefLabel).join(' • ') }}
       </h3>
       <p
-        v-if="term.scopeNote"
+        v-if="filterLanguageStrings(term.scopeNote).length > 0"
         class="card-text"
       >
-        {{ term.scopeNote.join(' • ') }}
+        {{ filterLanguageStrings(term.scopeNote).join(' • ') }}
       </p>
 
       <div
-        v-if="term.altLabel.length > 0"
+        v-if="filterLanguageStrings(term.altLabel).length > 0"
         class="card-text"
       >
         <dl class="row mb-0">
-          <dt>{{ t('search.altLabel', term.altLabel.length) }}:&nbsp;</dt>
+          <dt>{{ t('search.altLabel', filterLanguageStrings(term.altLabel).length) }}:&nbsp;</dt>
           <dd>
             <span
-              v-for="(altLabel, index) in term.altLabel"
+              v-for="(altLabel, index) in filterLanguageStrings(term.altLabel)"
               :key="altLabel"
             >
               {{ altLabel }}
-              <span v-if="index !== term.altLabel.length - 1"> • </span>
+              <span v-if="index !== filterLanguageStrings(term.altLabel).length - 1"> • </span>
             </span>
           </dd>
         </dl>
@@ -78,31 +78,18 @@
   </div>
 </template>
 
-<script lang="ts">
-import {defineComponent, PropType, ref} from 'vue';
-import {Term} from '../query';
+<script lang="ts" setup>
 import {useI18n} from 'vue-i18n';
 import RelatedTerms from './RelatedTerms.vue';
 import ClipboardJS from 'clipboard';
 import {ArrowTopRightOnSquareIcon} from '@heroicons/vue/16/solid';
 import CopyButton from './CopyButton.vue';
+import {filterLanguageStrings} from '../query';
 
-export default defineComponent({
-  name: 'TermResult',
-  components: {CopyButton, RelatedTerms, ArrowTopRightOnSquareIcon},
-  props: {
-    term: {
-      type: Object as PropType<Term>,
-      required: true,
-    },
-  },
-  setup() {
-    const {t} = useI18n();
-    new ClipboardJS('.btn-copy');
+const {t} = useI18n();
+new ClipboardJS('.btn-copy');
 
-    return {t, copied: ref(false)};
-  },
-});
+defineProps({term: {type: Object, required: true}});
 </script>
 
 <style scoped>

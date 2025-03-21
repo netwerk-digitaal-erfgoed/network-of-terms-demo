@@ -63,8 +63,8 @@ export default defineComponent({
     }
 
     const {data, isFetching} = useQuery<TermsQueryResult>({
-      query: `query Terms ($sources: [ID]!, $query: String!) {
-                terms (sources: $sources query: $query) {
+      query: `query Terms ($sources: [ID]!, $query: String!, $languages: [Language!]) {
+                terms (sources: $sources query: $query languages: $languages) {
                   source {
                     name
                     uri
@@ -76,29 +76,29 @@ export default defineComponent({
                     }
                   }
                   result {
-                    ... on Terms {
+                    ... on TranslatedTerms {
                       terms {
                         uri
-                        prefLabel
-                        altLabel
-                        hiddenLabel
-                        scopeNote
+                        prefLabel { language value }
+                        altLabel { language value }
+                        hiddenLabel { language value }
+                        scopeNote { language value }
                         seeAlso
                         broader {
                           uri
-                          prefLabel
+                          prefLabel { language value }
                         }
                         narrower {
                           uri
-                          prefLabel
+                          prefLabel { language value }
                         }
                         related {
                           uri
-                          prefLabel
+                          prefLabel { language value }
                         }
                         exactMatch {
                           uri
-                          prefLabel
+                          prefLabel { language value }
                         }
                       }
                     }
@@ -114,6 +114,7 @@ export default defineComponent({
         sources: props.datasets,
         query: props.q,
         locale: locale.value,
+        languages: ['nl', 'en'],
       },
       context: {
         headers: reactive({'Accept-Language': locale}),

@@ -1,3 +1,5 @@
+import {i18n} from './main';
+
 export interface TermsQueryResult {
   terms: [
     {
@@ -27,13 +29,18 @@ export interface LookupQuery {
   ]
 }
 
+export interface LanguageString {
+  language: string;
+  value: string;
+}
+
 export interface Term {
   __typename: string;
   uri: string;
-  prefLabel: string[];
-  altLabel: string[];
-  hiddenLabel: string[];
-  scopeNote: string[];
+  prefLabel: LanguageString[];
+  altLabel: LanguageString[];
+  hiddenLabel: LanguageString[];
+  scopeNote: LanguageString[];
   seeAlso: string[];
   broader: RelatedTerm[];
   narrower: RelatedTerm[];
@@ -43,7 +50,7 @@ export interface Term {
 
 export interface RelatedTerm {
   uri: string;
-  prefLabel: string;
+  prefLabel: LanguageString[];
 }
 
 export interface Source {
@@ -70,4 +77,13 @@ export interface Feature {
 export interface Genre {
   uri: string;
   name: string;
+}
+
+export const filterLanguageStrings = (languageStrings: LanguageString[]) => {
+  const preferredValues = languageStrings.filter(languageString => languageString.language === i18n.global.locale);
+  if (preferredValues.length > 0) {
+    return preferredValues.map(languageString => languageString.value);
+  }
+
+  return languageStrings.map(languageString => languageString.value);
 }

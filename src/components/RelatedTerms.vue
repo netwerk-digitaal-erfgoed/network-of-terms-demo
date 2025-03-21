@@ -11,7 +11,7 @@
         name: 'lookup', query: {uri: term.uri}
       }"
     >
-      {{ term.prefLabel[0] }}
+      {{ filterLanguageStrings(term.prefLabel)[0] }}
     </router-link>
   </dd>
   <dd v-if="!lookupLink">
@@ -22,35 +22,31 @@
       class="btn btn-outline-secondary mr-2 mb-2"
       target="_blank"
     >
-      {{ term.prefLabel[0] ?? term.uri }}
+      {{ filterLanguageStrings(term.prefLabel)[0] ?? term.uri }}
       <ArrowTopRightOnSquareIcon class="icon" />
     </a>
   </dd>
 </template>
 
-<script lang="ts">
-import {defineComponent, PropType} from 'vue';
-import {RelatedTerm} from '../query';
+<script lang="ts" setup>
+import {PropType} from 'vue';
+import {RelatedTerm, filterLanguageStrings} from '../query';
 import {ArrowTopRightOnSquareIcon} from '@heroicons/vue/16/solid';
 
-export default defineComponent({
-  name: "RelatedTerms",
-  components: {ArrowTopRightOnSquareIcon},
-  props: {
-    caption: {
-      type: String,
-      required: true,
-    },
-    terms: {
-      type: Object as PropType<RelatedTerm[]>,
-      required: true,
-    },
-    lookupLink: {
-      type: Boolean,
-      default: true,
-    },
+defineProps({
+  caption: {
+    type: String,
+    required: true,
   },
-});
+  terms: {
+    type: Object as PropType<RelatedTerm[]>,
+    required: true,
+  },
+  lookupLink: {
+    type: Boolean,
+    default: true,
+  },
+})
 </script>
 
 <style scoped>

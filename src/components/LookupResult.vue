@@ -2,12 +2,11 @@
   <div v-if="data">
     <div v-if="data.lookup && data.lookup[0].source.__typename === 'Source'">
       <SourceHeader :source="data.lookup[0].source" />
-      <template v-if="data.lookup[0].result.__typename === 'Term'">
+      <template v-if="data.lookup[0].result.__typename === 'TranslatedTerm'">
         <p class="text-center text-muted">
           {{ t('search.termFound') }} in {{ data.lookup[0].responseTimeMs }} ms
         </p>
         <TermResult
-          v-if="data.lookup[0].result.__typename === 'Term'"
           class="mt-3"
           :term="data.lookup[0].result"
         />
@@ -56,8 +55,8 @@ export default defineComponent({
     }
 
     const {data, isFetching} = useQuery<LookupQuery>({
-      query: `query ($uris: [ID]!) {
-                lookup (uris: $uris) {
+      query: `query ($uris: [ID]!, $languages: [Language]!) {
+                lookup (uris: $uris, languages: $languages) {
                   source {
                     __typename
                     ... on Source {
@@ -72,28 +71,28 @@ export default defineComponent({
                   }
                   result {
                     __typename
-                    ... on Term {
+                    ... on TranslatedTerm {
                       uri
-                      prefLabel
-                      altLabel
-                      hiddenLabel
-                      scopeNote
+                      prefLabel { language value }
+                      altLabel { language value }
+                      hiddenLabel { language value }
+                      scopeNote { language value }
                       seeAlso
                       broader {
                         uri
-                        prefLabel
+                        prefLabel { language value }
                       }
                       narrower {
                         uri
-                        prefLabel
+                        prefLabel { language value }
                       }
                       related {
                         uri
-                        prefLabel
+                        prefLabel { language value }
                       }
                       exactMatch {
                         uri
-                        prefLabel
+                        prefLabel { language value }
                       }
                     }
                   }
@@ -103,6 +102,7 @@ export default defineComponent({
       variables: {
         uris: [props.uri],
         locale: locale.value,
+        languages: ['nl', 'en'],
       },
       context: {
         headers: reactive({'Accept-Language': locale}),
