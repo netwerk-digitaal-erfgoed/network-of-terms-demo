@@ -133,7 +133,6 @@
       "https://data.cultureelerfgoed.nl/PoolParty/sparql/term/id/cht",
     ]
     query: "schilderij"
-    queryMode: OPTIMIZED
   ) {
     source {
       name
@@ -165,7 +164,6 @@
       "https://data.cultureelerfgoed.nl/PoolParty/sparql/term/id/cht",
     ]
     query: "schilderij"
-    queryMode: OPTIMIZED
   ) {
     source {
       uri
