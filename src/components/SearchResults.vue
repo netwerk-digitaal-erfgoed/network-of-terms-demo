@@ -113,8 +113,7 @@ export default defineComponent({
       variables: {
         sources: props.datasets,
         query: props.q,
-        locale: locale.value,
-        languages: ['nl', 'en'],
+        languages: [...new Set([locale.value, 'nl', 'en'])],
       },
       context: {
         headers: reactive({'Accept-Language': locale}),

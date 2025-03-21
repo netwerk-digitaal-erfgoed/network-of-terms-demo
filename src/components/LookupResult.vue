@@ -101,8 +101,7 @@ export default defineComponent({
               }`,
       variables: {
         uris: [props.uri],
-        locale: locale.value,
-        languages: ['nl', 'en'],
+        languages: [...new Set([locale.value, 'nl', 'en'])],
       },
       context: {
         headers: reactive({'Accept-Language': locale}),
