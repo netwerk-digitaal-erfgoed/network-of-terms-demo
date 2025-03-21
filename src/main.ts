@@ -7,9 +7,8 @@ import * as nl from './locales/nl.json';
 import App from './App.vue';
 import './index.css';
 
-const i18n = createI18n({
+export const i18n = createI18n({
   locale: 'nl',
-  legacy: false,
   messages: {
     en,
     nl,

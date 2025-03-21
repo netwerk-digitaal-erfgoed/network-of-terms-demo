@@ -15,30 +15,30 @@
         href=""
         :class="{active: locale === 'en'}"
         class="dropdown-item"
-        @click.prevent="locale = 'en'"
+        @click.prevent="switchLocale('en')"
       >English</a>
       <a
         href=""
         :class="{active: locale === 'nl'}"
         class="dropdown-item"
-        @click.prevent="locale = 'nl'"
+        @click.prevent="switchLocale('nl')"
       >Nederlands</a>
     </div>
   </li>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import {useI18n} from 'vue-i18n';
-import {defineComponent} from 'vue';
+import {useRoute, useRouter} from 'vue-router';
 
-export default defineComponent({
-  name: 'LanguageToggle',
-  setup () {
-    const {t, locale} = useI18n();
+const router = useRouter();
+const route = useRoute();
+const {t, locale} = useI18n();
 
-    return {t, locale};
-  },
-});
+const switchLocale = (locale: string) => {
+  console.log('route', route);
+  router.replace({params: {...route.params, locale}});
+}
 </script>
 
 <style scoped>

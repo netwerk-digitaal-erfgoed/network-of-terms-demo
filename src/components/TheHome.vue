@@ -38,7 +38,7 @@
       <li class="nav-item">
         <router-link
           id="tab-search"
-          active-class="active"
+          exact-active-class="active"
           :to="{name: 'home'}"
           class="nav-link"
           href="#search"
@@ -51,7 +51,7 @@
       <li class="nav-item">
         <router-link
           id="tab-lookup"
-          active-class="active"
+          exact-active-class="active"
           :to="{name: 'lookup'}"
           href="#lookup"
           role="tab"
@@ -64,7 +64,7 @@
     </ul>
 
     <div class="tab-content">
-      <slot />
+      <slot><RouterView /></slot>
     </div>
   </div>
 </template>
