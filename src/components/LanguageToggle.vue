@@ -36,8 +36,7 @@ const route = useRoute();
 const {t, locale} = useI18n();
 
 const switchLocale = (locale: string) => {
-  console.log('route', route);
-  router.replace({params: {...route.params, locale}});
+  router.replace({params: {...route.params, locale}, query: route.query});
 }
 </script>
 
