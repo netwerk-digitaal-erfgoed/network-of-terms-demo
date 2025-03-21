@@ -57,7 +57,17 @@
                 </a>
               </div>
             </div>
-            <p>{{ source.description }}</p>
+            <p>
+              {{ source.description }}
+              <span
+                v-for="language in source.inLanguage"
+                :key="language"
+                class="badge rounded-pill text-bg-light"
+              >
+                {{ language }}
+              </span>
+
+            </p>
             <p>
               <span
                 v-for="genre in source.genres.sort((a: { 'name': string}, b: {'name': string}) => a.name.localeCompare(b.name))"
@@ -92,7 +102,7 @@ export default defineComponent({
     const variables = reactive({locale: locale}); // Use query variables to cache per locale and re-fetch when locale changes.
     const headers = reactive({'Accept-Language': locale});
     const {data} = await useQuery({
-      query: 'query Sources { sources { name alternateName mainEntityOfPage description uri creators { uri alternateName } genres { uri name } features { type url } } }',
+      query: 'query Sources { sources { name alternateName mainEntityOfPage description uri creators { uri alternateName } inLanguage genres { uri name } features { type url } } }',
       context: {
         headers,
       },
@@ -122,6 +132,7 @@ export default defineComponent({
 a.btn {
   text-decoration: none;
 }
+
 .badge {
   margin-right: 0.2em;
 }
