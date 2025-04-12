@@ -4,8 +4,8 @@
       Can I use the Network of Terms for <em>reconciliation</em>, for example in OpenRefine?
     </h3>
     <p>
-      Yes! The Terms Network offers a <em>Reconciliation Service</em> that allows you to reconcile your data
-      match terms. This makes it possible to convert words to URIs, for example from 'Rembrandt' to his URI 
+      Yes! The Network of Terms offers a <em>Reconciliation Service</em> that allows you to match your data
+      with terms. This makes it possible to convert words to URIs, for example from 'Rembrandt' to his URI 
       in the source RKDartists, <a href="https://data.rkd.nl/artists/66219">https://data.rkd.nl/artists/66219</a>.
       This process is called <em>reconciliation</em>. With the Reconciliation Service you can make these conversions
       automated, for an entire dataset. That saves you a lot of time.
@@ -25,18 +25,18 @@
     </h3>
     <ul>
       <li>
-        the Terms Network does offer the Reconciliation Service, but it actually
-        term matching is done by the terminology resources, not the Term Network. So you search
+        the Network of Terms does offer the Reconciliation Service, but the actual
+        term matching is done by the terminology resources, not the Network of Terms. So you search
         always in the sources themselves, so you always work with current terms.
         This also means that the speed at which terms are matched depends on the sources;
         sometimes this goes quickly, sometimes it takes a little longer. Also be wise with the amount of words on which
         you are looking for: the resources can be quite taxed when large numbers are involved.
       </li>
       <li>
-        the Term Network can only search terminology resources simply.
+        the Network of Terms can only search terminology resources in a simple way.
         For example, it does not know the types of terms, for example whether resources consist of
-        'persons', 'places' or 'events'; for the Terme network all terms are of type 'concept' ('skos:Concept').
-        This means that the Terms Network can find more matches than you need.
+        'persons', 'places' or 'events'; for the Network of Terms all terms are of type 'concept' ('skos:Concept').
+        This means that the Network of Terms can find more matches than you need.
       </li>
       <li>when reconciling in OpenRefine you must select the <strong>Reconcile against no particular type</strong> option.</li>
     </ul>
@@ -49,7 +49,7 @@
       You need this URL, for example, to set up the source in OpenRefine as a so-called 'Standard service'.
     </p>
     <p>
-      Note: The Terms Network does not offer a Reconciliation Service for all sources.
+      Note: The Network of Terms does not offer a Reconciliation Service for all sources.
       Some sources already have such a service, such as Wikidata.
     </p>
 
