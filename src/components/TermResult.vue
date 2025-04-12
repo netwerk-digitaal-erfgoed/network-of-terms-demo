@@ -41,6 +41,7 @@
 
         <a
           :href="term.seeAlso[0] ?? term.uri"
+          target="_blank"
           class="btn btn-primary ml-2"
         >
           {{ t('search.viewAtSource') }}
