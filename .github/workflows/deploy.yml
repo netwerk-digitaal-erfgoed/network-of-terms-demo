@@ -20,7 +20,7 @@ jobs:
         id: vars
         run: |
           echo "docker_image=${{ env.REGISTRY}}/${{ github.repository }}" >> $GITHUB_OUTPUT
-          echo "build_tag=-$(git show -s --format=%h-%cd --date=format:%Y%m%d%H%M%S)" >> $GITHUB_OUTPUT
+          echo "build_tag=$(git show -s --format=%h-%cd --date=format:%Y%m%d%H%M%S)" >> $GITHUB_OUTPUT
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
