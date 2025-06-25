@@ -21,8 +21,13 @@
           class="text-center alert alert-danger"
           role="alert"
         >
-          <ExclamationCircleIcon class="icon" />
-          {{ t('api.' + dataset.result.__typename, 'api.Error') }}
+          <ExclamationCircleIcon class="icon icon-text" />
+          <router-link
+            :to="{name: 'faq1', hash: '#timeout'}"
+            class="alert-link"
+          >
+            {{ t('api.' + dataset.result.__typename, t('api.Error')) }}
+          </router-link>
         </div>
       </template>
     </div>

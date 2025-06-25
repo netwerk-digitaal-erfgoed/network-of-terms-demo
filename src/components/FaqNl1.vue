@@ -31,6 +31,7 @@
       Gebruik van termen zorgt dus voor betere vindbaarheid.
     </p>
 
+    <a id="terminology-source" />
     <h3 class="display-5">
       Wat zijn terminologiebronnen?
     </h3>
@@ -151,6 +152,18 @@
       voorwaarden voldoet. Zo moet de bron als ‘open data’ beschikbaar zijn, bepaalde metadatastandaarden gebruiken en
       bepaalde zoekmogelijkheden bieden. Als de bron hier niet aan voldoet, dient de beheerder zijn bron eerst aan te
       passen voordat deze kan worden toegevoegd aan het Termennetwerk.
+    </p>
+
+    <a id="timeout" />
+    <h3 class="display-5">
+      Ik krijg de melding: “De terminologiebron is tijdelijk niet bereikbaar”. Wat betekent dit?
+    </h3>
+    <p>
+      Het Termennetwerk zoekt rechtstreeks (realtime) in <a href="#terminology-source">terminologiebronnen</a>.
+      Wanneer een terminologiebron tijdelijk niet bereikbaar is,
+      bijvoorbeeld door een storing of onderhoud bij de aanbieder van de bron,
+      kan het Termennetwerk dus geen zoekresultaten leveren.
+      Probeer je zoekopdracht later opnieuw.
     </p>
 
     <h3 class="display-5">

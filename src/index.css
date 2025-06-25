@@ -13,7 +13,7 @@ p, li {
   font-size: 1.2rem;
 }
 
-body a, a:hover {
+body a, a:hover:not(.alert-link) {
   color: #021b78;
 }
 
@@ -114,6 +114,10 @@ input:-moz-ui-invalid {
   width: 1em;
   height: 1em;
   margin-bottom: .1em;
+}
+
+.icon-text {
+  margin-right: .3em;
 }
 
 svg, path {

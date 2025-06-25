@@ -73,8 +73,8 @@
     "intro": "This is the list of terminology sources that you can consult through the Network of Terms."
   },
   "api": {
-    "ServerError": "The term source could not process the request",
-    "TimeoutError": "The term source is temporarily unavailable",
+    "ServerError": "The terminology source could not process the request",
+    "TimeoutError": "The terminology source is temporarily unavailable",
     "NotFoundError": "No term found with this URI",
     "Error": "An error occurred"
   }

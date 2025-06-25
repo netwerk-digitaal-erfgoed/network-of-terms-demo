@@ -31,6 +31,7 @@
       The use of terms therefore ensures better findability.
     </p>
 
+    <a id="terminology-source" />
     <h3 class="display-5">
       What are terminology resources?
     </h3>
@@ -39,7 +40,7 @@
       are there resources with information about places, such as <a href="https://www.geonames.org/">GeoNames</a>, and resources
       with information about individuals, such as <a href="https://rkd.nl/nl/explore/artists">RKDartists</a>. Also there are
       general resources with information on a variety of topics, such as <a href="https://www.wikidata.org/">Wikidata</a>,
-      and specific sources of information on targeted topics, such as the 
+      and specific sources of information on targeted topics, such as the
       <a href="https://vtmk.data.momu.be/id.html">Visual Thesaurus for Fashion and Costumes</a>.
     </p>
 
@@ -67,7 +68,7 @@
       Why is the Network of Terms important?
     </h3>
     <p>
-      The Network of Terms makes it easier to search terminology sources. A collection manager needs only to 
+      The Network of Terms makes it easier to search terminology sources. A collection manager needs only to
       consult the Network of Terms, no longer the individual sources. And a heritage software developer doesn't have to
       interface with the individual sources, just one interface to the Network of Terms. This saves time and money.
     </p>
@@ -77,13 +78,13 @@
     </h3>
     <p>
       You use the Network of Terms in your collection management system. So you don't have to <em>switch</em> between the two.
-      Exactly how you can use the Network of Terms depends on the possibilities offered by the supplier of your system. 
+      Exactly how you can use the Network of Terms depends on the possibilities offered by the supplier of your system.
       For example, it could look like this:
     </p>
     <p>
       Suppose you are busy describing a heritage object in your system, such as The Night Watch. At the field
       'Manufacturer' you want to indicate who the maker of the object is. To do this, enter a search query in the field,
-      such as "Rembrandt", and indicate which terminology source you want to search, such as RKDartists. 
+      such as "Rembrandt", and indicate which terminology source you want to search, such as RKDartists.
       The collection management system sends this information to the Network of Terms. The Network of Terms responds with terms
       that match the query. The collection management system shows you the answers in a list. You then choose
       the term that fits best. Under water, invisible, the collection management system stores the identifier – the URI –
@@ -95,7 +96,7 @@
       How can I try out the Network of Terms?
     </h3>
     <p>
-      You can use our <em>demonstrator</em>, a website that allows you to submit queries to the Network of Terms. 
+      You can use our <em>demonstrator</em>, a website that allows you to submit queries to the Network of Terms.
       The demonstrator can be reached at the following location:
     </p>
     <p><a href="https://termennetwerk.netwerkdigitaalerfgoed.nl/">https://termennetwerk.netwerkdigitaalerfgoed.nl/</a></p>
@@ -138,6 +139,18 @@
       the conditions. For example, the source must be available as 'open data', use certain metadata standards and
       provide certain search options. If the source does not meet these requirements, the administrator must first create his source
       before it can be added to the Network of Terms.
+    </p>
+
+    <a id="timeout" />
+    <h3 class="display-5">
+      I’m getting an error: “The term source is temporarily unavailable”. What does this mean?
+    </h3>
+    <p>
+      The Network of Terms searches <a href="#terminology-source">terminology sources</a> directly (in real time).
+      When a terminology source is temporarily unavailable,
+      for example because of a service interruption or maintenance by the source provider,
+      the Network of Terms cannot provide search results.
+      Please retry your search request later.
     </p>
 
     <h3 class="display-5">
