@@ -15,7 +15,6 @@ import SearchForm from './components/SearchForm.vue';
 
 export const router = createRouter({
   history: createWebHistory(),
-  strict: true,
   routes: [
     {
       path: '/:locale(nl|en)',
@@ -92,11 +91,9 @@ export const router = createRouter({
 router.beforeEach((to, from, next) => {
   const locale: string = to.params.locale as  string;
   if (!locale || !(i18n.global.availableLocales as string[]).includes(locale)) {
-    if (to.path === '/') {
-      return next({path: `/${i18n.global.locale}`})
-    }
+    const path = to.path === '/' ? '' : to.path.replace(/\/+$/, '');
 
-    return next({path: `/${i18n.global.locale}${to.fullPath}`});
+    return next({path: `/${i18n.global.locale}${path}`, query: to.query});
   }
 
   i18n.global.locale = locale as 'nl' | 'en';
