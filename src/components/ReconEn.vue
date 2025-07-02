@@ -5,7 +5,7 @@
     </h3>
     <p>
       Yes! The Network of Terms offers a <em>Reconciliation Service</em> that allows you to match your data
-      with terms. This makes it possible to convert words to URIs, for example from 'Rembrandt' to his URI 
+      with terms. This makes it possible to convert words to URIs, for example from 'Rembrandt' to his URI
       in the source RKDartists, <a href="https://data.rkd.nl/artists/66219">https://data.rkd.nl/artists/66219</a>.
       This process is called <em>reconciliation</em>. With the Reconciliation Service you can make these conversions
       automated, for an entire dataset. That saves you a lot of time.
@@ -45,26 +45,21 @@
       What terminology resources can I use for reconciliation?
     </h3>
     <p>
-      Below is a list of available resources. Each source has its URL listed.
+      See the <router-link :to="{name: 'sources'}">
+        {{ t('termSources.title') }}
+      </router-link> for a list of available terminology sources.
+      Each source has its reconciliation URL listed, if available.
       You need this URL, for example, to set up the source in OpenRefine as a so-called 'Standard service'.
     </p>
     <p>
       Note: The Network of Terms does not offer a Reconciliation Service for all sources.
       Some sources already have such a service, such as Wikidata.
     </p>
-
-    <suspense>
-      <ReconciliationEndpoints />
-    </suspense>
   </div>
 </template>
 
-<script lang="ts">
-import {defineComponent} from 'vue';
-import ReconciliationEndpoints from './ReconciliationEndpoints.vue';
+<script lang="ts" setup>
+import {useI18n} from 'vue-i18n';
 
-export default defineComponent({
-  name: 'ReconEN',
-  components: {ReconciliationEndpoints},
-});
+const {t} = useI18n();
 </script>

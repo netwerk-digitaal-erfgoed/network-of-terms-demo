@@ -70,7 +70,10 @@
     "selectGenres": "Select one or more subjects:",
     "matchingSources": "no matching sources | {n} matching source | {n} matching sources",
     "search": "Search in these sources",
-    "intro": "This is the list of terminology sources that you can consult through the Network of Terms."
+    "intro": "This is the list of terminology sources that you can consult through the Network of Terms.",
+    "availableInLanguages": "Available in languages",
+    "genres": "Subjects",
+    "reconciliationUrl": "Reconciliation URL"
   },
   "api": {
     "ServerError": "The terminology source could not process the request",

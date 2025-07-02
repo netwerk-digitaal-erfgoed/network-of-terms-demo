@@ -64,26 +64,21 @@
       Welke terminologiebronnen kan ik gebruiken voor reconciliation?
     </h3>
     <p>
-      Hieronder vind je een lijst van beschikbare bronnen. Bij elke bron staat diens URL vermeld.
-      Deze URL heb je bijvoorbeeld nodig om de bron te kunnen inrichten in OpenRefine als zogeheten 'Standaarddienst'.
+      Zie de <router-link :to="{name: 'sources'}">
+        {{ t('termSources.title') }}
+      </router-link> voor een overzicht van de beschikbare bronnen.
+      Bij elke bron staat diens reconciliatie-URL vermeld, indien beschikbaar.
+      Deze URL heb je bijvoorbeeld nodig om de bron te kunnen inrichten in OpenRefine als zogeheten ‘Standaarddienst’.
     </p>
     <p>
       Merk op: het Termennetwerk biedt niet voor alle bronnen een Reconciliation Service.
       Sommige bronnen hebben zelf al zo'n service, zoals Wikidata.
     </p>
-
-    <suspense>
-      <ReconciliationEndpoints />
-    </suspense>
   </div>
 </template>
 
-<script lang="ts">
-import {defineComponent} from 'vue';
-import ReconciliationEndpoints from './ReconciliationEndpoints.vue';
+<script lang="ts" setup>
+import {useI18n} from 'vue-i18n';
 
-export default defineComponent({
-  name: 'ReconNl',
-  components: {ReconciliationEndpoints},
-});
+const {t} = useI18n();
 </script>
