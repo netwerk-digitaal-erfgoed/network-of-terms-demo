@@ -11,7 +11,7 @@
         name: 'lookup', query: {uri: term.uri}
       }"
     >
-      {{ filterLanguageStrings(term.prefLabel)[0] }}
+      {{ filterLanguageStrings(term.prefLabel)[0] ?? term.uri }}
     </router-link>
   </dd>
   <dd v-if="!lookupLink">
