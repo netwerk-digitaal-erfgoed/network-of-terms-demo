@@ -152,9 +152,9 @@
       the Network of Terms cannot provide search results.
       Please retry your search request later.
       If the problem persists, you can report it to the
-      <router-link :to="{name: 'sources'}">
-        source provider
-      </router-link>.
+      <router-link
+        :to="{name: 'sources'}"
+      >source provider</router-link>.
     </p>
 
     <a id="TimeoutError" />
@@ -167,9 +167,9 @@
       Sometimes a terminology source responds slowly, for example due to high load.
       When a source takes too long to respond, the Network of Terms stops waiting and displays this error.
       Please retry your search request later or contact the
-      <router-link :to="{name: 'sources'}">
-        source provider
-      </router-link>.
+      <router-link
+        :to="{name: 'sources'}"
+      >source provider</router-link>.
     </p>
 
     <h3 class="display-5">

@@ -165,7 +165,9 @@
       kan het Termennetwerk geen zoekresultaten leveren.
       Probeer je zoekopdracht later opnieuw.
       Mocht het probleem dan nog steeds optreden, kun je dat melden bij de
-      <router-link :to="{name: 'sources'}">aanbieder van de bron</router-link>.
+      <router-link
+        :to="{name: 'sources'}"
+      >aanbieder van de bron</router-link>.
     </p>
 
     <a id="TimeoutError" />
@@ -178,7 +180,9 @@
       Soms reageert een terminologie traag, bijvoorbeeld door drukte.
       Wanneer een bron te lang over een antwoord doet, stopt het Termennetwerk met wachten en toont deze foutmelding.
       Probeer je zoekopdracht later opnieuw of neem contact op met de
-      <router-link :to="{name: 'sources'}">aanbieder van de bron</router-link>.
+      <router-link
+        :to="{name: 'sources'}"
+      >aanbieder van de bron</router-link>.
     </p>
 
     <h3 class="display-5">
