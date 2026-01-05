@@ -76,8 +76,8 @@
     "reconciliationUrl": "Reconciliatie-URL"
   },
   "api": {
-    "ServerError": "De terminologiebron kon de vraag niet verwerken",
-    "TimeoutError": "De terminologiebron is tijdelijk niet bereikbaar",
+    "ServerError": "De terminologiebron is niet bereikbaar",
+    "TimeoutError": "De terminologiebron reageerde niet op tijd",
     "NotFoundError": "Geen term gevonden met deze URI",
     "Error": "Er is een fout opgetreden"
   }

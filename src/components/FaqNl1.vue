@@ -154,16 +154,35 @@
       passen voordat deze kan worden toegevoegd aan het Termennetwerk.
     </p>
 
-    <a id="timeout" />
+    <a id="ServerError" />
     <h3 class="display-5">
-      Ik krijg de melding: “De terminologiebron is tijdelijk niet bereikbaar”. Wat betekent dit?
+      Ik krijg een foutmelding: “{{ t('api.ServerError') }}”. Wat betekent dit?
     </h3>
     <p>
       Het Termennetwerk zoekt rechtstreeks (realtime) in <a href="#terminology-source">terminologiebronnen</a>.
-      Wanneer een terminologiebron tijdelijk niet bereikbaar is,
+      Wanneer een terminologiebron niet bereikbaar is,
       bijvoorbeeld door een storing of onderhoud bij de aanbieder van de bron,
-      kan het Termennetwerk dus geen zoekresultaten leveren.
+      kan het Termennetwerk geen zoekresultaten leveren.
       Probeer je zoekopdracht later opnieuw.
+      Mocht het probleem dan nog steeds optreden, kun je dat melden bij de
+      <router-link
+        :to="{name: 'sources'}"
+      >aanbieder van de bron</router-link>.
+    </p>
+
+    <a id="TimeoutError" />
+    <h3 class="display-5">
+      Ik krijg een foutmelding: “{{ t('api.TimeoutError') }}”. Wat betekent dit?
+    </h3>
+    <p>
+      Het Termennetwerk zoekt rechtstreeks (realtime) in
+      <a href="#terminology-source">terminologiebronnen</a>.
+      Soms reageert een terminologie traag, bijvoorbeeld door drukte.
+      Wanneer een bron te lang over een antwoord doet, stopt het Termennetwerk met wachten en toont deze foutmelding.
+      Probeer je zoekopdracht later opnieuw of neem contact op met de
+      <router-link
+        :to="{name: 'sources'}"
+      >aanbieder van de bron</router-link>.
     </p>
 
     <h3 class="display-5">
@@ -178,8 +197,13 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue';
+import {useI18n} from 'vue-i18n';
 
 export default defineComponent({
   name: 'FaqNl1',
+  setup() {
+    const {t} = useI18n();
+    return {t};
+  },
 });
 </script>

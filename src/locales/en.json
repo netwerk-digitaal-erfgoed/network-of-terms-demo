@@ -76,8 +76,8 @@
     "reconciliationUrl": "Reconciliation URL"
   },
   "api": {
-    "ServerError": "The terminology source could not process the request",
-    "TimeoutError": "The terminology source is temporarily unavailable",
+    "ServerError": "The terminology source is unavailable",
+    "TimeoutError": "The terminology source did not respond in time",
     "NotFoundError": "No term found with this URI",
     "Error": "An error occurred"
   }
