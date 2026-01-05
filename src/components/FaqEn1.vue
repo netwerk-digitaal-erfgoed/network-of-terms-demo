@@ -141,16 +141,35 @@
       before it can be added to the Network of Terms.
     </p>
 
-    <a id="timeout" />
+    <a id="ServerError" />
     <h3 class="display-5">
-      I’m getting an error: “The term source is temporarily unavailable”. What does this mean?
+      I'm getting an error: "{{ t('api.ServerError') }}". What does this mean?
     </h3>
     <p>
       The Network of Terms searches <a href="#terminology-source">terminology sources</a> directly (in real time).
-      When a terminology source is temporarily unavailable,
+      When a terminology source is unavailable,
       for example because of a service interruption or maintenance by the source provider,
       the Network of Terms cannot provide search results.
       Please retry your search request later.
+      If the problem persists, you can report it to the
+      <router-link :to="{name: 'sources'}">
+        source provider
+      </router-link>.
+    </p>
+
+    <a id="TimeoutError" />
+    <h3 class="display-5">
+      I'm getting an error: "{{ t('api.TimeoutError') }}". What does this mean?
+    </h3>
+    <p>
+      The Network of Terms searches
+      <a href="#terminology-source">terminology sources</a> directly (in real time).
+      Sometimes a terminology source responds slowly, for example due to high load.
+      When a source takes too long to respond, the Network of Terms stops waiting and displays this error.
+      Please retry your search request later or contact the
+      <router-link :to="{name: 'sources'}">
+        source provider
+      </router-link>.
     </p>
 
     <h3 class="display-5">
@@ -165,8 +184,13 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue';
+import {useI18n} from 'vue-i18n';
 
 export default defineComponent({
   name: 'FaqEn1',
+  setup() {
+    const {t} = useI18n();
+    return {t};
+  },
 });
 </script>

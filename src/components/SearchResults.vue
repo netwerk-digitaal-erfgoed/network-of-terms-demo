@@ -23,7 +23,7 @@
         >
           <ExclamationCircleIcon class="icon icon-text" />
           <router-link
-            :to="{name: 'faq1', hash: '#timeout'}"
+            :to="{name: 'faq1', hash: `#${dataset.result.__typename}`}"
             class="alert-link"
           >
             {{ t('api.' + dataset.result.__typename, t('api.Error')) }}
