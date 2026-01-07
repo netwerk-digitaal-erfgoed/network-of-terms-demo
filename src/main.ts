@@ -7,6 +7,19 @@ import * as nl from './locales/nl.json';
 import App from './App.vue';
 import './index.css';
 
+// Initialize Matomo analytics (production only)
+if (import.meta.env.PROD) {
+  const _paq = window._paq = window._paq || [];
+  _paq.push(['enableLinkTracking']);
+  const u = '//matomo.netwerkdigitaalerfgoed.nl/';
+  _paq.push(['setTrackerUrl', u + 'matomo.php']);
+  _paq.push(['setSiteId', '3']);
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = u + 'matomo.js';
+  document.head.appendChild(script);
+}
+
 export const i18n = createI18n({
   locale: 'nl',
   messages: {
