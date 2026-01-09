@@ -99,3 +99,18 @@ router.beforeEach((to, from, next) => {
   i18n.global.locale = locale as 'nl' | 'en';
   next();
 });
+
+// Matomo page view tracking for SPA
+declare global {
+  interface Window {
+    _paq?: [string, ...unknown[]][];
+  }
+}
+
+router.afterEach((to, from) => {
+  if (import.meta.env.PROD) {
+    window._paq?.push(['setReferrerUrl', from.fullPath]);
+    window._paq?.push(['setCustomUrl', to.fullPath]);
+    window._paq?.push(['trackPageView']);
+  }
+});
