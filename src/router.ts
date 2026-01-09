@@ -109,8 +109,8 @@ declare global {
 
 router.afterEach((to, from) => {
   if (import.meta.env.PROD) {
-    window._paq?.push(['setReferrerUrl', from.fullPath]);
-    window._paq?.push(['setCustomUrl', to.fullPath]);
+    window._paq?.push(['setReferrerUrl', window.location.origin + from.fullPath]);
+    window._paq?.push(['setCustomUrl', window.location.origin + to.fullPath]);
     window._paq?.push(['trackPageView']);
   }
 });
