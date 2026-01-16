@@ -123,6 +123,9 @@
             <p>
               <a href="https://status.termennetwerk.netwerkdigitaalerfgoed.nl">{{ t('general.status') }}</a> <ArrowTopRightOnSquareIcon class="icon" />
             </p>
+            <p>
+              <a href="https://docs.nde.nl/services/network-of-terms/">{{ t('general.documentation') }}</a> <ArrowTopRightOnSquareIcon class="icon" />
+            </p>
           </div>
           <div class="col-md-3">
             <p>
