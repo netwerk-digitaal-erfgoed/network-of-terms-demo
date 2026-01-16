@@ -33,6 +33,12 @@
             />
           </router-link>
           <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                :href="newsUrl"
+              >{{ t('general.news') }}</a>
+            </li>
             <li class="nav-item dropdown">
               <a
                 id="faqDropdownMenuLink"
@@ -104,6 +110,9 @@
               >
                 {{ t('faq.reconciliation') }}
               </router-link>
+            </p>
+            <p>
+              <a :href="newsUrl">{{ t('general.news') }}</a>
             </p>
           </div>
           <div class="col-md-3">
@@ -210,7 +219,13 @@ export default defineComponent({
       return rest;
     });
 
-    return {t, locale, currentLocation, githubSvg, twitterSvg, youtubeSvg, linkedinSvg, logoNlSvg, logoEnSvg, logoRCENlSvg, logoRCEEnSvg};
+    const newsUrl = computed(() => {
+      return locale.value === 'nl'
+        ? 'https://docs.nde.nl/nl/blog/tags/termennetwerk'
+        : 'https://docs.nde.nl/blog/tags/network-of-terms';
+    });
+
+    return {t, locale, currentLocation, newsUrl, githubSvg, twitterSvg, youtubeSvg, linkedinSvg, logoNlSvg, logoEnSvg, logoRCENlSvg, logoRCEEnSvg};
   },
 });
 </script>
