@@ -118,10 +118,10 @@
               </router-link>
             </p>
             <p>
-              <a :href="newsUrl">{{ t('general.news') }}</a>
+              <a :href="newsUrl">{{ t('general.news') }}</a> <ArrowTopRightOnSquareIcon class="icon" />
             </p>
             <p>
-              <a href="https://status.termennetwerk.netwerkdigitaalerfgoed.nl">{{ t('general.status') }} <ArrowTopRightOnSquareIcon class="icon" /></a>
+              <a href="https://status.termennetwerk.netwerkdigitaalerfgoed.nl">{{ t('general.status') }}</a> <ArrowTopRightOnSquareIcon class="icon" />
             </p>
           </div>
           <div class="col-md-3">
