@@ -221,7 +221,7 @@ export default defineComponent({
 
     const newsUrl = computed(() => {
       return locale.value === 'nl'
-        ? 'https://docs.nde.nl/nl/blog/tags/termennetwerk'
+        ? 'https://docs.nde.nl/nl/blog/tags/network-of-terms'
         : 'https://docs.nde.nl/blog/tags/network-of-terms';
     });
 
