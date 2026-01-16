@@ -74,6 +74,7 @@
     "intro": "Dit is de lijst van terminologiebronnen die je via het Termennetwerk kunt raadplegen.",
     "availableInLanguages": "Beschikbaar in talen",
     "genres": "Onderwerpen",
+    "uri": "URI",
     "reconciliationUrl": "Reconciliatie-URL"
   },
   "api": {

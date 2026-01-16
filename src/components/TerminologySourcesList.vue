@@ -88,6 +88,14 @@
                 </span>
               </dd>
 
+              <dt class="col-sm-3">
+                {{ t('termSources.uri') }}
+              </dt>
+              <dd class="col-sm-9">
+                <span class="scrollable-inline-text text-muted me-1">{{ source.uri }}</span>
+                <CopyButton :text="source.uri" />
+              </dd>
+
               <template v-if="reconciliationUrl(source)">
                 <dt class="col-sm-3">
                   {{ t('termSources.reconciliationUrl') }}

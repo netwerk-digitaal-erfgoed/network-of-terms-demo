@@ -74,6 +74,7 @@
     "intro": "This is the list of terminology sources that you can consult through the Network of Terms.",
     "availableInLanguages": "Available in languages",
     "genres": "Subjects",
+    "uri": "URI",
     "reconciliationUrl": "Reconciliation URL"
   },
   "api": {
