@@ -39,6 +39,12 @@
                 :href="newsUrl"
               >{{ t('general.news') }}</a>
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://status.termennetwerk.netwerkdigitaalerfgoed.nl"
+              >{{ t('general.status') }}</a>
+            </li>
             <li class="nav-item dropdown">
               <a
                 id="faqDropdownMenuLink"
@@ -112,7 +118,10 @@
               </router-link>
             </p>
             <p>
-              <a :href="newsUrl">{{ t('general.news') }}</a>
+              <a :href="newsUrl">{{ t('general.news') }}</a> <ArrowTopRightOnSquareIcon class="icon" />
+            </p>
+            <p>
+              <a href="https://status.termennetwerk.netwerkdigitaalerfgoed.nl">{{ t('general.status') }}</a> <ArrowTopRightOnSquareIcon class="icon" />
             </p>
           </div>
           <div class="col-md-3">
@@ -196,6 +205,7 @@ import {useI18n} from 'vue-i18n';
 import {useRoute} from 'vue-router';
 import {computed, defineComponent} from 'vue';
 import LanguageToggle from './components/LanguageToggle.vue';
+import {ArrowTopRightOnSquareIcon} from '@heroicons/vue/16/solid';
 import githubSvg from './assets/github.svg?raw';
 import twitterSvg from './assets/twitter.svg?raw';
 import youtubeSvg from './assets/youtube.svg?raw';
@@ -209,6 +219,7 @@ export default defineComponent({
   name: 'App',
   components: {
     LanguageToggle,
+    ArrowTopRightOnSquareIcon,
   },
   setup() {
     const {t, locale} = useI18n();
