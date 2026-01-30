@@ -32,7 +32,7 @@ const {t, locale} = useI18n();
 const variables = reactive({locale: locale}); // Use query variables to cache per locale and re-fetch when locale changes.
 const headers = reactive({'Accept-Language': locale});
 const {data} = useQuery({
-  query: 'query Sources { sources { name alternateName uri creators { uri alternateName } } }',
+  query: 'query Sources { sources { name alternateName uri creators { uri alternateName } status { isAvailable } } }',
   context: {
     headers,
   },
@@ -49,6 +49,10 @@ watch(locale, async () => {
 });
 
 onUpdated(() => {
+  // Disable HTML sanitization to allow SVG icons in data-content.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ($.fn.selectpicker.Constructor.DEFAULTS as any).sanitize = false;
+
   $('select').selectpicker('show');
 
   // Refresh select after options have loaded.
