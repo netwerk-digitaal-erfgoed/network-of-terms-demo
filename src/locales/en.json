@@ -77,7 +77,10 @@
     "availableInLanguages": "Available in languages",
     "genres": "Subjects",
     "uri": "URI",
-    "reconciliationUrl": "Reconciliation URL"
+    "reconciliationUrl": "Reconciliation URL",
+    "statusAvailable": "Available",
+    "statusUnavailable": "Unavailable",
+    "lastChecked": "Last checked"
   },
   "api": {
     "ServerError": "The terminology source is unavailable",

@@ -47,6 +47,14 @@
               <h5 class="mb-1">
                 {{ source.name }}
                 <small class="text-muted">{{ source.creators[0].alternateName }}</small>
+                <span
+                  v-if="source.status"
+                  class="badge rounded-pill ms-2"
+                  :class="source.status.isAvailable ? 'text-bg-success' : 'text-bg-danger'"
+                  :title="t('termSources.lastChecked') + ': ' + formatDate(source.status.lastChecked)"
+                >
+                  {{ source.status.isAvailable ? '●' : '○' }} {{ source.status.isAvailable ? t('termSources.statusAvailable') : t('termSources.statusUnavailable') }}
+                </span>
               </h5>
               <div>
                 <a
@@ -137,7 +145,7 @@ export default defineComponent({
     const variables = reactive({locale: locale}); // Use query variables to cache per locale and re-fetch when locale changes.
     const headers = reactive({'Accept-Language': locale});
     const {data} = await useQuery({
-      query: 'query Sources { sources { name alternateName mainEntityOfPage description uri creators { uri alternateName } inLanguage genres { uri name } features { type url } } }',
+      query: 'query Sources { sources { name alternateName mainEntityOfPage description uri creators { uri alternateName } inLanguage genres { uri name } features { type url } status { isAvailable lastChecked } } }',
       context: {
         headers,
       },
@@ -161,7 +169,11 @@ export default defineComponent({
     const reconciliationUrl = (source: Source) =>
       source.features.find((feature: Feature) => feature.type === 'RECONCILIATION')?.url;
 
-    return {t, selectedGenres, terminologySources, terminologySourceUris, genres: allGenres, reconciliationUrl};
+    const formatDate = (isoDate: string) => {
+      return new Date(isoDate).toLocaleString(locale.value);
+    };
+
+    return {t, selectedGenres, terminologySources, terminologySourceUris, genres: allGenres, reconciliationUrl, formatDate};
   },
 });
 </script>

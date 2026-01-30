@@ -77,7 +77,10 @@
     "availableInLanguages": "Beschikbaar in talen",
     "genres": "Onderwerpen",
     "uri": "URI",
-    "reconciliationUrl": "Reconciliatie-URL"
+    "reconciliationUrl": "Reconciliatie-URL",
+    "statusAvailable": "Beschikbaar",
+    "statusUnavailable": "Niet beschikbaar",
+    "lastChecked": "Laatst gecontroleerd"
   },
   "api": {
     "ServerError": "De terminologiebron is niet bereikbaar",

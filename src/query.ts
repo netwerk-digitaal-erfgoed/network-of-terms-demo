@@ -62,6 +62,7 @@ export interface Source {
   creators: Creator[];
   features: Feature[];
   genres: Genre[];
+  status?: SourceStatus;
 }
 
 export interface Creator {
@@ -77,6 +78,11 @@ export interface Feature {
 export interface Genre {
   uri: string;
   name: string;
+}
+
+export interface SourceStatus {
+  isAvailable: boolean;
+  lastChecked: string;
 }
 
 export const filterLanguageStrings = (languageStrings: LanguageString[]) => {
