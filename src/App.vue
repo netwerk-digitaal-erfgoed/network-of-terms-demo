@@ -42,7 +42,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://status.termennetwerk.netwerkdigitaalerfgoed.nl"
+                href="https://status.netwerkdigitaalerfgoed.nl"
               >{{ t('general.status') }}</a>
             </li>
             <li class="nav-item dropdown">
@@ -121,7 +121,7 @@
               <a :href="newsUrl">{{ t('general.news') }}</a> <ArrowTopRightOnSquareIcon class="icon" />
             </p>
             <p>
-              <a href="https://status.termennetwerk.netwerkdigitaalerfgoed.nl">{{ t('general.status') }}</a> <ArrowTopRightOnSquareIcon class="icon" />
+              <a href="https://status.netwerkdigitaalerfgoed.nl">{{ t('general.status') }}</a> <ArrowTopRightOnSquareIcon class="icon" />
             </p>
             <p>
               <a href="https://docs.nde.nl/services/network-of-terms/">{{ t('general.documentation') }}</a> <ArrowTopRightOnSquareIcon class="icon" />
