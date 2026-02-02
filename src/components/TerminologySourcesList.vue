@@ -104,20 +104,27 @@
                 <CopyButton :text="source.uri" />
               </dd>
 
-              <template v-if="reconciliationUrl(source)">
-                <dt class="col-sm-3">
-                  {{ t('termSources.reconciliationUrl') }}
-                  <router-link :to="{name: 'reconciliation'}">
-                    <QuestionMarkCircleIcon class="icon" />
-                  </router-link>
-                </dt>
-                <dd class="col-sm-7">
-                  <span class="scrollable-inline-text text-muted me-1">{{ reconciliationUrl(source)! }}</span>
-                  <CopyButton
-                    :text="reconciliationUrl(source)!"
-                  />
-                </dd>
-              </template>
+              <dt class="col-sm-3">
+                {{ reconciliationUrl(source) ? t('termSources.reconciliationUrl') : t('termSources.reconciliation') }}
+                <router-link :to="{name: 'reconciliation'}">
+                  <QuestionMarkCircleIcon class="icon" />
+                </router-link>
+              </dt>
+              <dd
+                v-if="reconciliationUrl(source)"
+                class="col-sm-7"
+              >
+                <span class="scrollable-inline-text text-muted me-1">{{ reconciliationUrl(source)! }}</span>
+                <CopyButton
+                  :text="reconciliationUrl(source)!"
+                />
+              </dd>
+              <dd
+                v-else
+                class="col-sm-9"
+              >
+                {{ t('termSources.reconciliationAvailableAtSource') }}
+              </dd>
             </dl>
           </div>
         </div>
@@ -166,8 +173,10 @@ export default defineComponent({
     });
     const terminologySourceUris = computed(() => terminologySources.value.map((source: Source) => source.uri).join(','));
 
-    const reconciliationUrl = (source: Source) =>
-      source.features.find((feature: Feature) => feature.type === 'RECONCILIATION')?.url;
+    const reconciliationFeature = (source: Source) =>
+      source.features.find((feature: Feature) => feature.type === 'RECONCILIATION');
+
+    const reconciliationUrl = (source: Source) => reconciliationFeature(source)?.url;
 
     const formatDate = (isoDate: string) => {
       return new Date(isoDate).toLocaleString(locale.value);

@@ -77,7 +77,9 @@
     "availableInLanguages": "Beschikbaar in talen",
     "genres": "Onderwerpen",
     "uri": "URI",
+    "reconciliation": "Reconciliatie",
     "reconciliationUrl": "Reconciliatie-URL",
+    "reconciliationAvailableAtSource": "Beschikbaar bij de bron",
     "statusAvailable": "Beschikbaar",
     "statusUnavailable": "Niet beschikbaar",
     "lastChecked": "Laatst gecontroleerd"

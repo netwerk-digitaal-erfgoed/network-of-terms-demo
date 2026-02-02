@@ -77,7 +77,9 @@
     "availableInLanguages": "Available in languages",
     "genres": "Subjects",
     "uri": "URI",
+    "reconciliation": "Reconciliation",
     "reconciliationUrl": "Reconciliation URL",
+    "reconciliationAvailableAtSource": "Available at the source",
     "statusAvailable": "Available",
     "statusUnavailable": "Unavailable",
     "lastChecked": "Last checked"
