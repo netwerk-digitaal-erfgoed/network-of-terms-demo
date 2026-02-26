@@ -32,12 +32,24 @@
           >{{ t('search.labelTermSources') }}</label>
           <div class="col-sm-12 col-lg-8">
             <DatasetsSelect />
-            <p class="form-text ms-1">
+            <p class="form-text ms-1 mb-0">
               {{ t('search.helpTermSources') }}
               <router-link to="sources">
                 {{ t('search.termSourcesLink') }}
               </router-link>
             </p>
+          </div>
+        </div>
+        <div
+          v-if="showGenresFilter"
+          class="row mb-3"
+        >
+          <label
+            for="genres"
+            class="col-lg-3 col-form-label col-form-label-lg text-end"
+          >{{ t('search.labelGenres') }}</label>
+          <div class="col-sm-12 col-lg-8">
+            <GenresSelect />
           </div>
         </div>
         <div class="form-group row">
@@ -62,22 +74,24 @@
   <SearchResults
     :q="q"
     :datasets="state.selectedDatasets"
+    :genres="state.selectedGenres"
   />
 </template>
 
 <script lang="ts">
 import {useI18n} from 'vue-i18n';
 import DatasetsSelect from './DatasetsSelect.vue';
+import GenresSelect from './GenresSelect.vue';
 import {useClient} from 'villus';
 import state from '../store';
 import {useRoute, useRouter} from 'vue-router';
-import {defineComponent, ref} from 'vue';
+import {computed, defineComponent, ref, watch} from 'vue';
 import TheHome from './TheHome.vue';
 import SearchResults from './SearchResults.vue';
 
 export default defineComponent({
   name: 'SearchForm',
-  components: {SearchResults, TheHome, DatasetsSelect},
+  components: {SearchResults, TheHome, DatasetsSelect, GenresSelect},
   setup() {
     const {t} = useI18n();
 
@@ -90,13 +104,35 @@ export default defineComponent({
     const q = ref(route.query.q as string);
     const fromUrl = route.query.datasets as string;
     state.selectedDatasets = (fromUrl ? fromUrl.split(',') : []);
+    const genresFromUrl = route.query.genres as string;
+    state.selectedGenres = (genresFromUrl ? genresFromUrl.split(',') : []);
+
+    const showGenresFilter = computed(() =>
+      state.sources.some(source =>
+        state.selectedDatasets.includes(source.uri)
+        && source.features.some(f => f.type === 'GENRE_FILTER'),
+      ),
+    );
+
+    watch(showGenresFilter, (show) => {
+      if (!show) {
+        state.selectedGenres = [];
+      }
+    });
 
     function onSubmit() {
       state.loading = true;
-      router.replace({name: 'home', query: {q: q.value, datasets: state.selectedDatasets.join(',')}});
+      const query: Record<string, string> = {
+        q: q.value,
+        datasets: state.selectedDatasets.join(','),
+      };
+      if (state.selectedGenres.length > 0) {
+        query.genres = state.selectedGenres.join(',');
+      }
+      router.replace({name: 'home', query});
     }
 
-    return {t, q, onSubmit, state};
+    return {t, q, onSubmit, state, showGenresFilter};
   },
 });
 </script>
