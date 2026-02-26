@@ -32,20 +32,26 @@ const {t, locale} = useI18n();
 const variables = reactive({locale: locale}); // Use query variables to cache per locale and re-fetch when locale changes.
 const headers = reactive({'Accept-Language': locale});
 const {data} = useQuery({
-  query: 'query Sources { sources { name alternateName uri creators { uri alternateName } status { isAvailable } } }',
+  query: 'query Sources { sources { name alternateName uri creators { uri alternateName } status { isAvailable } features { type } genres { uri name } } }',
   context: {
     headers,
   },
   variables,
 });
 
+watch(data, (newData) => {
+  if (newData?.sources) {
+    state.sources = newData.sources;
+  }
+});
+
 watch(locale, async () => {
-  // The select doesn't pick up the change of its HTML select element’s title (= placeholder),
+  // The select doesn't pick up the change of its HTML select element's title (= placeholder),
   // so refresh the placeholder manually.
-  $('select').selectpicker({
+  $('#datasets').selectpicker({
     title: t('search.placeholderDatasets'),
   });
-  $('select').selectpicker('refresh');
+  $('#datasets').selectpicker('refresh');
 });
 
 onUpdated(() => {
@@ -53,11 +59,11 @@ onUpdated(() => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ($.fn.selectpicker.Constructor.DEFAULTS as any).sanitize = false;
 
-  $('select').selectpicker('show');
+  $('#datasets').selectpicker('show');
 
   // Refresh select after options have loaded.
-  $('select').selectpicker('refresh');
+  $('#datasets').selectpicker('refresh');
 
-  $('.bs-searchbox input').on('input', (event) => $(event.target).attr('spellcheck', 'false'));
+  $('#datasets').parent().find('.bs-searchbox input').on('input', (event) => $(event.target).attr('spellcheck', 'false'));
 });
 </script>

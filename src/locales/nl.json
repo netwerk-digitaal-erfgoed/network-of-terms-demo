@@ -63,7 +63,9 @@
     "copyUri": "Kopieer URI",
     "viewAtSource": "Bekijk bij bron",
     "sourceNotFound": "Geen terminologiebron gevonden voor deze URI",
-    "termFound": "Term gevonden"
+    "termFound": "Term gevonden",
+    "labelGenres": "Onderwerpen",
+    "placeholderGenres": "Optioneel filteren op onderwerp"
   },
   "language": {
     "label": "Language"

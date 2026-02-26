@@ -56,6 +56,10 @@ export default defineComponent({
       type: Array,
       default: () => [],
     },
+    genres: {
+      type: Array,
+      default: () => [],
+    },
   },
   setup(props) {
     const {t, locale} = useI18n();
@@ -68,8 +72,8 @@ export default defineComponent({
     }
 
     const {data, isFetching} = useQuery<TermsQueryResult>({
-      query: `query Terms ($sources: [ID]!, $query: String!, $languages: [Language!]) {
-                terms (sources: $sources query: $query languages: $languages) {
+      query: `query Terms ($sources: [ID]!, $query: String!, $languages: [Language!], $genres: [ID]) {
+                terms (sources: $sources query: $query languages: $languages genres: $genres) {
                   source {
                     name
                     uri
@@ -119,6 +123,7 @@ export default defineComponent({
         sources: props.datasets,
         query: props.q,
         languages: [...new Set([locale.value, 'nl', 'en'])],
+        ...(props.genres.length > 0 ? {genres: props.genres} : {}),
       },
       context: {
         headers: reactive({'Accept-Language': locale}),
