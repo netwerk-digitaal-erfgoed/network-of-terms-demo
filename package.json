@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "lint": "eslint --ext .ts,.vue src",
-    "fix": "eslint --ext .ts,.vue src --fix"
+    "lint": "eslint src",
+    "fix": "eslint src --fix"
   },
   "dependencies": {
     "clipboard": "^2.0.11",
@@ -20,17 +20,11 @@
     "@heroicons/vue": "^2.2.0",
     "@types/bootstrap-select": "^1.13.7",
     "@types/jquery": "^3.5.32",
-    "@typescript-eslint/eslint-plugin": "^8.26.1",
-    "@typescript-eslint/parser": "^8.25.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/compiler-sfc": "^3.5.12",
-    "@vue/eslint-config-standard": "^8.0.1",
-    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/eslint-config-typescript": "^14.6.0",
     "eslint": "^9.38.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-standard": "^5.0.0",
-    "eslint-plugin-vue": "^9.32.0",
+    "eslint-plugin-vue": "^10.5.1",
     "typescript": "^5.7.3",
     "vite": "^6.1.1",
     "vue-tsc": "^2.2.8"
