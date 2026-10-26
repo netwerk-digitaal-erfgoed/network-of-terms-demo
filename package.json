@@ -13,7 +13,7 @@
     "graphql": "^16.8.1",
     "villus": "^3.5.2",
     "vue": "^3.5.44",
-    "vue-i18n": "^11.4.14",
+    "vue-i18n": "^11.4.16",
     "vue-router": "^5.4.0"
   },
   "devDependencies": {
